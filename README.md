@@ -75,7 +75,10 @@ A game counts as working when it shows **rendered gameplay AND working input** �
 
 ## The CPU JIT
 
-`source/emulation/cpu/` contains a two-tier CPU:
+The CPU is a two-tier design: an exact interpreter (the semantic reference)
+and a WASM JIT for hot code. The JIT is built on its own development lane and
+folded into this fork at snapshot refreshes — what follows is the lane's
+current state, which may run ahead of this snapshot's tree:
 
 - **Interpreter** — exact, including 80-bit x87 semantics. It's the reference everything is fuzzed against.
 - **WASM JIT** — compiles hot basic blocks to WebAssembly modules, dispatched by table index. Covered so far: integer ALU (8/16/32/64-bit, all forms), shifts, rotates, all `IMUL` forms, `MOVZX`/`MOVSX`, string ops, and memory-operand ALU with interpreter-exact fault ordering.
@@ -93,7 +96,7 @@ Every JIT change must pass: native unit tests, Node WASM tests, the 258-test sel
 
 | Path | What it is |
 |---|---|
-| `source/emulation/cpu/` | x86-64 interpreter + WASM JIT |
+| `source/emulation/cpu/` | x86-64 interpreter (+ WASM JIT, see above) |
 | `source/vulkan/` | Vulkan capture bridge (`vk64bridge.cpp`) — guest Vulkan calls in, command stream out |
 | `web/` | Page side: WebGPU replay (`vkwebgpu.mjs`), shader translation, session/input plumbing |
 | `web/tests/` | Pixel probes — the verification suite (D3D9 triangle, D3D12 clear, input, …) |
