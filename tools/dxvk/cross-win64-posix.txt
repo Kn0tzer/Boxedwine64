@@ -1,0 +1,24 @@
+# tools/dxvk/cross-win64-posix.txt — DXVK win64 cross file for THIS host.
+#
+# Upstream build-win64.txt names the bare `x86_64-w64-mingw32-*` tools, which on
+# Debian/Ubuntu resolve (via update-alternatives) to the ambient default. On this
+# box the default is the **win32-threads** flavor (`Thread model: win32`), and
+# DXVK does not build with win32 threads (README "Build troubleshooting":
+# `std::cv_status has not been declared`). The `-posix` suffixed tools below are
+# the same GCC 13 otherwise, so this file pins those explicitly instead of
+# depending on whatever the alternatives point at.
+[binaries]
+c = 'x86_64-w64-mingw32-gcc-posix'
+cpp = 'x86_64-w64-mingw32-g++-posix'
+ar = 'x86_64-w64-mingw32-ar'
+strip = 'x86_64-w64-mingw32-strip'
+windres = 'x86_64-w64-mingw32-windres'
+
+[properties]
+needs_exe_wrapper = true
+
+[host_machine]
+system = 'windows'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

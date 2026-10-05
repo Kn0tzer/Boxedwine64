@@ -1,0 +1,5 @@
+IMPORT OK: Imported 2 files. Select the executable and press Start.
+APPS-DIR [".","..","cryptprobe.exe","cryptprobe.pdb","cryptprobe-result.txt"]
+PROBE: crypt32.dll: load=ok certopenstore=000000029652BA70 gle=14007
+done
+PASS probe finished

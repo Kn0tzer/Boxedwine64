@@ -1,0 +1,9 @@
+importing /tmp/stage/overhead
+IMPORT OK: Imported 51 files. Select the executable and press Start.
+executable: OverHead.exe
+selected: OverHead.exe
+FAIL locator.waitFor: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('iframe') to be visible
+
+STATUS This runtime currently requires a 64-bit EXE. 32-bit/WoW64 is not certified.

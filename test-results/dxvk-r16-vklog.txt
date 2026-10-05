@@ -1,0 +1,4 @@
+log: [guest fd=2 pid=22 wine64] 003c:err:winediag:getaddrinfo Failed to resolve your host name IP
+log: 003c:err:winediag:getaddrinfo Failed to resolve your host name IP
+log: [guest fd=2 pid=31 wine64] 005c:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\MountMgr": c0000142
+log: 005c:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\MountMgr": c0000142

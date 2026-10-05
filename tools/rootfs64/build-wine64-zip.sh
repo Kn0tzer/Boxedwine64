@@ -82,6 +82,25 @@ copy /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
 # libfreetype: wine probes it for font rendering ("Wine cannot find the FreeType
 # font library"); harmless to omit but cheap to ship.
 copy /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+# crypt32's unixlib dlopens libgnutls.so.30 at runtime (NOT via DT_NEEDED, so
+# the ldd closure drops it). Without it the dlopen fails, crypt32's init
+# leaves its entire .bss nt-callback table zero, and the first unix call
+# jumps through a NULL slot (wild jump to 0x0 -> unimpl at 0x10270) — killing
+# ANY process that loads crypt32, including Unity's BALDI.exe. Verified
+# 2026-10-03 via BW64_DUMPADDR table dump + offline disassembly of the
+# dlopen/dlsym init loop. Ship it AND its DT_NEEDED closure.
+gnutls_dlopen_libs=(
+  /usr/lib/x86_64-linux-gnu/libgnutls.so.30
+  /usr/lib/x86_64-linux-gnu/libnettle.so.8
+  /usr/lib/x86_64-linux-gnu/libhogweed.so.6
+  /usr/lib/x86_64-linux-gnu/libgmp.so.10
+  /usr/lib/x86_64-linux-gnu/libtasn1.so.6
+  /usr/lib/x86_64-linux-gnu/libp11-kit.so.0
+  /usr/lib/x86_64-linux-gnu/libffi.so.8
+  /usr/lib/x86_64-linux-gnu/libidn2.so.0
+  /usr/lib/x86_64-linux-gnu/libunistring.so.2
+)
+for gl in "${gnutls_dlopen_libs[@]}"; do copy "$gl"; done
 # winex11.drv dlopens these X11 client libs at runtime (NOT via DT_NEEDED, so ldd
 # never lists them and the closure above drops them — the base set libX11/libxcb/
 # libXext IS pulled because the wine modules link it, but these higher libs are
@@ -190,6 +209,37 @@ if [ -f "$LIBGL_PREBUILT" ]; then
 else
     echo "WARNING: $LIBGL_PREBUILT missing — run tools/rootfs64/build-libgl64.sh first;" \
          "wine64 will run but with OpenGL disabled." >&2
+fi
+
+# Stage our guest Vulkan shim (tools/rootfs64/libvk64/libvk64.c -> libvulkan.so.1).
+# Same shape as the libGL.so.1 staging above, for the same reason: with no Vulkan
+# loader and no ICD .so in the guest, THIS library is the guest's whole Vulkan API
+# surface — it exports the 85 vk* entry points that vkcube/DXVK resolve through
+# vkGetInstanceProcAddr, and each one traps to the Boxedwine64 host on the private
+# syscall 0x564B0000 (source/vulkan/vk64bridge*). It is also the answer to
+# tasks/p1-final.md unknown #1: the committed rootfs shipped NO libvulkan.so.1, so
+# the guest's loader probing /lib/x86_64-linux-gnu and /usr/lib/x86_64-linux-gnu
+# (and /lib, /usr/lib) all failed with ENOENT. Build it with
+# tools/rootfs64/buildvk.sh.
+VK_PREBUILT="$HERE/libvk64/libvulkan.so.1"
+VK_FIXTURE="$HERE/libvk64/vkfixture"
+if [ -f "$VK_PREBUILT" ]; then
+    echo "--- staging custom guest libvulkan.so.1 ---"
+    mkdir -p "$STAGEHOST/lib/x86_64-linux-gnu" "$STAGEHOST/usr/lib/x86_64-linux-gnu"
+    cp "$VK_PREBUILT" "$STAGEHOST/lib/x86_64-linux-gnu/libvulkan.so.1"
+    # also drop a copy on the usr path some loaders search first
+    cp "$VK_PREBUILT" "$STAGEHOST/usr/lib/x86_64-linux-gnu/libvulkan.so.1"
+    if [ -f "$VK_FIXTURE" ]; then
+        # the P2 boundary fixture: a guest ELF that walks vkcube's whole Vulkan
+        # path through the shim (see tools/rootfs64/libvk64/vkfixture.c). Run it
+        # with web/tests/scratch-vk.mjs.
+        echo "--- staging vkfixture (P2 boundary fixture) ---"
+        mkdir -p "$STAGEHOST/usr/bin"
+        cp "$VK_FIXTURE" "$STAGEHOST/usr/bin/vkfixture"
+    fi
+else
+    echo "WARNING: $VK_PREBUILT missing — run tools/rootfs64/buildvk.sh first;" \
+         "Vulkan apps will find no libvulkan.so.1." >&2
 fi
 
 # Stage the ALSA->OSS sound bridge (M5). wine's winealsa needs libasound to

@@ -1,0 +1,8 @@
+importing /tmp/stage/baldi
+IMPORT OK: Imported 171 files. Select the executable and press Start.
+executable: UnityCrashHandler64.exe
+selected: BALDI.exe
+runtime iframe up; waiting for guest window
+FAIL CPU64: exit_group syscall, status=1  pid=10 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64Z:\home\username\apps\BALDI.exe-screen-width640-screen-height480-screen-fullscreen0'
+STATUS Booting Wine. First launch can take 30–120 seconds.
+PROBE {"roots":["/root/home/username","/root/home/username/.","/root/home/username/..","/root/home/username/apps","/root/home/username/.wine"],"/root/home/username/apps/BALDI_Data/Managed/mscorlib.dll":{"size":3906048,"header":[77,90,144,0,3,0,0,0,4,0,0,0,255,255,0,0]},"/root/home/username/apps/BALDI_Data/boot.config":"wait-for-native-debugger=0\nhdr-display-enabled=0\n","/root/home/username/apps/player.log":"[object Object]","usertree":[]}

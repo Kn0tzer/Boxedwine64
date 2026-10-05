@@ -12,6 +12,7 @@
 #ifdef BOXEDWINE_GUEST_X64
 
 #include "cpu64.h"
+#include "jit64.h"      // phase-1 JIT framework (BW64_JIT=1 runtime flag)
 #include "kmemory64.h"
 #include "syscall64.h"
 #include "ksignal.h"   // K_SIGFPE
@@ -63,7 +64,11 @@ CPU64::CPU64(KMemory64* memory) : memory(memory) {
     fpu.FINIT();
 }
 
-CPU64::~CPU64() = default;
+CPU64::~CPU64() {
+    // State ownership is independent of BOXEDWINE_BLOCK_EXEC: freeJit() is
+    // compiled only with that gate, so release the complete type here.
+    delete m_jit;
+}
 
 void CPU64::cloneRegistersFrom(const CPU64* from) {
     for (int i = 0; i < X64_REG_COUNT; i++) {
@@ -751,47 +756,48 @@ U32 CPU64::step() {
         case 0x68: case 0x6a: goto dsp_22;
         case 0x0f: goto dsp_23;
         case 0xc3: goto dsp_26;
-        case 0xcf: goto dsp_27;
-        case 0xa0: case 0xa1: case 0xa2: case 0xa3: goto dsp_28;
-        case 0xa8: case 0xa9: goto dsp_29;
-        case 0xf6: case 0xf7: goto dsp_30;
-        case 0xfe: goto dsp_31;
-        case 0xff: goto dsp_32;
-        case 0x8f: goto dsp_33;
-        case 0xe8: goto dsp_34;
-        case 0xe9: goto dsp_35;
-        case 0xeb: goto dsp_36;
+        case 0xc2: goto dsp_27;
+        case 0xcf: goto dsp_28;
+        case 0xa0: case 0xa1: case 0xa2: case 0xa3: goto dsp_29;
+        case 0xa8: case 0xa9: goto dsp_30;
+        case 0xf6: case 0xf7: goto dsp_31;
+        case 0xfe: goto dsp_32;
+        case 0xff: goto dsp_33;
+        case 0x8f: goto dsp_34;
+        case 0xe8: goto dsp_35;
+        case 0xe9: goto dsp_36;
+        case 0xeb: goto dsp_37;
         case 0x70: case 0x71: case 0x72: case 0x73: case 0x74: case 0x75: case 0x76: case 0x77: 
         case 0x78: case 0x79: case 0x7a: case 0x7b: case 0x7c: case 0x7d: case 0x7e: case 0x7f: 
-        goto dsp_37;
-        case 0x63: goto dsp_39;
-        case 0xc0: case 0xc1: case 0xd0: case 0xd1: case 0xd2: case 0xd3: goto dsp_40;
-        case 0x69: case 0x6b: goto dsp_41;
-        case 0xa4: case 0xa5: case 0xaa: case 0xab: goto dsp_42;
-        case 0xa6: case 0xa7: case 0xae: case 0xaf: goto dsp_43;
-        case 0xc9: goto dsp_44;
-        case 0x9c: goto dsp_45;
-        case 0x9d: goto dsp_46;
-        case 0x9e: goto dsp_47;
-        case 0x9f: goto dsp_48;
-        case 0xcc: goto dsp_49;
-        case 0xfc: goto dsp_50;
-        case 0xfd: goto dsp_51;
-        case 0xf5: goto dsp_52;
-        case 0xf8: goto dsp_53;
-        case 0xf9: goto dsp_54;
+        goto dsp_38;
+        case 0x63: goto dsp_40;
+        case 0xc0: case 0xc1: case 0xd0: case 0xd1: case 0xd2: case 0xd3: goto dsp_41;
+        case 0x69: case 0x6b: goto dsp_42;
+        case 0xa4: case 0xa5: case 0xaa: case 0xab: goto dsp_43;
+        case 0xa6: case 0xa7: case 0xae: case 0xaf: goto dsp_44;
+        case 0xc9: goto dsp_45;
+        case 0x9c: goto dsp_46;
+        case 0x9d: goto dsp_47;
+        case 0x9e: goto dsp_48;
+        case 0x9f: goto dsp_49;
+        case 0xcc: goto dsp_50;
+        case 0xfc: goto dsp_51;
+        case 0xfd: goto dsp_52;
+        case 0xf5: goto dsp_53;
+        case 0xf8: goto dsp_54;
+        case 0xf9: goto dsp_55;
         case 0xd8: case 0xd9: case 0xda: case 0xdb: case 0xdc: case 0xdd: case 0xde: case 0xdf: 
-        goto dsp_58;
+        goto dsp_59;
         case 0x06: case 0x07: case 0x0e: case 0x16: case 0x17: case 0x1e: case 0x1f: case 0x26: 
         case 0x27: case 0x2e: case 0x2f: case 0x36: case 0x37: case 0x3e: case 0x3f: case 0x40: 
         case 0x41: case 0x42: case 0x43: case 0x44: case 0x45: case 0x46: case 0x47: case 0x48: 
         case 0x49: case 0x4a: case 0x4b: case 0x4c: case 0x4d: case 0x4e: case 0x4f: case 0x60: 
         case 0x61: case 0x62: case 0x64: case 0x65: case 0x66: case 0x67: case 0x6c: case 0x6d: 
-        case 0x6e: case 0x6f: case 0x82: case 0x9a: case 0xac: case 0xad: case 0xc2: case 0xc4: 
-        case 0xc5: case 0xc8: case 0xca: case 0xcb: case 0xcd: case 0xce: case 0xd4: case 0xd5: 
-        case 0xd6: case 0xe0: case 0xe1: case 0xe2: case 0xe3: case 0xe4: case 0xe5: case 0xe6: 
-        case 0xe7: case 0xea: case 0xec: case 0xed: case 0xee: case 0xef: case 0xf0: case 0xf1: 
-        case 0xf2: case 0xf3: case 0xf4: case 0xfa: case 0xfb: goto unhandled;
+        case 0x6e: case 0x6f: case 0x82: case 0x9a: case 0xac: case 0xad: case 0xc4: case 0xc5: 
+        case 0xc8: case 0xca: case 0xcb: case 0xcd: case 0xce: case 0xd4: case 0xd5: case 0xd6: 
+        case 0xe0: case 0xe1: case 0xe2: case 0xe3: case 0xe4: case 0xe5: case 0xe6: case 0xe7: 
+        case 0xea: case 0xec: case 0xed: case 0xee: case 0xef: case 0xf0: case 0xf1: case 0xf2: 
+        case 0xf3: case 0xf4: case 0xfa: case 0xfb: goto unhandled;
     }
 
     // ---- Single-byte opcodes ----
@@ -1351,6 +1357,19 @@ dsp_26:
         return opOff + 1;
     }
 
+    // RET imm16 (C2 iw) — near return, then pop imm16 bytes of parameters.
+    // Win64 callees that forward to a stdcall-style helper (and tiny loader
+    // stubs like BALDI.exe's entry tail) emit `ret 0`. RSP is a plain GPR
+    // here, so the add is exact.
+dsp_27:
+    if (op == 0xC2) {
+        U16 imm = (U16)(fetchByte(rip + opOff + 1) |
+                        ((U16)fetchByte(rip + opOff + 2) << 8));
+        rip = pop64();
+        reg[X64_RSP].u64 += imm;
+        return opOff + 3;
+    }
+
     // IRETQ (REX.W CF == 48 CF), and the non-promoted IRET (CF) / IRETD.
     // Wine's PE-side ntdll uses iretq to return from its user-mode exception
     // dispatcher (NtContinue / the KiUserExceptionDispatcher tail). In long
@@ -1363,7 +1382,7 @@ dsp_26:
     // only the user-visible arithmetic/direction/IF bits are writable; the
     // reserved bits keep their fixed values. This is effectively a privileged
     // return-from-frame, structurally the same as restoreSignalFrame.
-dsp_27:
+dsp_28:
     if (op == 0xCF) {
         const U32 writable = 0x00254FD5u; // CF PF AF ZF SF TF IF DF OF (matches POPFQ)
         if (rexW) {
@@ -1405,7 +1424,7 @@ dsp_27:
     // -fno-pic compiled against fixed-address globals, and for any static
     // ET_EXEC that addresses a known absolute symbol. Surfaced by
     // tools/buildMultiSegmentElf64.py via the unimpl-tracer.
-dsp_28:
+dsp_29:
     if (op == 0xA0 || op == 0xA1 || op == 0xA2 || op == 0xA3) {
         U32 size = (op == 0xA0 || op == 0xA2) ? 1 : opSize;
         // Fetch the 8-byte absolute address that follows the opcode.
@@ -1439,7 +1458,7 @@ dsp_28:
         return used;
     }
 
-dsp_29:
+dsp_30:
     if (op == 0xA8 || op == 0xA9) {
         U32 size = (op == 0xA8) ? 1 : opSize;
         U64 a = (size == 1) ? reg[X64_RAX].u8
@@ -1465,7 +1484,7 @@ dsp_29:
 
     // F6/F7 — group 3: /0 TEST imm, /2 NOT, /3 NEG, /4 MUL, /5 IMUL, /6 DIV, /7 IDIV.
     // v1: only /0 TEST imm wired (needed by ld-linux); rest unimpl.
-dsp_30:
+dsp_31:
     if (op == 0xF6 || op == 0xF7) {
         U32 size = (op == 0xF6) ? 1 : opSize;
         // Decode with NO trailing immediate: only the /0 TEST subform carries
@@ -1703,7 +1722,7 @@ dsp_30:
     // FE — group 4: INC r/m8 (/0) and DEC r/m8 (/1). Byte-only sibling of the
     // FF group; all other /digit values are invalid encodings. wineserver's
     // startup hits this (INC byte ptr [rip+disp32] on a refcount/flag byte).
-dsp_31:
+dsp_32:
     if (op == 0xFE) {
         ModRM m = decodeModRM(rip + opOff + 1, p, 1);
         U8 sub = m.regField & 0x7;
@@ -1725,7 +1744,7 @@ dsp_31:
 
     // INC/DEC r/m via FF /0 and /1. (Single-byte 40-4F encodings are REX
     // in long mode and are already consumed by the prefix loop.)
-dsp_32:
+dsp_33:
     if (op == 0xFF) {
         ModRM m = decodeModRM(rip + opOff + 1, p, 0);
         U8 sub = m.regField & 0x7;
@@ -1766,7 +1785,7 @@ dsp_32:
     }
 
     // 8F /0 — POP r/m (operand size always 64 in long mode for POP).
-dsp_33:
+dsp_34:
     if (op == 0x8F) {
         ModRM m = decodeModRM(rip + opOff + 1, p, 0);
         if ((m.regField & 0x7) != 0) goto unhandled;
@@ -1781,7 +1800,7 @@ dsp_33:
 
     // CALL rel32 (E8 cd). Pushes RIP-of-next-instruction; jumps to
     // RIP-of-next + sign_ext(disp32).
-dsp_34:
+dsp_35:
     if (op == 0xE8) {
         S32 disp = (S32)fetchDword(rip + opOff + 1);
         U32 used = opOff + 1 + 4;
@@ -1792,7 +1811,7 @@ dsp_34:
     }
 
     // JMP rel32 (E9 cd).
-dsp_35:
+dsp_36:
     if (op == 0xE9) {
         S32 disp = (S32)fetchDword(rip + opOff + 1);
         U32 used = opOff + 1 + 4;
@@ -1801,7 +1820,7 @@ dsp_35:
     }
 
     // JMP rel8 (EB cb).
-dsp_36:
+dsp_37:
     if (op == 0xEB) {
         S8 disp = (S8)fetchByte(rip + opOff + 1);
         U32 used = opOff + 1 + 1;
@@ -1810,7 +1829,7 @@ dsp_36:
     }
 
     // Jcc rel8 (70-7F). Condition encoded in low 4 bits.
-dsp_37:
+dsp_38:
     if (op >= 0x70 && op <= 0x7F) {
         S8 disp = (S8)fetchByte(rip + opOff + 1);
         U32 used = opOff + 1 + 1;
@@ -1999,7 +2018,177 @@ dsp_37:
             return used;
         }
 
-        // 0F A3 /r — BT  r/m, r       (test bit, no modify)
+        // 0F C7 /1 — CMPXCHG8B m64 (REX.W=0) / CMPXCHG16B m128 (REX.W=1).
+        // Compares EDX:EAX (8B) or RDX:RAX (16B) with the memory operand:
+        // equal -> ZF=1 and ECX:EBX / RCX:RBX stored to memory, else ZF=0
+        // and the memory value loaded into the accumulator pair. Only ZF is
+        // modified; other arithmetic flags are preserved. Register destination is #UD on hardware;
+        // fall through to the unhandled diagnostic in that case. Mono's GC
+        // and Unity's Baselib atomics emit the 16-byte form.
+        if (op2 == 0xC7) {
+            ModRM m = decodeModRM(rip + opOff + 2, p, 0);
+            if (!m.isReg && (m.regField & 0x7) == 1) {
+                std::unique_lock<std::recursive_mutex> atomicLock(cpu64AtomicLockFor(m.effAddr), std::defer_lock);
+                atomicLock.lock();
+                if (!(p.rex & 0x08)) {
+                    U64 acc = ((U64)reg[X64_RDX].u32 << 32) | reg[X64_RAX].u32;
+                    U64 mem = ((U64)memory->readd(m.effAddr + 4) << 32) | memory->readd(m.effAddr);
+                    rflags = (rflags & ~X64_ZF) | (acc == mem ? X64_ZF : 0);
+                    if (acc == mem) {
+                        memory->writed(m.effAddr, reg[X64_RBX].u32);
+                        memory->writed(m.effAddr + 4, reg[X64_RCX].u32);
+                    } else {
+                        reg[X64_RAX].setU64((U32)mem);
+                        reg[X64_RDX].setU64((U32)(mem >> 32));
+                    }
+                } else {
+                    U64 accLo = reg[X64_RAX].u64, accHi = reg[X64_RDX].u64;
+                    U64 memLo = memory->readq(m.effAddr);
+                    U64 memHi = memory->readq(m.effAddr + 8);
+                    bool eq = (accLo == memLo && accHi == memHi);
+                    rflags = (rflags & ~X64_ZF) | (eq ? X64_ZF : 0);
+                    if (eq) {
+                        memory->writeq(m.effAddr, reg[X64_RBX].u64);
+                        memory->writeq(m.effAddr + 8, reg[X64_RCX].u64);
+                    } else {
+                        reg[X64_RAX].setU64(memLo);
+                        reg[X64_RDX].setU64(memHi);
+                    }
+                }
+                U32 used = opOff + 2 + m.length;
+                rip += used;
+                return used;
+            }
+        }
+        // Packed single-precision reciprocal ops: RSQRTPS 0F 52 / RCPPS 0F 53
+        // (no prefix) and scalar RSQRTSS/RCPSS (F3 prefix, low lane only,
+        // upper lanes pass through). Hardware returns ~12-bit approximations;
+        // exact host results are a valid refinement (games follow with a
+        // Newton-Raphson MULPS, as Unity's math does). Inf/NaN flow through
+        // IEEE rules naturally.
+        if ((!p.osize16 && p.rep == 0 && (op2 == 0x52 || op2 == 0x53)) ||
+            (p.rep == 0xF3 && (op2 == 0x52 || op2 == 0x53))) {
+            bool scalar = (p.rep == 0xF3);
+            ModRM m = decodeModRM(rip + opOff + 2, p, 0);
+            U64 srcLo, srcHi;
+            if (m.isReg) {
+                srcLo = xmm[m.rmIndex].lo;
+                srcHi = xmm[m.rmIndex].hi;
+            } else {
+                srcLo = scalar ? memory->readd(m.effAddr) : memory->readq(m.effAddr);
+                srcHi = scalar ? 0 : memory->readq(m.effAddr + 8);
+            }
+            auto u32f = [](U32 b){ float f; std::memcpy(&f,&b,4); return f; };
+            auto fu32 = [](float f){ U32 b; std::memcpy(&b,&f,4); return b; };
+            U64 outLo, outHi;
+            if (scalar) {
+                float b0 = u32f((U32)(srcLo & 0xFFFFFFFFULL));
+                float r0 = (op2 == 0x52) ? (1.0f / std::sqrt(b0)) : (1.0f / b0);
+                outLo = (fu32(r0) & 0xFFFFFFFFULL) | (xmm[m.regField].lo & 0xFFFFFFFF00000000ULL);
+                outHi = xmm[m.regField].hi;
+            } else {
+                float b[4];
+                b[0] = u32f((U32)(srcLo & 0xFFFFFFFFULL));
+                b[1] = u32f((U32)(srcLo >> 32));
+                b[2] = u32f((U32)(srcHi & 0xFFFFFFFFULL));
+                b[3] = u32f((U32)(srcHi >> 32));
+                U32 r[4];
+                for (int i = 0; i < 4; i++) {
+                    float v = (op2 == 0x52) ? (1.0f / std::sqrt(b[i])) : (1.0f / b[i]);
+                    r[i] = fu32(v);
+                }
+                outLo = (U64)r[0] | ((U64)r[1] << 32);
+                outHi = (U64)r[2] | ((U64)r[3] << 32);
+            }
+            xmm[m.regField].lo = outLo;
+            xmm[m.regField].hi = outHi;
+            U32 used = opOff + 2 + m.length;
+            rip += used;
+            return used;
+        }
+
+        // FP conversions between scalar/packed singles, doubles and integers.
+        //   F3 0F 5A CVTSS2SD   F2 0F 5A CVTSD2SS   0F 5A CVTPS2PD
+        //   66 0F 5A CVTPD2PS  F3 0F 2A CVTSI2SS   F2 0F 2A CVTSI2SD
+        //   F3 0F 2D/2C CVT(T)SS2SI   F2 0F 2D/2C CVT(T)SD2SI
+        // MXCSR is not modeled (LDMXCSR/STMXCSR are no-ops), so the rounding
+        // conversions use the default round-to-nearest mode. Out-of-range and
+        // NaN inputs yield the integer indefinite value, per the SDM. Unity's
+        // startup (rsqrtps -> cvtss2sd -> movsd) and Mono's time/GC paths hit
+        // these immediately.
+        if ((p.rep == 0xF3 && (op2 == 0x5A || op2 == 0x2A || op2 == 0x2D || op2 == 0x2C)) ||
+            (p.rep == 0xF2 && (op2 == 0x5A || op2 == 0x2A || op2 == 0x2D || op2 == 0x2C)) ||
+            (p.rep == 0 && op2 == 0x5A)) {
+            bool toInt = (op2 == 0x2D || op2 == 0x2C);
+            bool trunc = (op2 == 0x2C);
+            bool dbl = (p.rep == 0xF2) || (p.osize16 && op2 == 0x5A);
+            bool i64 = (p.rex & 0x08) != 0;
+            ModRM m = decodeModRM(rip + opOff + 2, p, 0);
+            auto u32f = [](U32 b){ float f; std::memcpy(&f,&b,4); return f; };
+            auto fu32 = [](float f){ U32 b; std::memcpy(&b,&f,4); return b; };
+            auto u64d = [](U64 b){ double d; std::memcpy(&d,&b,8); return d; };
+            auto du64 = [](double d){ U64 b; std::memcpy(&b,&d,8); return b; };
+            if (!toInt && op2 == 0x5A && p.rep == 0 && !p.osize16) {
+                // CVTPS2PD: two packed singles -> two doubles.
+                U64 sLo = m.isReg ? xmm[m.rmIndex].lo : memory->readq(m.effAddr);
+                float b0 = u32f((U32)(sLo & 0xFFFFFFFFULL));
+                float b1 = u32f((U32)(sLo >> 32));
+                xmm[m.regField].lo = du64((double)b0);
+                xmm[m.regField].hi = du64((double)b1);
+            } else if (!toInt && op2 == 0x5A && p.rep == 0 && p.osize16) {
+                // CVTPD2PS: two packed doubles -> two singles, upper zeroed.
+                U64 sLo = m.isReg ? xmm[m.rmIndex].lo : memory->readq(m.effAddr);
+                U64 sHi = m.isReg ? xmm[m.rmIndex].hi : memory->readq(m.effAddr + 8);
+                float r0 = (float)u64d(sLo), r1 = (float)u64d(sHi);
+                xmm[m.regField].lo = (U64)fu32(r0) | ((U64)fu32(r1) << 32);
+                xmm[m.regField].hi = 0;
+            } else if (!toInt && op2 == 0x5A && p.rep == 0xF3) {
+                // CVTSS2SD: scalar single -> scalar double, upper preserved.
+                U32 bits = m.isReg ? (U32)(xmm[m.rmIndex].lo & 0xFFFFFFFFULL)
+                                   : memory->readd(m.effAddr);
+                xmm[m.regField].lo = du64((double)u32f(bits));
+            } else if (!toInt && op2 == 0x5A && p.rep == 0xF2) {
+                // CVTSD2SS: scalar double -> scalar single, upper preserved.
+                U64 bits = m.isReg ? xmm[m.rmIndex].lo : memory->readq(m.effAddr);
+                float r = (float)u64d(bits);
+                xmm[m.regField].lo = (xmm[m.regField].lo & 0xFFFFFFFF00000000ULL) | fu32(r);
+            } else if (!toInt && op2 == 0x2A) {
+                // CVTSI2SS / CVTSI2SD: integer -> scalar float/double.
+                S64 iv = i64 ? (S64)(m.isReg ? reg[m.rmIndex].u64 : memory->readq(m.effAddr))
+                             : (S64)(S32)(m.isReg ? reg[m.rmIndex].u32 : memory->readd(m.effAddr));
+                if (dbl) {
+                    xmm[m.regField].lo = du64((double)iv);
+                } else {
+                    float r = (float)iv;
+                    xmm[m.regField].lo = (xmm[m.regField].lo & 0xFFFFFFFF00000000ULL) | fu32(r);
+                }
+            } else if (toInt) {
+                // CVT(T)SS2SI / CVT(T)SD2SI: scalar float/double -> GP reg.
+                double v;
+                if (dbl) {
+                    v = u64d(m.isReg ? xmm[m.rmIndex].lo : memory->readq(m.effAddr));
+                } else {
+                    U32 bits = m.isReg ? (U32)(xmm[m.rmIndex].lo & 0xFFFFFFFFULL)
+                                       : memory->readd(m.effAddr);
+                    v = (double)u32f(bits);
+                }
+                double r = trunc ? std::trunc(v) : std::nearbyint(v);
+                if (i64) {
+                    if (!std::isfinite(r) || r < -9223372036854775808.0 || r >= 9223372036854775808.0)
+                        reg[m.regField].setU64(0x8000000000000000ULL);
+                    else
+                        reg[m.regField].setU64((U64)(S64)r);
+                } else {
+                    if (!std::isfinite(r) || r < -2147483648.0 || r >= 2147483648.0)
+                        reg[m.regField].setU32(0x80000000U);
+                    else
+                        reg[m.regField].setU32((U32)(S32)r);
+                }
+            }
+            U32 used = opOff + 2 + m.length;
+            rip += used;
+            return used;
+        }
         // 0F AB /r — BTS r/m, r       (set bit, return old in CF)
         // 0F B3 /r — BTR r/m, r       (reset bit)
         // 0F BB /r — BTC r/m, r       (complement bit)
@@ -2183,7 +2372,7 @@ dsp_37:
 
     // 63 /r — MOVSXD r64, r/m32 (with REX.W). Without REX.W it acts like
     // MOV r32, r/m32 (Intel: deprecated form). We support both.
-dsp_39:
+dsp_40:
     if (op == 0x63) {
         ModRM m = decodeModRM(rip + opOff + 1, p, 0);
         U64 raw = loadRM(m, 4, rexPresent);
@@ -2203,7 +2392,7 @@ dsp_39:
     //   /0 ROL  /1 ROR  /2 RCL  /3 RCR
     // D0/C0 = byte form; D1/C1 = opSize form. D0/D1 shift by 1; D2/D3 shift
     // by CL; C0/C1 shift by imm8.
-dsp_40:
+dsp_41:
     if (op == 0xD0 || op == 0xD1 || op == 0xD2 || op == 0xD3 ||
         op == 0xC0 || op == 0xC1) {
         U32 size = (op == 0xD0 || op == 0xD2 || op == 0xC0) ? 1 : opSize;
@@ -2237,7 +2426,7 @@ dsp_40:
     }
 
     // IMUL r, r/m, imm (69 iz / 6B ib). Three-operand signed multiply.
-dsp_41:
+dsp_42:
     if (op == 0x69 || op == 0x6B) {
         ModRM m = decodeModRM(rip + opOff + 1, p,
             (op == 0x69) ? (opSize == 2 ? 2 : 4) : 1);
@@ -2279,7 +2468,7 @@ dsp_41:
     //
     // MOVSB/MOVSW/MOVSD/MOVSQ — A4 (byte), A5 (opSize).
     // STOSB/STOSW/STOSD/STOSQ — AA (byte), AB (opSize). Source is RAX.
-dsp_42:
+dsp_43:
     if (op == 0xA4 || op == 0xA5 || op == 0xAA || op == 0xAB) {
         U32 size = (op == 0xA4 || op == 0xAA) ? 1 : opSize;
         bool isStos = (op == 0xAA || op == 0xAB);
@@ -2323,7 +2512,7 @@ dsp_42:
     // both also break when RCX reaches 0.
     //   CMPSB/CMPSW/CMPSD/CMPSQ — A6 / A7
     //   SCASB/SCASW/SCASD/SCASQ — AE / AF
-dsp_43:
+dsp_44:
     if (op == 0xA6 || op == 0xA7 || op == 0xAE || op == 0xAF) {
         U32 size = (op == 0xA6 || op == 0xAE) ? 1 : opSize;
         bool isScas = (op == 0xAE || op == 0xAF);
@@ -2373,7 +2562,7 @@ dsp_43:
     }
 
     // LEAVE (C9). Equivalent to: RSP = RBP; RBP = pop64().
-dsp_44:
+dsp_45:
     if (op == 0xC9) {
         reg[X64_RSP].setU64(reg[X64_RBP].u64);
         reg[X64_RBP].setU64(pop64());
@@ -2385,13 +2574,13 @@ dsp_44:
     // extended to 64; POPFQ pops 64 bits but only the low 32 carry the
     // user-visible flags. We mirror that: writeable mask covers the
     // arithmetic and direction flags + IF.
-dsp_45:
+dsp_46:
     if (op == 0x9C) {
         push64((U64)rflags);
         rip += opOff + 1;
         return opOff + 1;
     }
-dsp_46:
+dsp_47:
     if (op == 0x9D) {
         U64 v = pop64();
         const U32 writable = 0x00254FD5u; // CF PF AF ZF SF TF IF DF OF + others
@@ -2402,7 +2591,7 @@ dsp_46:
 
     // SAHF (9E). Load the low 8 bits of rflags from AH. Only SF/ZF/AF/PF/CF
     // are user-visible in those bits per AMD64; bit 1 reads as 1.
-dsp_47:
+dsp_48:
     if (op == 0x9E) {
         U8 ah = (U8)((reg[X64_RAX].u64 >> 8) & 0xFF);
         const U32 mask = X64_SF | X64_ZF | X64_AF | X64_PF | X64_CF;
@@ -2413,7 +2602,7 @@ dsp_47:
 
     // LAHF (9F). Store the low 8 bits of rflags (SF/ZF/0/AF/0/PF/1/CF) into
     // AH. Bit 1 is always 1, bits 3/5 are always 0.
-dsp_48:
+dsp_49:
     if (op == 0x9F) {
         U8 v = (U8)(rflags & (X64_SF | X64_ZF | X64_AF | X64_PF | X64_CF));
         v |= 0x02; // reserved bit 1 reads as 1
@@ -2428,7 +2617,7 @@ dsp_48:
     // without real signal delivery, klog the trap and yield so the guest
     // exits cleanly instead of looping or corrupting host state. assert()
     // failure paths and debugger-injected breakpoints emit this.
-dsp_49:
+dsp_50:
     if (op == 0xCC) {
         klog_fmt("CPU64: INT3 at RIP=0x%llx — yielding (no SIGTRAP delivery yet)",
                  (unsigned long long)rip);
@@ -2438,17 +2627,17 @@ dsp_49:
     }
 
     // CLD (FC) / STD (FD). Direction flag for string ops.
-dsp_50:
-    if (op == 0xFC) { rflags &= ~X64_DF; rip += opOff + 1; return opOff + 1; }
 dsp_51:
+    if (op == 0xFC) { rflags &= ~X64_DF; rip += opOff + 1; return opOff + 1; }
+dsp_52:
     if (op == 0xFD) { rflags |=  X64_DF; rip += opOff + 1; return opOff + 1; }
 
     // CMC (F5) / CLC (F8) / STC (F9). Carry-flag toggle/clear/set.
-dsp_52:
-    if (op == 0xF5) { rflags ^= X64_CF; rip += opOff + 1; return opOff + 1; }
 dsp_53:
-    if (op == 0xF8) { rflags &= ~X64_CF; rip += opOff + 1; return opOff + 1; }
+    if (op == 0xF5) { rflags ^= X64_CF; rip += opOff + 1; return opOff + 1; }
 dsp_54:
+    if (op == 0xF8) { rflags &= ~X64_CF; rip += opOff + 1; return opOff + 1; }
+dsp_55:
     if (op == 0xF9) { rflags |=  X64_CF; rip += opOff + 1; return opOff + 1; }
 
     // CPUID (0F A2). Return a conservative feature set: SSE2 only, no SSE3+,
@@ -3645,8 +3834,10 @@ dsp_54:
             // Fall through to default panic for unimplemented 0F 01 .. forms.
         }
 
-        // PREFETCH* — 0F 18 /reg. Treated as a no-op (hint only).
-        if (op2 == 0x18) {
+        // PREFETCH* (0F 18) and AMD PREFETCH/PREFETCHW (0F 0D).
+        // Cache hints only: decode the full address but do not read memory.
+        // Unity's player emits PREFETCHW [rbx+0x14] during startup.
+        if (op2 == 0x18 || op2 == 0x0D) {
             ModRM m = decodeModRM(rip + opOff + 2, p, 0);
             U32 used = opOff + 2 + m.length;
             rip += used;
@@ -4725,7 +4916,7 @@ dsp_54:
     // because the FPU::FLD_F64_EA family takes a 32-bit CPU* that we can't
     // satisfy. ModR/M "reg" field is the sub-opcode (/0../7) for memory forms;
     // for register forms (mod==11) the low 3 bits identify ST(i).
-dsp_58:
+dsp_59:
     if (op == 0xD8 || op == 0xD9 || op == 0xDA || op == 0xDB ||
         op == 0xDC || op == 0xDD || op == 0xDE || op == 0xDF) {
         U8 modrmByte = fetchByte(rip + opOff + 1);
@@ -5325,10 +5516,32 @@ void CPU64::run() {
                              (unsigned long long)e.rsi, (unsigned long long)e.rdi,
                              (unsigned long long)e.rsp, (unsigned long long)e.rbp);
                 }
+                // BW64_DUMPADDR=0x...: at wildjump fire, dump 8 guest qwords at
+                // the given address (e.g. a suspect .bss callback table whose
+                // slot was called as code). The address is ASLR-slid per run;
+                // take it from that run's FMMAP lines. Opt-in; off by default.
+                static const char* dumpAddrEnv = std::getenv("BW64_DUMPADDR");
+                if (dumpAddrEnv && dumpAddrEnv[0] && memory) {
+                    U64 dumpAddr = std::strtoull(dumpAddrEnv, nullptr, 0);
+                    if (dumpAddr) {
+                        char hx[160] = {0};
+                        for (int qi = 0; qi < 8; qi++)
+                            snprintf(hx + qi * 17, 18, "%016llx ",
+                                     (unsigned long long)memory->readq(dumpAddr + (U64)qi * 8));
+                        klog_fmt("BW64_DUMPADDR [0x%llx]= %s",
+                                 (unsigned long long)dumpAddr, hx);
+                    }
+                }
             }
         }
 #ifdef BOXEDWINE_BLOCK_EXEC
         {
+            // Phase-1 JIT fast path (active only when BW64_JIT=1; no-op otherwise).
+            U32 jn = tryJitStep();
+            if (jn) {
+                instructionCount += jn;
+                continue;
+            }
             U32 bn = tryBlockStep();
             if (bn) {
                 instructionCount += bn;
@@ -5587,9 +5800,9 @@ bool CPU64::buildBlock(U64 startRip, BBlock& b) {
     return true;
 }
 
-U32 CPU64::execBlock(const BBlock& b) {
+U32 CPU64::execBlock(const BBlock& b, U64 maxInsn) {
     U32 executed = 0;
-    for (U16 i = 0; i < b.n; i++) {
+    for (U16 i = 0; i < b.n && executed < maxInsn; i++) {
         const BRec& rec = b.recs[i];
         bool rexPresent = rec.rexPresent != 0;
         U32 size = rec.size;
@@ -5705,11 +5918,67 @@ U32 CPU64::execBlock(const BBlock& b) {
         }
         }
         executed++;
+        // A guest store can rewrite a later instruction in this block. Stop
+        // at the next RIP so the runner decodes the updated bytes immediately.
+        if (KMemory64::blockPageGenOf(b.page0) != b.gen0 ||
+            KMemory64::blockPageGenOf(b.page1) != b.gen1) break;
     }
     return executed;
 }
 
-U32 CPU64::tryBlockStep() {
+// ---- Phase-1 JIT hook (see include/jit64.h). Gated on BW64_JIT=1 so default
+// behavior is unchanged. Compiles the JIT plan for the block at RIP, validates
+// it, then executes via the interpreter's execBlock (same BBlock builder the
+// JIT decoder cross-checks in tests) so semantics stay bit-identical. Phase 2
+// replaces the execBlock call with wasm-module execution of the emitted plan.
+// The hook lives INSIDE the BOXEDWINE_BLOCK_EXEC section because it reuses
+// BBlock/execBlock/page-gen validity; without that infra it returns 0.
+U32 CPU64::tryJitStep(U64 maxInsn) {
+    if (!jit64Enabled()) return 0;
+    if (!m_jit) ensureJit();
+    U64 r = rip;
+    // Snapshot up to 15 bytes/insn * 24 recs for the JIT decoder.
+    U8 snap[15 * 24];
+    for (U32 i = 0; i < sizeof(snap); i++) snap[i] = fetchByte(r + i);
+    Jit64Op ops[24];
+    U32 n = jit64CompileStream(r, snap, (U32)sizeof(snap), ops, 24, true);
+    if (n < 2) { m_jit->insnsFallback++; return 0; }
+    // Reuse the interpreter's block builder as the execution vehicle AND the
+    // cross-check: the JIT plan and BBlock must agree on every instruction
+    // length (otherwise the JIT decoder drifted from step()'s dispatch).
+    BBlock bb;
+    if (!buildBlock(r, bb)) { m_jit->insnsFallback += 1; return 0; }
+    if (bb.n != n) { m_jit->insnsFallback += 1; return 0; } // decoder drift guard
+    for (U32 i = 0; i < n; i++) {
+        if (ops[i].plan != JIT64_FAST || ops[i].len != bb.recs[i].len) {
+            m_jit->insnsFallback += 1;
+            return 0; // whole-block fallback rule
+        }
+    }
+    // Gens come from the just-built BBlock (registered by buildBlock).
+    const Jit64Block* hit = m_jit->cache.lookup(r, bb.page0, bb.gen0, bb.page1, bb.gen1);
+    if (!hit) {
+        hit = m_jit->cache.insert(r, bb.page0, bb.gen0, bb.page1, bb.gen1, ops, n);
+        m_jit->blocksCompiled++;
+    }
+    U32 done = execBlock(bb, maxInsn);
+    m_jit->blocksExecuted++;
+    m_jit->insnsFast += done;
+    return done;
+}
+
+void CPU64::ensureJit() {
+    if (!m_jit) {
+        m_jit = new Jit64State();
+    }
+}
+
+void CPU64::freeJit() {
+    delete m_jit;
+    m_jit = nullptr;
+}
+
+U32 CPU64::tryBlockStep(U64 maxInsn) {
     U64 r = rip;
     U32 neg = (U32)((r ^ (r >> 10)) & 1023);
     if (blockNegCache[neg] == r) return 0;
@@ -5731,7 +6000,7 @@ U32 CPU64::tryBlockStep() {
     if (b.startRip == r) {
         if (KMemory64::blockPageGenOf(b.page0) == b.gen0 &&
             KMemory64::blockPageGenOf(b.page1) == b.gen1) {
-            U32 n = execBlock(b);
+            U32 n = execBlock(b, maxInsn);
             blockStatsExec++;
             blockStatsInsn += n;
             return n;
@@ -5742,7 +6011,7 @@ U32 CPU64::tryBlockStep() {
         blockNegCache[neg] = r;
         return 0;
     }
-    U32 n = execBlock(b);
+    U32 n = execBlock(b, maxInsn);
     blockStatsExec++;
     blockStatsInsn += n;
     return n;
@@ -5774,7 +6043,14 @@ U64 CPU64::runBounded(U64 maxInsn) {
         }
 #ifdef BOXEDWINE_BLOCK_EXEC
         {
-            U32 bn = tryBlockStep();
+            // Phase-1 JIT fast path (active only when BW64_JIT=1; no-op otherwise).
+            U32 jn = tryJitStep(maxInsn - ran);
+            if (jn) {
+                instructionCount += jn;
+                ran += jn;
+                continue;
+            }
+            U32 bn = tryBlockStep(maxInsn - ran);
             if (bn) {
                 instructionCount += bn;
                 ran += bn;

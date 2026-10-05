@@ -1,0 +1,73 @@
+{
+  "passed": false,
+  "tri12Result": 1,
+  "tri12FailLines": [
+    "log: tri12: FAIL D3D12CreateDevice hr=0x80070057\r"
+  ],
+  "gateLines": [
+    "log: [guest fd=2 pid=24 wine64] 0040:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: 0040:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: [guest fd=2 pid=29 wine64] 0058:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: 0058:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: [guest fd=2 pid=41 wine64] 0084:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: 0084:fixme:thread:set_native_thread_name cross-process native thread naming not supported",
+    "log: [guest fd=2 pid=46 wine64] 1791232560.762:0078:007c:err:vkd3d-proton:vkd3d_init_device_caps: Lacking support for VK_EXT_vertex_attribute_divisor.",
+    "log: 1791232560.762:0078:007c:err:vkd3d-proton:vkd3d_init_device_caps: Lacking support for VK_EXT_vertex_attribute_divisor."
+  ],
+  "framesBuilt": 0,
+  "chunksCaptured": 0,
+  "decodedFrames": [],
+  "guestExitLines": [
+    "log: CPU64: exit_group syscall, status=1  pid=46 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64Z:\\\\home\\\\username\\\\tri12.exe'"
+  ],
+  "provenance": [
+    {
+      "name": "tri12.exe",
+      "path": "tools/vkd3d/probe/tri12.exe",
+      "bytes": 298983,
+      "sha256": "ae5146d93de7c69451c736345bf88f1fab0dffaecef5bae2596bcdc5f6a60899"
+    },
+    {
+      "name": "d3d12.dll",
+      "path": "/home/ubuntu/wt-vkd3d/tools/vkd3d/build.w64/libs/d3d12/d3d12.dll",
+      "bytes": 700635,
+      "sha256": "c19e3b0d98abc8fd784eb51b9cda4e7415e2e092609ea31509e2fb55e067bc15"
+    },
+    {
+      "name": "d3d12core.dll",
+      "path": "/home/ubuntu/wt-vkd3d/tools/vkd3d/build.w64/libs/d3d12core/d3d12core.dll",
+      "bytes": 8986250,
+      "sha256": "43b7fd36f264ceea3ba64f79dbe0be4e5c0239739a11daeac01ea6c9cda868a0"
+    },
+    {
+      "name": "libvulkan.so.1",
+      "path": "tools/rootfs64/libvk64/libvulkan.so.1",
+      "bytes": 80160,
+      "sha256": "c460a84a9cd926328eb62e44b807c8fc7fab9a2b637c57a7c72e4d8ea6ba28bf"
+    }
+  ],
+  "stats": {
+    "received": 0,
+    "rendered": 0,
+    "rejected": 0,
+    "errors": [],
+    "last": null,
+    "litPixels": 0,
+    "paintedPixels": 0,
+    "totalPixels": 0,
+    "pipeline": null,
+    "v2": {
+      "chunksReceived": 0,
+      "framesReceived": 0,
+      "rendered": 0,
+      "droppedConsumer": 0,
+      "chunkGaps": 0,
+      "rejected": 0,
+      "queue": 0,
+      "pipeline2": null
+    }
+  },
+  "pixels": null,
+  "errors": [],
+  "renderErrors": []
+}

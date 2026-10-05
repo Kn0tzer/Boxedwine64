@@ -69,6 +69,17 @@ wasm64-selftest-mem64: export EXTRA_LD_FLAGS := -sMEMORY64=1 -sENVIRONMENT=node 
 # DISABLE_GL_EXTENSIONS empties the large legacy 32-bit glfunctions_ext* marshaling
 # (unused by the 64-bit bridge) so enabling BOXEDWINE_OPENGL doesn't bloat/break the
 # WASM link.
+#
+# BOXEDWINE_VULKAN64 compiles in source/vulkan/vk64bridge.cpp — the guest->host
+# Vulkan trap whose host (__EMSCRIPTEN__) path owns the whole Vulkan
+# implementation (object tables, command recording, the per-frame manifest that
+# hops into the page via MAIN_THREAD_EM_ASM). Without it the file (and the
+# `case VK64_SYSCALL_NR` dispatch in syscall64.cpp) is #ifdef'd out and the
+# guest's Vulkan trap (magic syscall 0x564B0000) falls through to the
+# unimplemented default. The guest side is tools/rootfs64/libvk64
+# (libvulkan.so.1), which is why the guest app has no Vulkan loader at all —
+# the shim IS the API surface. source/vulkan/*.cpp is already in SOURCES, so no
+# new source line is needed for it.
 # GLH names the header pulled in by `#include GLH` in the opengl sources
 # (platform*/platformOpenGL.cpp, source/opengl/glcommon.cpp, …) — it supplies the
 # GL types (GLenum/GLfloat/…) that glfunctions.h references. The rest of the tree
@@ -78,7 +89,7 @@ wasm64-selftest-mem64: export EXTRA_LD_FLAGS := -sMEMORY64=1 -sENVIRONMENT=node 
 # the BOXEDWINE_OPENGL build fails with "unknown type name 'GLenum'" on a CLEAN
 # tree (a stale .o hid it locally). DISABLE_GL_EXTENSIONS empties the large legacy
 # 32-bit glfunctions_ext* marshaling (unused by the 64-bit gl64 bridge).
-wasm64-mt: export EXTRA_CPP_FLAGS := -DBOXEDWINE_GUEST_X64=1 -DBOXEDWINE_MULTI_THREADED -DBOXEDWINE_OPENGL '-DGLH=<SDL_opengl.h>' -DDISABLE_GL_EXTENSIONS -pthread -DNDEBUG
+wasm64-mt: export EXTRA_CPP_FLAGS := -DBOXEDWINE_GUEST_X64=1 -DBOXEDWINE_MULTI_THREADED -DBOXEDWINE_OPENGL -DBOXEDWINE_VULKAN64 '-DGLH=<SDL_opengl.h>' -DDISABLE_GL_EXTENSIONS -pthread -DNDEBUG
 wasm64-mt: export BUILD_DIR := Build/Wasm64Mt
 wasm64-mt: export SHELL_FILE := shell.html
 wasm64-mt: export TARGET_EXEC := boxedwine64.html
@@ -148,7 +159,11 @@ SOURCES += $(wildcard $(PROJDIR)/source/sdl/*.cpp)
 SOURCES += $(wildcard $(PROJDIR)/source/sdl/emscripten/*.cpp)
 SOURCES += $(wildcard $(PROJDIR)/platform/sdl/*.cpp)
 SOURCES += $(wildcard $(PROJDIR)/platform/linux/*.cpp)
-SOURCES += $(shell find $(PROJDIR)/source/emulation -type f -name '*.cpp')
+# Phase-1 JIT: source/emulation/cpu/tests/ is the NATIVE g++ unit-test
+# harness (it has its own main()); prune it so emcc never links it.
+# jit64.cpp itself is auto-globbed here and is BOXEDWINE_GUEST_X64-gated.
+EMULATION_SOURCES = $(shell find $(PROJDIR)/source/emulation -type d -name tests -prune -o -type f -name '*.cpp' -print)
+SOURCES += $(EMULATION_SOURCES)
 SOURCES += $(wildcard $(PROJDIR)/source/io/*.cpp)
 SOURCES += $(wildcard $(PROJDIR)/source/kernel/*.cpp)
 SOURCES += $(wildcard $(PROJDIR)/source/kernel/**/*.cpp)
@@ -178,7 +193,7 @@ TEST_SOURCES += $(wildcard $(PROJDIR)/source/sdl/*.cpp)
 TEST_SOURCES += $(wildcard $(PROJDIR)/source/sdl/emscripten/*.cpp)
 TEST_SOURCES += $(wildcard $(PROJDIR)/platform/sdl/*.cpp)
 TEST_SOURCES += $(wildcard $(PROJDIR)/platform/linux/*.cpp)
-TEST_SOURCES += $(shell find $(PROJDIR)/source/emulation -type f -name '*.cpp')
+TEST_SOURCES += $(EMULATION_SOURCES)
 TEST_SOURCES += $(wildcard $(PROJDIR)/source/io/*.cpp)
 TEST_SOURCES += $(wildcard $(PROJDIR)/source/kernel/*.cpp)
 TEST_SOURCES += $(wildcard $(PROJDIR)/source/kernel/**/*.cpp)
@@ -227,7 +242,7 @@ LDFLAGS = -O3 $(FS_LDFLAGS) -s USE_SDL=2 -s USE_ZLIB=1 -fwasm-exceptions -s INIT
 #	$(CC) $(TEST_OBJS) -o $@ $(LDFLAGS)
 
 $(BUILD_DIR)/$(TARGET_EXEC): $(ALL)
-	@$(CC) $(ALL) -o $@ $(LDFLAGS)
+	@$(CXX) $(ALL) -o $@ $(LDFLAGS)
 ifneq ($(strip $(ASSET_FILES)),)
 	@for asset in $(ASSET_FILES); do \
 		if [ -e "$$asset" ]; then cp "$$asset" "$(BUILD_DIR)/"; fi; \

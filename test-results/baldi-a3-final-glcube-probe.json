@@ -1,0 +1,13 @@
+{
+  "roots": [
+    "/root/home/username",
+    "/root/home/username/.",
+    "/root/home/username/..",
+    "/root/home/username/apps",
+    "/root/home/username/.wine"
+  ],
+  "/root/home/username/apps/BALDI_Data/Managed/mscorlib.dll": "[object Object]",
+  "/root/home/username/apps/BALDI_Data/boot.config": "[object Object]",
+  "/root/home/username/apps/player.log": "[object Object]",
+  "usertree": []
+}

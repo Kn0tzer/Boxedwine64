@@ -1,0 +1,12 @@
+importing /tmp/stage/baldi
+IMPORT OK: Imported 171 files. Select the executable and press Start.
+executable: UnityCrashHandler64.exe
+selected: BALDI.exe
+runtime iframe up; waiting for guest window
+MAPPED
+STATUS Guest window mapped. Rendering…
+STATUS Guest window mapped. Rendering…
+RUNTIME Running...
+ERRORS []
+CHECKPOINT: window mapped; gameplay/input verification is still required.
+PLAYERLOG player.log unreadable: [object Object]

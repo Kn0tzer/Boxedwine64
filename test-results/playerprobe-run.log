@@ -1,0 +1,5 @@
+IMPORT OK: Imported 3 files. Select the executable and press Start.
+APPS-DIR [".","..","playerprobe.pdb","UnityPlayer.dll","playerprobe.exe","playerprobe-result.txt"]
+PROBE: UnityPlayer.dll: load=ok gle=0
+done
+PASS probe finished

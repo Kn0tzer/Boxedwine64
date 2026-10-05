@@ -266,6 +266,197 @@ enum {
     GL64_fn_glGetQueryObjectui64v,      // (id, pname, out params* (64-bit))
     GL64_fn_glQueryCounter,             // (id, target)
 
+    // --- version mode. Guest shim asks the host which GL profile to
+    //     advertise (host reads BW64_GLVERSION; "3*" -> 32, else 21), so
+    //     D3D9-era apps keep the proven 2.1 strings while D3D11 experiments
+    //     opt into 3.2 core. No guest libc dependency involved. ---
+    GL64_fn_glVersionMode = 620,        // () -> 21, 32 or 33
+
+    // =====================================================================
+    // A2: the GL 3.x surface wined3d binds unconditionally in load_gl_funcs()
+    // (adapter_gl.c: `USE_GL_FUNC(pfn) = wglGetProcAddress(#pfn)`, NO null check).
+    // Before A2 every one of these resolved to the guest's gl64_noop, so
+    // wined3d believed FBO / sampler / MRT / UBO state worked while nothing
+    // reached the GPU -> D3D11CreateDevice returned E_FAIL (d3d11/device.c:
+    // wined3d_device_gl_create_primary_opengl_context_cs bails, context_count
+    // stays 0, adapter_gl_init_3d returns E_FAIL).
+    //
+    // MUST stay byte-identical to the enum in tools/rootfs64/libgl64/libgl64.c.
+    // Explicit values (not implicit ++) so a mismatch is visible in review.
+    // =====================================================================
+
+    // --- framebuffer objects (GL 3.0 core / ARB_framebuffer_object) ---
+    GL64_fn_glGenFramebuffers = 630,    // (n, out ids*)
+    GL64_fn_glDeleteFramebuffers,       // (n, ids*)
+    GL64_fn_glBindFramebuffer,          // (target, fb)
+    GL64_fn_glIsFramebuffer,            // (fb) -> GLboolean
+    GL64_fn_glFramebufferTexture1D,     // (target, attachment, textarget, tex, level)  [probe only]
+    GL64_fn_glFramebufferTexture2D,     // (target, attachment, textarget, tex, level)
+    GL64_fn_glFramebufferTexture3D,     // (target, attachment, textarget, tex, level, zoff)
+    GL64_fn_glFramebufferTexture,       // (target, attachment, tex, level)
+    GL64_fn_glFramebufferTextureLayer,  // (target, attachment, tex, level, layer)
+    GL64_fn_glFramebufferRenderbuffer,  // (target, attachment, rb_target, rb)
+    GL64_fn_glCheckFramebufferStatus,   // (target) -> GLenum  [LOAD-BEARING: != COMPLETE is a hard fail]
+    GL64_fn_glBlitFramebuffer,          // (sx0,sy0,sx1,sy1, dx0,dy0,dx1,dy1, mask, filter)
+    GL64_fn_glGenRenderbuffers = 642,   // (n, out ids*)
+    GL64_fn_glDeleteRenderbuffers,      // (n, ids*)
+    GL64_fn_glBindRenderbuffer,         // (target, rb)
+    GL64_fn_glRenderbufferStorage,      // (target, internalformat, w, h)
+    GL64_fn_glRenderbufferStorageMultisample, // (target, samples, internalformat, w, h)
+    GL64_fn_glIsRenderbuffer,           // (rb) -> GLboolean
+    GL64_fn_glGetRenderbufferParameteriv, // (rb, pname, out params*)
+    GL64_fn_glGetFramebufferAttachmentParameteriv, // (target, attachment, pname, out params*)
+    GL64_fn_glDrawBuffers,              // (n, bufs*)  [MRT]
+    GL64_fn_glReadBuffer,               // (src)
+
+    // --- sampler objects (GL 3.3 core / ARB_sampler_objects) ---
+    // LOAD-BEARING for feature level: feature_level_from_caps() gates every
+    // FL >= 10_0 on gl_info->supported[ARB_SAMPLER_OBJECTS].
+    GL64_fn_glGenSamplers = 660,        // (n, out ids*)
+    GL64_fn_glDeleteSamplers,           // (n, ids*)
+    GL64_fn_glBindSampler,              // (unit, sampler)
+    GL64_fn_glIsSampler,                // (sampler) -> GLboolean
+    GL64_fn_glSamplerParameteri,        // (sampler, pname, param)
+    GL64_fn_glSamplerParameterf,        // (sampler, pname, param)   [float bit-cast]
+    GL64_fn_glSamplerParameteriv,       // (sampler, pname, values*)
+    GL64_fn_glSamplerParameterfv,       // (sampler, pname, values*)
+    GL64_fn_glSamplerParameterIiv,      // (sampler, pname, values*)
+    GL64_fn_glSamplerParameterIuiv,     // (sampler, pname, values*)
+    GL64_fn_glGetSamplerParameteriv,    // (sampler, pname, out params*)
+    GL64_fn_glGetSamplerParameterfv,    // (sampler, pname, out params*)
+    GL64_fn_glGetSamplerParameterIiv,   // (sampler, pname, out params*)
+    GL64_fn_glGetSamplerParameterIuiv,  // (sampler, pname, out params*)
+
+    // --- 3D / array textures ---
+    GL64_fn_glTexImage3D = 690,         // (target, level, ifmt, w, h, d, border, fmt, type, pixels*)
+    GL64_fn_glTexSubImage3D,            // (target, level, x,y,z, w,h,d, fmt, type, pixels*)
+    GL64_fn_glCompressedTexImage3D,     // (target, level, ifmt, w, h, d, imageSize, data*)
+    GL64_fn_glCompressedTexSubImage3D,  // (target, level, x,y,z, w,h,d, ifmt, imageSize, data*)
+    GL64_fn_glTexImage2DMultisample,    // (target, samples, ifmt, w, h, fixedsample)
+    GL64_fn_glTexImage3DMultisample,    // (target, samples, ifmt, w, h, d, fixedsample)
+
+    // --- MRT / uniform blocks / buffer objects ---
+    GL64_fn_glBindFragDataLocation = 700,   // (program, color, name*)
+    GL64_fn_glGetFragDataIndex,            // (program, name*) -> GLint
+    GL64_fn_glBindBufferRange,             // (target, index, buffer, offset, size)
+    GL64_fn_glBindBufferBase,              // (target, index, buffer)
+    GL64_fn_glGetUniformBlockIndex,        // (program, name*) -> GLuint
+    GL64_fn_glUniformBlockBinding,         // (program, blockIndex, binding)
+    GL64_fn_glGetActiveUniformBlockiv,     // (program, blockIndex, pname, out params*)
+    GL64_fn_glGetActiveUniformBlockName,   // (program, blockIndex, bufSize, out length*, out name*)
+    GL64_fn_glBufferStorage,               // (target, size, data*, flags)
+    GL64_fn_glCopyBufferSubData,           // (readTarget, writeTarget, readOffset, writeOffset, size)
+    GL64_fn_glGetBufferSubData,            // (target, offset, size, data*)
+    GL64_fn_glGetBufferParameteriv,        // (target, pname, out params*)
+
+    // --- int uniforms / introspection ---
+    GL64_fn_glUniform2i = 730,          // (loc, v0, v1)
+    GL64_fn_glUniform3i,                // (loc, v0, v1, v2)
+    GL64_fn_glUniform4i,                // (loc, v0, v1, v2, v3)
+    GL64_fn_glUniform2iv,               // (loc, n, values*)
+    GL64_fn_glUniform3iv,               // (loc, n, values*)
+    GL64_fn_glUniform4iv,               // (loc, n, values*)
+    GL64_fn_glGetUniformfv,             // (program, locations*, out values*)
+    GL64_fn_glGetUniformiv,             // (program, locations*, out values*)
+    GL64_fn_glGetActiveUniform,         // (program, index, bufSize, out length*, out name*)
+    GL64_fn_glGetAttachedShaders,       // (program, maxCount, out count*, out shaders*)
+    GL64_fn_glGetShaderSourceImpl,      // (shader, bufSize, out length*, out source*)
+    GL64_fn_glGetTexParameteriv,        // (target, pname, out params*)
+    GL64_fn_glGetTexLevelParameteriv,   // (target, level, pname, out params*)
+    GL64_fn_glGetTextureParameteriv,    // (texture, pname, out params*)
+    GL64_fn_glGetTextureLevelParameteriv, // (texture, level, pname, out params*)
+    GL64_fn_glGetCompressedTexImage,    // (target, level, out image*)
+    GL64_fn_glCompressedTexSubImage2D,  // (target, level, x, y, w, h, format, imageSize, data*)
+
+    // --- indexed state (GL 3.0 core / ARB_blend_func_extended) ---
+    GL64_fn_glEnablei = 760,           // (index, cap)
+    GL64_fn_glDisablei,                // (index, cap)
+    GL64_fn_glIsEnabledi,              // (index, cap) -> GLboolean
+    GL64_fn_glBlendEquationi,          // (buf, mode)
+    GL64_fn_glBlendEquationSeparatei,  // (buf, rgb, alpha)
+    GL64_fn_glBlendFunci,              // (buf, src, dst)
+    GL64_fn_glBlendFuncSeparatei,      // (buf, srcRGB, dstRGB, srcA, dstA)
+    GL64_fn_glColorMaski,              // (buf, r, g, b, a)
+    GL64_fn_glMinSampleShading,        // (value)
+
+    // --- instancing / base vertex ---
+    GL64_fn_glVertexAttribDivisor = 780, // (index, divisor)
+    GL64_fn_glDrawArraysInstanced,       // (mode, first, count, primcount)
+    GL64_fn_glDrawElementsInstanced,     // (mode, count, type, indices*, primcount)
+    GL64_fn_glDrawArraysInstancedBaseInstance, // (mode, first, count, primcount, baseInstance)
+    GL64_fn_glDrawElementsInstancedBaseVertexBaseInstance, // (mode,count,type,indices*,primcount,baseVertex,baseInstance)
+    GL64_fn_glDrawElementsBaseVertex,    // (mode, count, type, indices*, baseVertex)
+    GL64_fn_glDrawRangeElementsBaseVertex, // (mode, start, end, count, type, indices*, baseVertex)
+
+    // --- best-effort / safe no-ops (never called before a working device) ---
+    GL64_fn_glDebugMessageCallback = 800, // (callback*, user*)
+    GL64_fn_glDebugMessageControl,       // (source, type, id, severity, count, ids*, enabled)
+    GL64_fn_glDebugMessageInsert,        // (source, type, id, severity, length, buf*)
+    GL64_fn_glGetDebugMessageLog,        // (count, sources*, types*, ids*, sevs*, lens*, log*) -> 0 msgs
+    GL64_fn_glBeginTransformFeedback,    // (mode)
+    GL64_fn_glEndTransformFeedback,      // ()
+    GL64_fn_glTransformFeedbackVaryings, // (program, count, varyings*, mode)
+    GL64_fn_glPointParameteri,           // (pname, param)
+    GL64_fn_glPointParameteriv,          // (pname, params*)
+    GL64_fn_glPointParameterf,           // (pname, param)
+    GL64_fn_glPointParameterfv,          // (pname, params*)
+    GL64_fn_glTexBuffer,                 // (target, internalformat, buffer)
+    GL64_fn_glTexBufferRange,            // (target, internalformat, buffer, offset, size)
+    GL64_fn_glTexBufferARB,              // (target, internalformat, buffer)
+    GL64_fn_glTexBufferRangeARB,         // (target, internalformat, buffer, offset, size)
+    GL64_fn_glTextureBarrierNV,          // ()
+    GL64_fn_glFinalCombinerInputNV,      // (target, input, inputName)
+    GL64_fn_glVertexAttrib1f = 817,      // (index, v0)
+    GL64_fn_glVertexAttrib2f,            // (index, v0, v1)
+    GL64_fn_glVertexAttrib3f,            // (index, v0, v1, v2)
+    GL64_fn_glVertexAttrib1fv,           // (index, v*)
+    GL64_fn_glVertexAttrib2fv,
+    GL64_fn_glVertexAttrib3fv,
+    GL64_fn_glVertexAttrib4fv,
+    GL64_fn_glVertexAttrib1d = 824,      // (index, v0) [double bit-cast]
+    GL64_fn_glVertexAttrib2d,
+    GL64_fn_glVertexAttrib3d,
+    GL64_fn_glVertexAttrib4d,
+    GL64_fn_glVertexAttrib1dv = 828,     // (index, v*)
+    GL64_fn_glVertexAttrib2dv,
+    GL64_fn_glVertexAttrib3dv,
+    GL64_fn_glVertexAttrib4dv,
+    GL64_fn_glVertexAttribI4i = 832,     // (index, x, y, z, w)
+    GL64_fn_glVertexAttribI4ui,          // (index, x, y, z, w)
+    GL64_fn_glVertexAttribI4iv,          // (index, v*)
+    GL64_fn_glVertexAttribI4uiv,         // (index, v*)
+
+    // --- appended in A2 cycle 2 (never renumber; see the append-only note) ---
+    // glPolygonOffsetClamp is the THIRD of the three conditions
+    // feature_level_from_caps() requires before it will return ANY level >= 10_0
+    // (the others are GL 3.2 and ARB_sampler_objects), so without it the D3D11
+    // device stays capped at 9_3 no matter how much else is real.
+    GL64_fn_glPolygonOffsetClamp = 840,  // (factor, units, clamp)
+    GL64_fn_glDrawElementsInstancedBaseVertex, // (mode,count,type,indices*,primcount,baseVertex)
+    GL64_fn_glMultiDrawElementsBaseVertex, // (mode,count*,type,indices**,primcount,baseVertex*)
+    GL64_fn_glTextureBarrier,            // ()
+
+    // A3 functional adapter probes (append-only).
+    GL64_fn_glReadPixels = 850,        // (x,y,w,h,format,type,pixels*)
+    GL64_fn_glGetTexImage = 851,       // (target,level,format,type,pixels*)
+
+    // C7: immutable storage (append-only). Wine allocates depth/stencil probe
+    // textures via glTexStorage*; unimplemented they were silent no-ops, so
+    // attachments referenced storage that never existed (and the calls were
+    // invisible in the trace).
+    GL64_fn_glTexStorage2D = 852,      // (target,levels,ifmt,w,h)
+    GL64_fn_glTexStorage3D = 853,      // (target,levels,ifmt,w,h,d)
+    GL64_fn_glTexStorage1D = 854,      // (target,levels,ifmt,w) -> w x 1 2D
+
+    // C10: multisample immutable storage (append-only). Wine disables the
+    // whole ARB_texture_multisample extension when glTexStorage2DMultisample
+    // resolves NULL. WebGL2 has no texStorage*Multisample entry points, but
+    // texImage*Multisample allocates identical immutable multisample storage,
+    // so the host routes there honestly (same drivers, same errors).
+    GL64_fn_glTexStorage2DMultisample = 855, // (target,samples,ifmt,w,h,fixed)
+    GL64_fn_glTexStorage3DMultisample = 856, // (target,samples,ifmt,w,h,d,fixed)
+    GL64_fn_glGetMultisamplefv = 857,  // (pname,index,values* -> 2 floats)
+
     GL64_fn__MAX
 };
 

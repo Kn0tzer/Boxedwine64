@@ -1,0 +1,12 @@
+importing /tmp/stage/spyce
+IMPORT OK: Imported 133 files. Select the executable and press Start.
+executable: UnityCrashHandler64.exe
+selected: StandaloneWindows64.exe
+runtime iframe up; waiting for guest window
+MAPPED
+STATUS Guest window mapped. Rendering…
+STATUS Guest window mapped. Rendering…
+RUNTIME Running...
+ERRORS []
+CHECKPOINT: window mapped; gameplay/input verification is still required.
+PLAYERLOG player.log unreadable: stat: ErrnoError/44 | readFile({"encoding":"utf8","flags":0}): ErrnoError/44 | readFile(undefined): ErrnoError/44

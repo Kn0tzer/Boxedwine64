@@ -24,6 +24,10 @@
 #include "../opengl/gl64bridge.h"
 #include "../opengl/gl64bridge_abi.h"
 #endif
+#ifdef BOXEDWINE_VULKAN64
+#include "../vulkan/vk64bridge.h"
+#include "../vulkan/vk64bridge_abi.h"
+#endif
 
 // x86-64 Linux syscall numbers used here. The canonical table lives in
 // arch/x86/entry/syscalls/syscall_64.tbl in the Linux source; the values
@@ -145,6 +149,7 @@
 #define X64_SYS_gettimeofday      96
 #define X64_SYS_getrusage         98
 #define X64_SYS_sysinfo           99
+#define X64_SYS_times             100
 #define X64_SYS_getppid           110
 #define X64_SYS_getpgrp           111
 #define X64_SYS_getpgid           121
@@ -1281,7 +1286,7 @@ static U64 sys_pwrite64(CPU64* cpu, U64 fd, U64 buf, U64 count, U64 offset) {
 // guest memory. Field offsets match the canonical glibc/kernel layout for
 // __NR_fstat / __NR_newfstatat result buffers on x86-64.
 static void writeStatBuf64(KMemory64* mem, U64 addr, U64 size, U32 mode,
-                            U64 ino, U32 uid, U32 gid, U64 mtime) {
+                            U64 ino, U32 uid, U32 gid, U64 mtime, U64 rdev) {
     U8 buf[144];
     std::memset(buf, 0, sizeof(buf));
     auto put64 = [&](U32 off, U64 v) { std::memcpy(buf + off, &v, 8); };
@@ -1293,7 +1298,12 @@ static void writeStatBuf64(KMemory64* mem, U64 addr, U64 size, U32 mode,
     put32(28, uid);           // st_uid
     put32(32, gid);           // st_gid
     put32(36, 0);             // __pad0
-    put64(40, 0);             // st_rdev
+    put64(40, rdev);          // st_rdev — REAL device id. Wine's ntdll debug init
+                              // (dlls/ntdll/unix/debug.c init_options) disables ALL
+                              // debug output when fstat(2) is a char device whose
+                              // st_rdev equals /dev/null's — with the old hardcoded 0
+                              // that guard tripped for /dev/tty0 and WINEDEBUG was
+                              // silently ignored in every guest process (O2).
     put64(48, size);          // st_size
     put64(56, 4096);          // st_blksize
     put64(64, (size + 511) / 512); // st_blocks (512-byte units)
@@ -1329,7 +1339,7 @@ static U64 sys_stat_path64(CPU64* cpu, U64 pathAddr, U64 statbuf, bool followSym
     U32 mode  = node->getMode();
     U64 ino   = node->id;
     U64 mtime = node->lastModified() / 1000; // ms → seconds
-    writeStatBuf64(cpu->memory, statbuf, size, mode, ino, 1000, 1000, mtime);
+    writeStatBuf64(cpu->memory, statbuf, size, mode, ino, 1000, 1000, mtime, node->rdev);
     return 0;
 }
 
@@ -1366,7 +1376,9 @@ static U64 sys_fstat64(CPU64* cpu, U64 fd, U64 statbuf) {
     if (!cpu->thread || !cpu->thread->process) return (U64)-K_ENOSYS;
     if (!statbuf) return (U64)-K_EFAULT;
     KFileDescriptorPtr fdesc = cpu->thread->process->getFileDescriptor((FD)fd);
-    if (!fdesc) return (U64)-9; // -EBADF
+    if (!fdesc) {
+        return (U64)-9; // -EBADF
+    }
     // Reach for the underlying KFile to ask the FsNode for metadata.
     std::shared_ptr<KFile> kfile = std::dynamic_pointer_cast<KFile>(fdesc->kobject);
     U64 size = 0;
@@ -1378,14 +1390,19 @@ static U64 sys_fstat64(CPU64* cpu, U64 fd, U64 statbuf) {
         if (kfile->openFile->node) {
             mode  = kfile->openFile->node->getMode();
             ino   = kfile->openFile->node->id;
-            mtime = (U64)kfile->openFile->node->lastModified();
+            mtime = (U64)kfile->openFile->node->lastModified() / 1000; // ms -> Linux seconds
         }
     } else {
         // Non-file kobject (socket/pipe): claim S_IFCHR so callers don't
         // assume seekable.
         mode = 0020666;
     }
-    writeStatBuf64(cpu->memory, statbuf, size, mode, ino, 1000, 1000, mtime);
+    // Real st_rdev for device nodes (tty0 etc.); 0 for regular files/pipes —
+    // identical to the old behavior except for char/block devices. Without the
+    // node's rdev, wine's debug init mistakes tty fds for /dev/null and drops
+    // every WINEDEBUG channel (see writeStatBuf64's st_rdev note).
+    U64 rdev = (kfile && kfile->openFile && kfile->openFile->node) ? kfile->openFile->node->rdev : 0;
+    writeStatBuf64(cpu->memory, statbuf, size, mode, ino, 1000, 1000, mtime, rdev);
     return 0;
 }
 
@@ -2754,6 +2771,7 @@ static const char* x64SyscallName(U64 nr) {
         case 96: return "gettimeofday";
         case 98: return "getrusage";
         case 99: return "sysinfo";
+        case 100: return "times";
         case 102: return "getuid";
         case 105: return "setuid";
         case 106: return "setgid";
@@ -2904,6 +2922,13 @@ void ksyscall64(CPU64* cpu) {
             // Private guest->host OpenGL trap (see source/opengl/gl64bridge*).
             // RDI=fn id, RSI=guest VA of GL64Args. Result goes back in RAX.
             ret = gl64Bridge(cpu, a1, a2);
+            break;
+#endif
+#ifdef BOXEDWINE_VULKAN64
+        case VK64_SYSCALL_NR:
+            // Private guest->host Vulkan trap (see source/vulkan/vk64bridge*).
+            // RDI=fn id, RSI=guest VA of VK64Args. Result goes back in RAX.
+            ret = vk64Bridge(cpu, a1, a2);
             break;
 #endif
         case X64_SYS_write:
@@ -3088,7 +3113,8 @@ void ksyscall64(CPU64* cpu) {
             break;
         case X64_SYS_getcwd: {
             // getcwd(buf, size) — copy current directory string out. Returns
-            // a pointer to buf on success, -ERANGE if size is too small.
+            // the byte count including NUL on success (the libc wrapper
+            // returns a pointer), -ERANGE if size is too small.
             if (!a1 || a2 == 0) { ret = (U64)-K_EFAULT; break; }
             // No-process standalone runner: default cwd to "/".
             BString cwd = (cpu->thread && cpu->thread->process)
@@ -3097,7 +3123,7 @@ void ksyscall64(CPU64* cpu) {
             U64 need = (U64)cwd.length() + 1;
             if (need > a2) { ret = (U64)-34; /* -ERANGE */ break; }
             cpu->memory->memcpyToGuest(a1, cwd.c_str(), need);
-            ret = a1;
+            ret = need;
             break;
         }
         case X64_SYS_fcntl: {
@@ -4252,6 +4278,14 @@ void ksyscall64(CPU64* cpu) {
             if (a2) cpu->memory->memsetGuest(a2, 0, 144);
             ret = 0;
             break;
+        case X64_SYS_times: {
+            // times(&tms): struct tms is 4x clock_t = 32 bytes on x86_64.
+            // Zero the accounting fields; return USER_HZ (100) ticks since an
+            // arbitrary point so Mono/Unity startup timing moves forward.
+            if (a1) cpu->memory->memsetGuest(a1, 0, 32);
+            ret = KSystem::getSystemTimeAsMicroSeconds() / 10000ULL;
+            break;
+        }
         case X64_SYS_sysinfo:
             // struct sysinfo — zero-fill the standard 64-byte layout.
             // ld-linux doesn't actually read these; some binaries call it

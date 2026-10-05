@@ -1,0 +1,2 @@
+crypt32.dll: load=ok certopenstore=000000029652BA70 gle=14007
+done

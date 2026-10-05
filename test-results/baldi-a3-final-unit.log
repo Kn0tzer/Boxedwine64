@@ -1,0 +1,197 @@
+
+> boxedwine64-browser-lab@ test /home/ubuntu/boxedwine64
+> node --test web/tests/*.test.mjs
+
+TAP version 13
+# Subtest: reject traversal, absolute paths, Windows aliases and control characters
+ok 1 - reject traversal, absolute paths, Windows aliases and control characters
+  ---
+  duration_ms: 2.039618
+  type: 'test'
+  ...
+# Subtest: enforce expansion, count and case insensitive collision budgets
+ok 2 - enforce expansion, count and case insensitive collision budgets
+  ---
+  duration_ms: 0.958968
+  type: 'test'
+  ...
+# Subtest: strip exactly one common enclosing folder without flattening siblings
+ok 3 - strip exactly one common enclosing folder without flattening siblings
+  ---
+  duration_ms: 0.970129
+  type: 'test'
+  ...
+# Subtest: ZIP export/import preserves UTF-8 names and contents
+ok 4 - ZIP export/import preserves UTF-8 names and contents
+  ---
+  duration_ms: 76.319628
+  type: 'test'
+  ...
+# Subtest: archive traversal rejected before extraction
+ok 5 - archive traversal rejected before extraction
+  ---
+  duration_ms: 9.573044
+  type: 'test'
+  ...
+# Subtest: PE detection validates header and distinguishes x64/x86
+ok 6 - PE detection validates header and distinguishes x64/x86
+  ---
+  duration_ms: 1.09445
+  type: 'test'
+  ...
+# Subtest: column-major matrix multiplication preserves identity
+ok 7 - column-major matrix multiplication preserves identity
+  ---
+  duration_ms: 1.798696
+  type: 'test'
+  ...
+# Subtest: guest quads triangulate and depth converts from GL to WebGPU
+ok 8 - guest quads triangulate and depth converts from GL to WebGPU
+  ---
+  duration_ms: 1.719295
+  type: 'test'
+  ...
+# Subtest: matrix and current color persist across frame boundaries
+ok 9 - matrix and current color persist across frame boundaries
+  ---
+  duration_ms: 0.393483
+  type: 'test'
+  ...
+# Subtest: unsupported shader/texture/light state fails instead of silently rendering wrong
+ok 10 - unsupported shader/texture/light state fails instead of silently rendering wrong
+  ---
+  duration_ms: 5.321167
+  type: 'test'
+  ...
+# naga: vertex shader rejected by Naga (parse) — ANGLE keeps rendering
+# naga: lift failed (too-large) for fragment shader — ANGLE keeps rendering
+# naga: WebGL2RenderingContext unavailable — ANGLE fallback active
+# Subtest: lift of the wined3d FFP pair: 450 core + synthesized bindings + sampler split
+ok 11 - lift of the wined3d FFP pair: 450 core + synthesized bindings + sampler split
+  ---
+  duration_ms: 3.615432
+  type: 'test'
+  ...
+# Subtest: lifted FFP pair translates end-to-end through Naga to valid WGSL
+ok 12 - lifted FFP pair translates end-to-end through Naga to valid WGSL
+  ---
+  duration_ms: 46.096244
+  type: 'test'
+  ...
+# Subtest: KNOWN GAP parity: raw \#version 120 is rejected by Naga directly, lifted instead
+ok 13 - KNOWN GAP parity: raw \#version 120 is rejected by Naga directly, lifted instead
+  ---
+  duration_ms: 12.58275
+  type: 'test'
+  ...
+# Subtest: raw-120 fragment: FFP built-ins + texture2D + gl_FragData[0] lift cleanly
+ok 14 - raw-120 fragment: FFP built-ins + texture2D + gl_FragData[0] lift cleanly
+  ---
+  duration_ms: 2.023218
+  type: 'test'
+  ...
+# Subtest: duplicate \#version lines (wined3d bug) strip to exactly one stamped version
+ok 15 - duplicate \#version lines (wined3d bug) strip to exactly one stamped version
+  ---
+  duration_ms: 0.332803
+  type: 'test'
+  ...
+# Subtest: size guard: >1 MiB source rejected before translate (mirrors web/shader.mjs)
+ok 16 - size guard: >1 MiB source rejected before translate (mirrors web/shader.mjs)
+  ---
+  duration_ms: 6.142134
+  type: 'test'
+  ...
+# Subtest: stage inference parity with the bridge heuristic (both spellings)
+ok 17 - stage inference parity with the bridge heuristic (both spellings)
+  ---
+  duration_ms: 0.713406
+  type: 'test'
+  ...
+# Subtest: pipeline failure paths: malformed GLSL never throws, ring record shape holds
+ok 18 - pipeline failure paths: malformed GLSL never throws, ring record shape holds
+  ---
+  duration_ms: 4.403118
+  type: 'test'
+  ...
+# Subtest: pipeline: too-large and unsupported-version routes, counters and dedupe
+ok 19 - pipeline: too-large and unsupported-version routes, counters and dedupe
+  ---
+  duration_ms: 6.392136
+  type: 'test'
+  ...
+# Subtest: installNagaCapture degrades gracefully without WebGL2 (node smoke)
+ok 20 - installNagaCapture degrades gracefully without WebGL2 (node smoke)
+  ---
+  duration_ms: 9.817326
+  type: 'test'
+  ...
+# Subtest: browser e2e: ?naga=1 runtime boots, patched shaderSource capture works, zero page errors
+ok 21 - browser e2e: ?naga=1 runtime boots, patched shaderSource capture works, zero page errors # SKIP
+  ---
+  duration_ms: 0.320883
+  type: 'test'
+  ...
+# Subtest: glsl vertex 450 translates to WGSL with position builtin
+ok 22 - glsl vertex 450 translates to WGSL with position builtin
+  ---
+  duration_ms: 45.159635
+  type: 'test'
+  ...
+# Subtest: glsl fragment with combined sampler translates
+ok 23 - glsl fragment with combined sampler translates
+  ---
+  duration_ms: 1.866617
+  type: 'test'
+  ...
+# Subtest: glsl compute translates with storage buffer
+ok 24 - glsl compute translates with storage buffer
+  ---
+  duration_ms: 1.348092
+  type: 'test'
+  ...
+# Subtest: wgsl round-trips through validate
+ok 25 - wgsl round-trips through validate
+  ---
+  duration_ms: 14.583647
+  type: 'test'
+  ...
+# Subtest: wgsl -> spir-v -> wgsl round-trips with valid magic
+ok 26 - wgsl -> spir-v -> wgsl round-trips with valid magic
+  ---
+  duration_ms: 27.903804
+  type: 'test'
+  ...
+# Subtest: KNOWN GAP: legacy GLSL 120 attribute syntax is rejected
+ok 27 - KNOWN GAP: legacy GLSL 120 attribute syntax is rejected
+  ---
+  duration_ms: 3.541471
+  type: 'test'
+  ...
+# Subtest: KNOWN GAP: tessellation control layout is rejected
+ok 28 - KNOWN GAP: tessellation control layout is rejected
+  ---
+  duration_ms: 0.755286
+  type: 'test'
+  ...
+# Subtest: KNOWN GAP: split sampler2D uniform is rejected (use combined texture+sampler)
+ok 29 - KNOWN GAP: split sampler2D uniform is rejected (use combined texture+sampler)
+  ---
+  duration_ms: 0.445444
+  type: 'test'
+  ...
+# Subtest: malformed SPIR-V is rejected, matching web/shader.mjs guards
+ok 30 - malformed SPIR-V is rejected, matching web/shader.mjs guards
+  ---
+  duration_ms: 1.368212
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 287.241194

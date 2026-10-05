@@ -221,7 +221,156 @@ enum {
     GL64_fn_glGetQueryObjectiv,
     GL64_fn_glGetQueryObjectuiv,
     GL64_fn_glGetQueryObjectui64v,
-    GL64_fn_glQueryCounter
+    GL64_fn_glQueryCounter,
+
+    // version mode (must match source/opengl/gl64bridge_abi.h)
+    GL64_fn_glVersionMode = 620,
+
+    // === A2: the GL 3.x surface wined3d expects but had no wrappers for ===
+    // (must match source/opengl/gl64bridge_abi.h exactly)
+    GL64_fn_glGenFramebuffers = 630,
+    GL64_fn_glDeleteFramebuffers,
+    GL64_fn_glBindFramebuffer,
+    GL64_fn_glIsFramebuffer,
+    GL64_fn_glFramebufferTexture1D,
+    GL64_fn_glFramebufferTexture2D,
+    GL64_fn_glFramebufferTexture3D,
+    GL64_fn_glFramebufferTexture,
+    GL64_fn_glFramebufferTextureLayer,
+    GL64_fn_glFramebufferRenderbuffer,
+    GL64_fn_glCheckFramebufferStatus,
+    GL64_fn_glBlitFramebuffer,
+    GL64_fn_glGenRenderbuffers,
+    GL64_fn_glDeleteRenderbuffers,
+    GL64_fn_glBindRenderbuffer,
+    GL64_fn_glRenderbufferStorage,
+    GL64_fn_glRenderbufferStorageMultisample,
+    GL64_fn_glIsRenderbuffer,
+    GL64_fn_glGetRenderbufferParameteriv,
+    GL64_fn_glGetFramebufferAttachmentParameteriv,
+    GL64_fn_glDrawBuffers,
+    GL64_fn_glReadBuffer,
+
+    GL64_fn_glGenSamplers = 660,
+    GL64_fn_glDeleteSamplers,
+    GL64_fn_glBindSampler,
+    GL64_fn_glIsSampler,
+    GL64_fn_glSamplerParameteri,
+    GL64_fn_glSamplerParameterf,
+    GL64_fn_glSamplerParameteriv,
+    GL64_fn_glSamplerParameterfv,
+    GL64_fn_glSamplerParameterIiv,
+    GL64_fn_glSamplerParameterIuiv,
+    GL64_fn_glGetSamplerParameteriv,
+    GL64_fn_glGetSamplerParameterfv,
+    GL64_fn_glGetSamplerParameterIiv,
+    GL64_fn_glGetSamplerParameterIuiv,
+
+    GL64_fn_glTexImage3D = 690,
+    GL64_fn_glTexSubImage3D,
+    GL64_fn_glCompressedTexImage3D,
+    GL64_fn_glCompressedTexSubImage3D,
+    GL64_fn_glTexImage2DMultisample,
+    GL64_fn_glTexImage3DMultisample,
+
+    GL64_fn_glBindFragDataLocation = 700,
+    GL64_fn_glGetFragDataIndex,
+    GL64_fn_glBindBufferRange,
+    GL64_fn_glBindBufferBase,
+    GL64_fn_glGetUniformBlockIndex,
+    GL64_fn_glUniformBlockBinding,
+    GL64_fn_glGetActiveUniformBlockiv,
+    GL64_fn_glGetActiveUniformBlockName,
+    GL64_fn_glBufferStorage,
+    GL64_fn_glCopyBufferSubData,
+    GL64_fn_glGetBufferSubData,
+    GL64_fn_glGetBufferParameteriv,
+
+    GL64_fn_glUniform2i = 730,
+    GL64_fn_glUniform3i,
+    GL64_fn_glUniform4i,
+    GL64_fn_glUniform2iv,
+    GL64_fn_glUniform3iv,
+    GL64_fn_glUniform4iv,
+    GL64_fn_glGetUniformfv,
+    GL64_fn_glGetUniformiv,
+    GL64_fn_glGetActiveUniform,
+    GL64_fn_glGetAttachedShaders,
+    GL64_fn_glGetShaderSourceImpl,
+    GL64_fn_glGetTexParameteriv,
+    GL64_fn_glGetTexLevelParameteriv,
+    GL64_fn_glGetTextureParameteriv,
+    GL64_fn_glGetTextureLevelParameteriv,
+    GL64_fn_glGetCompressedTexImage,
+    GL64_fn_glCompressedTexSubImage2D,
+
+    GL64_fn_glEnablei = 760,
+    GL64_fn_glDisablei,
+    GL64_fn_glIsEnabledi,
+    GL64_fn_glBlendEquationi,
+    GL64_fn_glBlendEquationSeparatei,
+    GL64_fn_glBlendFunci,
+    GL64_fn_glBlendFuncSeparatei,
+    GL64_fn_glColorMaski,
+    GL64_fn_glMinSampleShading,
+
+    GL64_fn_glVertexAttribDivisor = 780,
+    GL64_fn_glDrawArraysInstanced,
+    GL64_fn_glDrawElementsInstanced,
+    GL64_fn_glDrawArraysInstancedBaseInstance,
+    GL64_fn_glDrawElementsInstancedBaseVertexBaseInstance,
+    GL64_fn_glDrawElementsBaseVertex,
+    GL64_fn_glDrawRangeElementsBaseVertex,
+
+    GL64_fn_glDebugMessageCallback = 800,
+    GL64_fn_glDebugMessageControl,
+    GL64_fn_glDebugMessageInsert,
+    GL64_fn_glGetDebugMessageLog,
+    GL64_fn_glBeginTransformFeedback,
+    GL64_fn_glEndTransformFeedback,
+    GL64_fn_glTransformFeedbackVaryings,
+    GL64_fn_glPointParameteri,
+    GL64_fn_glPointParameteriv,
+    GL64_fn_glPointParameterf,
+    GL64_fn_glPointParameterfv,
+    GL64_fn_glTexBuffer,
+    GL64_fn_glTexBufferRange,
+    GL64_fn_glTexBufferARB,
+    GL64_fn_glTexBufferRangeARB,
+    GL64_fn_glTextureBarrierNV,
+    GL64_fn_glFinalCombinerInputNV,
+    GL64_fn_glVertexAttrib1f,
+    GL64_fn_glVertexAttrib2f,
+    GL64_fn_glVertexAttrib3f,
+    GL64_fn_glVertexAttrib1fv,
+    GL64_fn_glVertexAttrib2fv,
+    GL64_fn_glVertexAttrib3fv,
+    GL64_fn_glVertexAttrib4fv,
+    GL64_fn_glVertexAttrib1d, GL64_fn_glVertexAttrib2d,
+    GL64_fn_glVertexAttrib3d, GL64_fn_glVertexAttrib4d,
+    GL64_fn_glVertexAttrib1dv, GL64_fn_glVertexAttrib2dv,
+    GL64_fn_glVertexAttrib3dv, GL64_fn_glVertexAttrib4dv,
+    GL64_fn_glVertexAttribI4i,
+    GL64_fn_glVertexAttribI4ui,
+    GL64_fn_glVertexAttribI4iv,
+    GL64_fn_glVertexAttribI4uiv,
+
+    // === A2 cycle 2: appended only (must match source/opengl/gl64bridge_abi.h) ===
+    // glPolygonOffsetClamp is the third of the three conditions
+    // feature_level_from_caps() needs before it returns ANY feature level >= 10_0
+    // (the others are GL 3.2 and GL_ARB_sampler_objects).
+    GL64_fn_glPolygonOffsetClamp = 840,
+    GL64_fn_glDrawElementsInstancedBaseVertex,
+    GL64_fn_glMultiDrawElementsBaseVertex,
+    GL64_fn_glTextureBarrier,
+    GL64_fn_glReadPixels = 850,
+    GL64_fn_glGetTexImage = 851,
+    GL64_fn_glTexStorage2D = 852,
+    GL64_fn_glTexStorage3D = 853,
+    GL64_fn_glTexStorage1D = 854,
+    GL64_fn_glTexStorage2DMultisample = 855,
+    GL64_fn_glTexStorage3DMultisample = 856,
+    GL64_fn_glGetMultisamplefv = 857
 };
 
 // ---- the trap ---------------------------------------------------------------
@@ -431,6 +580,18 @@ API void glHint(GLenum t, GLenum m){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=m; (void
 API void glFlush(void) { (void)gl64_trap(GL64_fn_glFlush,0); }
 API void glFinish(void){ (void)gl64_trap(GL64_fn_glFinish,0); }
 API GLenum glGetError(void){ return (GLenum)gl64_trap(GL64_fn_glGetError,0); }
+// Version mode: ask the host which GL profile to advertise. The host reads
+// BW64_GLVERSION ("3*" -> 32, else 21); cached after the first query. This
+// keeps D3D9-era apps on the proven 2.1 strings while D3D11 experiments opt
+// into 3.2 core via ?glversion=3.2 — without any guest-libc dependency.
+static int gl_version_mode(void) {
+    static int cached = 0; // 0 = unknown, else 21, 32 or 33
+    if (!cached) {
+        uint64_t m = gl64_trap(GL64_fn_glVersionMode, 0);
+        cached = (m == 33) ? 33 : (m == 32 ? 32 : 21);
+    }
+    return cached;
+}
 API const GLubyte* glGetString(GLenum name) {
     // Host returns the real string only as a host pointer (unusable in-guest),
     // so it returns 0 and we hand back our own stable strings.
@@ -442,13 +603,30 @@ API const GLubyte* glGetString(GLenum name) {
     // needs to emit a draw. With an EMPTY extension string wined3d concluded the
     // driver had no usable feature set and never issued DrawPrimitive (the clear
     // showed, the triangle never did). These all map onto WebGL2/GLES3 features.
+    static const GLubyte* version21 = (const GLubyte*)"2.1 Boxedwine64";
+    static const GLubyte* version32 = (const GLubyte*)"3.2 Boxedwine64";
+    static const GLubyte* version33 = (const GLubyte*)"3.3 Boxedwine64";
     static const GLubyte* version  = (const GLubyte*)"2.1 Boxedwine64";
+    static const GLubyte* slv12    = (const GLubyte*)"1.20";
+    static const GLubyte* slv15    = (const GLubyte*)"1.50";
     static const GLubyte* slv      = (const GLubyte*)"1.20";
+    int mode = gl_version_mode();
+    if (mode == 33)      { version = version33; slv = (const GLubyte*)"3.30"; }
+    else if (mode == 32) { version = version32; slv = slv15; }
+    else                 { version = version21; slv = slv12; }
     // The monolithic GL_EXTENSIONS string (legacy/compat path). Must list the same
     // extensions as g_extList[] below (the core-profile glGetStringi path) so both
     // wined3d code paths see the same feature set.
+    //
+    // A2: the FBO / sampler-object / UBO / MRT / instancing extensions are now
+    // GENUINELY implemented on the host (1:1 WebGL2), so advertising them is no
+    // longer a lie — wined3d binds real pointers instead of gl64_noop.
+    // GL_ARB_sampler_objects is the load-bearing one: wined3d's
+    // feature_level_from_caps() gates every feature level >= 10_0 on it
+    // (adapter_gl.c lists ARB_SAMPLER_OBJECTS at min GL 3.3), so without it
+    // D3D11's requested 11_0 is refused and wined3d_device_create() fails.
     static const GLubyte* exts     = (const GLubyte*)
-        "GL_ARB_multitexture GL_ARB_vertex_buffer_object GL_ARB_texture_non_power_of_two GL_ARB_shader_objects GL_ARB_shading_language_100 GL_ARB_vertex_shader GL_ARB_fragment_shader";
+        "GL_ARB_multitexture GL_ARB_vertex_buffer_object GL_ARB_texture_non_power_of_two GL_ARB_shader_objects GL_ARB_shading_language_100 GL_ARB_vertex_shader GL_ARB_fragment_shader GL_ARB_sampler_objects GL_ARB_framebuffer_object GL_ARB_uniform_buffer_object GL_ARB_draw_buffers GL_ARB_instanced_arrays GL_ARB_polygon_offset_clamp GL_ARB_draw_buffers_blend GL_ARB_texture_cube_map_array GL_ARB_texture_storage GL_ARB_texture_storage_multisample";
     (void)gl64_trap(GL64_fn_glGetString, 0);
     switch (name) {
         case 0x1F00: return vendor;    // GL_VENDOR
@@ -467,15 +645,37 @@ API const GLubyte* glGetString(GLenum name) {
 // and never issue a draw, even though the monolithic string was populated.
 static const char* const g_extList[] = {
     // The MINIMAL set that lets wined3d create a GLSL device AND pass CreateDevice.
-    // Bisected (M16): advertising the broader texture-format/FBO extensions
-    // (texture_float / sRGB / s3tc / rectangle / framebuffer_object / occlusion)
-    // made wined3d run a strict D3D-format validation that FAILS against WebGL2 →
-    // CreateDevice returned D3DERR_NOTAVAILABLE. With just VBO + the 4 core GLSL
-    // extensions, wined3d selects its GLSL shader backend and the device creates.
-    // Keep the monolithic GL_EXTENSIONS string (glGetString) in sync with this.
+    // Bisected (M16): advertising the broader texture-format extensions
+    // (texture_float / sRGB / s3tc / rectangle / occlusion) made wined3d run a
+    // strict D3D-format validation that FAILS against WebGL2 → CreateDevice
+    // returned D3DERR_NOTAVAILABLE. Keep the monolithic GL_EXTENSIONS string
+    // (glGetString) in sync with this.
+    // A2: framebuffer_object / uniform_buffer_object / draw_buffers /
+    // instanced_arrays / sampler_objects are now REAL on the host, so the old
+    // "advertise FBO → format validation fails" objection no longer applies to
+    // them: they only turn on wined3d code paths, they do not declare a texture
+    // format we cannot back. sampler_objects is required for FL >= 10_0.
     "GL_ARB_multitexture","GL_ARB_vertex_buffer_object","GL_ARB_texture_non_power_of_two",
     "GL_ARB_shader_objects","GL_ARB_shading_language_100",
     "GL_ARB_vertex_shader","GL_ARB_fragment_shader",
+    "GL_ARB_sampler_objects","GL_ARB_framebuffer_object",
+    "GL_ARB_uniform_buffer_object","GL_ARB_draw_buffers","GL_ARB_instanced_arrays",
+    // A2 cycle 2. feature_level_from_caps() requires ALL THREE of
+    // WINED3D_GL_VERSION_3_2 + ARB_POLYGON_OFFSET_CLAMP + ARB_SAMPLER_OBJECTS
+    // before it returns any feature level >= 10_0; Unity's D3D11 path asks for
+    // 11_0. polygon_offset_clamp is real (forwarded to glPolygonOffset with the
+    // clamp dropped — WebGL2 has none), so advertising it is no longer a lie.
+    // draw_buffers_blend and texture_cube_map_array lift the 10_0 branch to 10_1;
+    // both are backed (indexed blend through GLctx, cube-map arrays by the real
+    // glTexImage3D on GL_TEXTURE_CUBE_MAP_ARRAY).
+    "GL_ARB_polygon_offset_clamp","GL_ARB_draw_buffers_blend",
+    "GL_ARB_texture_cube_map_array",
+    // C10: texture_storage (+_multisample) are now REAL on the host
+    // (TexStorage1D/2D/3D via glTexStorage; 2D/3DMS via the identical
+    // immutable multisample allocation). Advertising them lets wined3d keep
+    // ARB_texture_multisample instead of disabling it for "immutable storage
+    // is not supported" — verified against adapter_gl.c:3663.
+    "GL_ARB_texture_storage","GL_ARB_texture_storage_multisample",
 };
 #define G_EXT_COUNT ((int)(sizeof(g_extList)/sizeof(g_extList[0])))
 
@@ -707,6 +907,15 @@ API void glLineWidth(GLfloat w){ GL64Args a={{0}}; a.a[0]=F2U(w); (void)gl64_tra
 API void glPixelStorei(GLenum pname, GLint param){ GL64Args a={{0}}; a.a[0]=pname; a.a[1]=(uint64_t)(uint32_t)param; (void)gl64_trap(GL64_fn_glPixelStorei,&a); }
 API void glSampleCoverage(GLfloat value, GLboolean invert){ GL64Args a={{0}}; a.a[0]=F2U(value); a.a[1]=invert; (void)gl64_trap(GL64_fn_glSampleCoverage,&a); }
 
+API void glReadPixels(GLint x, GLint y, GLsizei w, GLsizei h, GLenum fmt, GLenum type, void* pixels){
+    GL64Args a={{0}}; a.a[0]=(uint32_t)x; a.a[1]=(uint32_t)y; a.a[2]=(uint32_t)w; a.a[3]=(uint32_t)h; a.a[4]=fmt; a.a[5]=type; a.a[6]=(uintptr_t)pixels;
+    (void)gl64_trap(GL64_fn_glReadPixels,&a);
+}
+API void glGetTexImage(GLenum target, GLint level, GLenum fmt, GLenum type, void* pixels){
+    GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint32_t)level; a.a[2]=fmt; a.a[3]=type; a.a[4]=(uintptr_t)pixels;
+    (void)gl64_trap(GL64_fn_glGetTexImage,&a);
+}
+
 // --- textures ---
 API void glActiveTexture(GLenum texture){ GL64Args a={{0}}; a.a[0]=texture; (void)gl64_trap(GL64_fn_glActiveTexture,&a); }
 API void glGenTextures(GLsizei n, GLuint* textures){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)textures; (void)gl64_trap(GL64_fn_glGenTextures,&a); }
@@ -717,6 +926,10 @@ API void glTexParameterf(GLenum target, GLenum pname, GLfloat param){ GL64Args a
 API void glTexImage2D(GLenum target, GLint level, GLint ifmt, GLsizei w, GLsizei h, GLint border, GLenum fmt, GLenum type, const void* pixels){
     GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uint32_t)ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=(uint64_t)(uint32_t)border; a.a[6]=fmt; a.a[7]=type; a.a[8]=(uint64_t)(uintptr_t)pixels;
     (void)gl64_trap(GL64_fn_glTexImage2D,&a);
+}
+// WebGL2 has no 1D textures; hostTextureTarget maps GL_TEXTURE_1D to 2D.
+API void glTexImage1D(GLenum target, GLint level, GLint ifmt, GLsizei w, GLint border, GLenum fmt, GLenum type, const void* pixels){
+    glTexImage2D(target, level, ifmt, w, 1, border, fmt, type, pixels);
 }
 API void glTexSubImage2D(GLenum target, GLint level, GLint x, GLint y, GLsizei w, GLsizei h, GLenum fmt, GLenum type, const void* pixels){
     GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uint32_t)x; a.a[3]=(uint64_t)(uint32_t)y; a.a[4]=(uint64_t)(uint32_t)w; a.a[5]=(uint64_t)(uint32_t)h; a.a[6]=fmt; a.a[7]=type; a.a[8]=(uint64_t)(uintptr_t)pixels;
@@ -779,6 +992,251 @@ API void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint* params){ GL64Args 
 API void glGetQueryObjectui64v(GLuint id, GLenum pname, uint64_t* params){ GL64Args a={{0}}; a.a[0]=id; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetQueryObjectui64v,&a); }
 
 // ===========================================================================
+// A2: the GL 3.x surface wined3d's wglGetProcAddress sweep binds unconditionally
+// (adapter_gl.c load_gl_funcs: `USE_GL_FUNC(pfn) = wglGetProcAddress(#pfn)` with
+// NO null check). Before this block every one of these resolved to gl64_noop, so
+// wined3d believed FBO / sampler / UBO / MRT state worked while nothing reached
+// the GPU — the direct cause of the D3D11CreateDevice E_FAIL. All are 1:1
+// WebGL2 (GLES3) entry points on the host; the *EXT / *ARB spellings are thin
+// aliases below so wined3d's fallback name lookups land on the same wrappers.
+// ===========================================================================
+
+// --- framebuffer objects ---
+API void glGenFramebuffers(GLsizei n, GLuint* fb){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)fb; (void)gl64_trap(GL64_fn_glGenFramebuffers,&a); }
+API void glDeleteFramebuffers(GLsizei n, const GLuint* fb){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)fb; (void)gl64_trap(GL64_fn_glDeleteFramebuffers,&a); }
+API void glBindFramebuffer(GLenum target, GLuint fb){ GL64Args a={{0}}; a.a[0]=target; a.a[1]=fb; (void)gl64_trap(GL64_fn_glBindFramebuffer,&a); }
+API GLboolean glIsFramebuffer(GLuint fb){ GL64Args a={{0}}; a.a[0]=fb; return (GLboolean)gl64_trap(GL64_fn_glIsFramebuffer,&a); }
+API void glFramebufferTexture1D(GLenum t, GLenum att, GLenum tt, GLuint tex, GLint lvl){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=tt; a.a[3]=tex; a.a[4]=(uint64_t)(uint32_t)lvl; (void)gl64_trap(GL64_fn_glFramebufferTexture1D,&a); }
+API void glFramebufferTexture2D(GLenum t, GLenum att, GLenum tt, GLuint tex, GLint lvl){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=tt; a.a[3]=tex; a.a[4]=(uint64_t)(uint32_t)lvl; (void)gl64_trap(GL64_fn_glFramebufferTexture2D,&a); }
+API void glFramebufferTexture3D(GLenum t, GLenum att, GLenum tt, GLuint tex, GLint lvl, GLint z){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=tt; a.a[3]=tex; a.a[4]=(uint64_t)(uint32_t)lvl; a.a[5]=(uint64_t)(uint32_t)z; (void)gl64_trap(GL64_fn_glFramebufferTexture3D,&a); }
+API void glFramebufferTexture(GLenum t, GLenum att, GLuint tex, GLint lvl){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=tex; a.a[3]=(uint64_t)(uint32_t)lvl; (void)gl64_trap(GL64_fn_glFramebufferTexture,&a); }
+API void glFramebufferTextureLayer(GLenum t, GLenum att, GLuint tex, GLint lvl, GLint layer){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=tex; a.a[3]=(uint64_t)(uint32_t)lvl; a.a[4]=(uint64_t)(uint32_t)layer; (void)gl64_trap(GL64_fn_glFramebufferTextureLayer,&a); }
+API void glFramebufferRenderbuffer(GLenum t, GLenum att, GLenum rbt, GLuint rb){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=rbt; a.a[3]=rb; (void)gl64_trap(GL64_fn_glFramebufferRenderbuffer,&a); }
+API GLenum glCheckFramebufferStatus(GLenum target){ GL64Args a={{0}}; a.a[0]=target; return (GLenum)gl64_trap(GL64_fn_glCheckFramebufferStatus,&a); }
+API void glBlitFramebuffer(GLint sx0,GLint sy0,GLint sx1,GLint sy1,GLint dx0,GLint dy0,GLint dx1,GLint dy1,GLbitfield mask,GLenum filter){
+    GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)sx0; a.a[1]=(uint64_t)(uint32_t)sy0; a.a[2]=(uint64_t)(uint32_t)sx1; a.a[3]=(uint64_t)(uint32_t)sy1;
+    a.a[4]=(uint64_t)(uint32_t)dx0; a.a[5]=(uint64_t)(uint32_t)dy0; a.a[6]=(uint64_t)(uint32_t)dx1; a.a[7]=(uint64_t)(uint32_t)dy1;
+    a.a[8]=mask; a.a[9]=filter; (void)gl64_trap(GL64_fn_glBlitFramebuffer,&a); }
+API void glGenRenderbuffers(GLsizei n, GLuint* rb){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)rb; (void)gl64_trap(GL64_fn_glGenRenderbuffers,&a); }
+API void glDeleteRenderbuffers(GLsizei n, const GLuint* rb){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)rb; (void)gl64_trap(GL64_fn_glDeleteRenderbuffers,&a); }
+API void glBindRenderbuffer(GLenum t, GLuint rb){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=rb; (void)gl64_trap(GL64_fn_glBindRenderbuffer,&a); }
+API void glRenderbufferStorage(GLenum t, GLenum ifmt, GLsizei w, GLsizei h){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=ifmt; a.a[2]=(uint64_t)(uint32_t)w; a.a[3]=(uint64_t)(uint32_t)h; (void)gl64_trap(GL64_fn_glRenderbufferStorage,&a); }
+API void glRenderbufferStorageMultisample(GLenum t, GLsizei s, GLenum ifmt, GLsizei w, GLsizei h){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)s; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; (void)gl64_trap(GL64_fn_glRenderbufferStorageMultisample,&a); }
+API GLboolean glIsRenderbuffer(GLuint rb){ GL64Args a={{0}}; a.a[0]=rb; return (GLboolean)gl64_trap(GL64_fn_glIsRenderbuffer,&a); }
+API void glGetRenderbufferParameteriv(GLuint rb, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=rb; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetRenderbufferParameteriv,&a); }
+API void glGetFramebufferAttachmentParameteriv(GLenum t, GLenum att, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=att; a.a[2]=pname; a.a[3]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetFramebufferAttachmentParameteriv,&a); }
+API void glDrawBuffers(GLsizei n, const GLenum* bufs){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)bufs; (void)gl64_trap(GL64_fn_glDrawBuffers,&a); }
+API void glReadBuffer(GLenum src){ GL64Args a={{0}}; a.a[0]=src; (void)gl64_trap(GL64_fn_glReadBuffer,&a); }
+
+// ARB_framebuffer_object / EXT_framebuffer_object spelling aliases. WebGL2 has no
+// EXT names, so alias them straight onto the core wrappers — wined3d's
+// `fbo_ops` EXT fallback table (adapter_gl.c:3776+) then works unchanged.
+API void glGenFramebuffersEXT(GLsizei n, GLuint* fb){ glGenFramebuffers(n, fb); }
+API void glDeleteFramebuffersEXT(GLsizei n, const GLuint* fb){ glDeleteFramebuffers(n, fb); }
+API void glBindFramebufferEXT(GLenum t, GLuint fb){ glBindFramebuffer(t, fb); }
+API GLboolean glIsFramebufferEXT(GLuint fb){ return glIsFramebuffer(fb); }
+API void glFramebufferTexture1DEXT(GLenum t, GLenum a, GLenum tt, GLuint tex, GLint l){ glFramebufferTexture1D(t,a,tt,tex,l); }
+API void glFramebufferTexture2DEXT(GLenum t, GLenum a, GLenum tt, GLuint tex, GLint l){ glFramebufferTexture2D(t,a,tt,tex,l); }
+API void glFramebufferTexture3DEXT(GLenum t, GLenum a, GLenum tt, GLuint tex, GLint lvl, GLint z){ glFramebufferTexture3D(t,a,tt,tex,lvl,z); }
+API void glFramebufferRenderbufferEXT(GLenum t, GLenum a, GLenum rbt, GLuint rb){ glFramebufferRenderbuffer(t,a,rbt,rb); }
+API GLenum glCheckFramebufferStatusEXT(GLenum t){ return glCheckFramebufferStatus(t); }
+API void glBlitFramebufferEXT(GLint a0,GLint a1,GLint a2,GLint a3,GLint a4,GLint a5,GLint a6,GLint a7,GLbitfield m,GLenum f){ glBlitFramebuffer(a0,a1,a2,a3,a4,a5,a6,a7,m,f); }
+API void glGetFramebufferAttachmentParameterivEXT(GLenum t, GLenum a, GLenum p, GLint* params){ glGetFramebufferAttachmentParameteriv(t,a,p,params); }
+API void glGenRenderbuffersEXT(GLsizei n, GLuint* rb){ glGenRenderbuffers(n, rb); }
+API void glDeleteRenderbuffersEXT(GLsizei n, const GLuint* rb){ glDeleteRenderbuffers(n, rb); }
+API void glBindRenderbufferEXT(GLenum t, GLuint rb){ glBindRenderbuffer(t, rb); }
+API void glRenderbufferStorageEXT(GLenum t, GLenum i, GLsizei w, GLsizei h){ glRenderbufferStorage(t,i,w,h); }
+API void glRenderbufferStorageMultisampleEXT(GLenum t, GLsizei s, GLenum i, GLsizei w, GLsizei h){ glRenderbufferStorageMultisample(t,s,i,w,h); }
+API GLboolean glIsRenderbufferEXT(GLuint rb){ return glIsRenderbuffer(rb); }
+API void glGetRenderbufferParameterivEXT(GLuint rb, GLenum p, GLint* params){ glGetRenderbufferParameteriv(rb,p,params); }
+API void glFramebufferTextureARB(GLenum t, GLenum a, GLuint tex, GLint l){ glFramebufferTexture(t,a,tex,l); }
+API void glFramebufferTextureLayerARB(GLenum t, GLenum a, GLuint tex, GLint l, GLint layer){ glFramebufferTextureLayer(t,a,tex,l,layer); }
+API void glFramebufferTexture2DARB(GLenum t, GLenum a, GLenum tt, GLuint tex, GLint l){ glFramebufferTexture2D(t,a,tt,tex,l); }
+API void glFramebufferRenderbufferARB(GLenum t, GLenum a, GLenum rbt, GLuint rb){ glFramebufferRenderbuffer(t,a,rbt,rb); }
+
+// --- sampler objects (GL 3.3 core / ARB_sampler_objects) ---
+API void glGenSamplers(GLsizei n, GLuint* s){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)s; (void)gl64_trap(GL64_fn_glGenSamplers,&a); }
+API void glDeleteSamplers(GLsizei n, const GLuint* s){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)n; a.a[1]=(uint64_t)(uintptr_t)s; (void)gl64_trap(GL64_fn_glDeleteSamplers,&a); }
+API void glBindSampler(GLuint unit, GLuint sampler){ GL64Args a={{0}}; a.a[0]=unit; a.a[1]=sampler; (void)gl64_trap(GL64_fn_glBindSampler,&a); }
+API GLboolean glIsSampler(GLuint s){ GL64Args a={{0}}; a.a[0]=s; return (GLboolean)gl64_trap(GL64_fn_glIsSampler,&a); }
+API void glSamplerParameteri(GLuint s, GLenum pname, GLint param){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uint32_t)param; (void)gl64_trap(GL64_fn_glSamplerParameteri,&a); }
+API void glSamplerParameterf(GLuint s, GLenum pname, GLfloat param){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=F2U(param); (void)gl64_trap(GL64_fn_glSamplerParameterf,&a); }
+API void glSamplerParameteriv(GLuint s, GLenum pname, const GLint* v){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glSamplerParameteriv,&a); }
+API void glSamplerParameterfv(GLuint s, GLenum pname, const GLfloat* v){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glSamplerParameterfv,&a); }
+API void glSamplerParameterIiv(GLuint s, GLenum pname, const GLint* v){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glSamplerParameterIiv,&a); }
+API void glSamplerParameterIuiv(GLuint s, GLenum pname, const GLuint* v){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glSamplerParameterIuiv,&a); }
+API void glGetSamplerParameteriv(GLuint s, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetSamplerParameteriv,&a); }
+API void glGetSamplerParameterfv(GLuint s, GLenum pname, GLfloat* params){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetSamplerParameterfv,&a); }
+API void glGetSamplerParameterIiv(GLuint s, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetSamplerParameterIiv,&a); }
+API void glGetSamplerParameterIuiv(GLuint s, GLenum pname, GLuint* params){ GL64Args a={{0}}; a.a[0]=s; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetSamplerParameterIuiv,&a); }
+
+// --- 3D / array textures ---
+API void glTexImage3D(GLenum target, GLint level, GLint ifmt, GLsizei w, GLsizei h, GLsizei d, GLint border, GLenum fmt, GLenum type, const void* px){
+    GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uint32_t)ifmt; a.a[3]=(uint64_t)(uint32_t)w;
+    a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=(uint64_t)(uint32_t)d; a.a[6]=(uint64_t)(uint32_t)border; a.a[7]=fmt; a.a[8]=type; a.a[9]=(uint64_t)(uintptr_t)px;
+    (void)gl64_trap(GL64_fn_glTexImage3D,&a); }
+API void glTexSubImage3D(GLenum target, GLint level, GLint x, GLint y, GLint z, GLsizei w, GLsizei h, GLsizei d, GLenum fmt, GLenum type, const void* px){
+    GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uint32_t)x; a.a[3]=(uint64_t)(uint32_t)y;
+    a.a[4]=(uint64_t)(uint32_t)z; a.a[5]=(uint64_t)(uint32_t)w; a.a[6]=(uint64_t)(uint32_t)h; a.a[7]=(uint64_t)(uint32_t)d;
+    a.a[8]=fmt; a.a[9]=type; a.a[10]=(uint64_t)(uintptr_t)px; (void)gl64_trap(GL64_fn_glTexSubImage3D,&a); }
+API void glCompressedTexImage3D(GLenum target, GLint level, GLenum ifmt, GLsizei w, GLsizei h, GLsizei d, GLsizei imageSize, const void* data){
+    GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h;
+    a.a[5]=(uint64_t)(uint32_t)d; a.a[6]=(uint64_t)(uint32_t)imageSize; a.a[7]=(uint64_t)(uintptr_t)data; (void)gl64_trap(GL64_fn_glCompressedTexImage3D,&a); }
+API void glCompressedTexSubImage3D(GLenum target, GLint level, GLint x, GLint y, GLint z, GLsizei w, GLsizei h, GLsizei d, GLenum fmt, GLsizei imageSize, const void* data){
+    GL64Args a={{0}}; a.a[0]=target; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uint32_t)x; a.a[3]=(uint64_t)(uint32_t)y;
+    a.a[4]=(uint64_t)(uint32_t)z; a.a[5]=(uint64_t)(uint32_t)w; a.a[6]=(uint64_t)(uint32_t)h; a.a[7]=(uint64_t)(uint32_t)d;
+    a.a[8]=fmt; a.a[9]=(uint64_t)(uint32_t)imageSize; a.a[10]=(uint64_t)(uintptr_t)data; (void)gl64_trap(GL64_fn_glCompressedTexSubImage3D,&a); }
+API void glTexImage3DEXT(GLenum t, GLint l, GLenum i, GLsizei w, GLsizei h, GLsizei d, GLint b, GLenum f, GLenum ty, const void* p){ glTexImage3D(t,l,i,w,h,d,b,f,ty,p); }
+API void glCompressedTexImage3DARB(GLenum t, GLint l, GLenum i, GLsizei w, GLsizei h, GLsizei d, GLsizei s, const void* p){ glCompressedTexImage3D(t,l,i,w,h,d,s,p); }
+API void glTexImage2DMultisample(GLenum t, GLsizei s, GLenum i, GLsizei w, GLsizei h, GLboolean fixed){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)s; a.a[2]=i; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=fixed; (void)gl64_trap(GL64_fn_glTexImage2DMultisample,&a); }
+API void glTexImage3DMultisample(GLenum t, GLsizei s, GLenum i, GLsizei w, GLsizei h, GLsizei d, GLboolean fixed){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)s; a.a[2]=i; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=(uint64_t)(uint32_t)d; a.a[6]=fixed; (void)gl64_trap(GL64_fn_glTexImage3DMultisample,&a); }
+// C7: immutable storage. Wine allocates depth/stencil probe textures via
+// glTexStorage*; previously PROC MISS -> gl64_noop, so attachments referenced
+// storage that never existed (and the calls were invisible in the trace).
+API void glTexStorage2D(GLenum t, GLsizei levels, GLenum ifmt, GLsizei w, GLsizei h){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)levels; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; (void)gl64_trap(GL64_fn_glTexStorage2D,&a); }
+API void glTexStorage3D(GLenum t, GLsizei levels, GLenum ifmt, GLsizei w, GLsizei h, GLsizei d){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)levels; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=(uint64_t)(uint32_t)d; (void)gl64_trap(GL64_fn_glTexStorage3D,&a); }
+API void glTexStorage1D(GLenum t, GLsizei levels, GLenum ifmt, GLsizei w){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)levels; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; (void)gl64_trap(GL64_fn_glTexStorage1D,&a); }
+// C10: multisample immutable storage (see ABI note). Same guest ABI shape as
+// the TexImage*Multisample wrappers; the host backs them with the identical
+// immutable multisample allocation.
+API void glTexStorage2DMultisample(GLenum t, GLsizei samples, GLenum ifmt, GLsizei w, GLsizei h, GLboolean fixed){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)samples; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=fixed; (void)gl64_trap(GL64_fn_glTexStorage2DMultisample,&a); }
+API void glTexStorage3DMultisample(GLenum t, GLsizei samples, GLenum ifmt, GLsizei w, GLsizei h, GLsizei d, GLboolean fixed){
+    GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)samples; a.a[2]=ifmt; a.a[3]=(uint64_t)(uint32_t)w; a.a[4]=(uint64_t)(uint32_t)h; a.a[5]=(uint64_t)(uint32_t)d; a.a[6]=fixed; (void)gl64_trap(GL64_fn_glTexStorage3DMultisample,&a); }
+API void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat* values){
+    GL64Args a={{0}}; a.a[0]=pname; a.a[1]=index; a.a[2]=(uint64_t)(uintptr_t)values; (void)gl64_trap(GL64_fn_glGetMultisamplefv,&a); }
+
+// --- MRT / frag-data / uniform blocks / buffer objects ---
+API void glBindFragDataLocation(GLuint p, GLuint color, const GLchar* name){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=color; a.a[2]=(uint64_t)(uintptr_t)name; (void)gl64_trap(GL64_fn_glBindFragDataLocation,&a); }
+API GLint glGetFragDataIndex(GLuint p, const GLchar* name){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uintptr_t)name; return (GLint)gl64_trap(GL64_fn_glGetFragDataIndex,&a); }
+API void glBindBufferRange(GLenum t, GLuint idx, GLuint buf, GLintptr off, GLsizeiptr size){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=idx; a.a[2]=buf; a.a[3]=(uint64_t)off; a.a[4]=(uint64_t)size; (void)gl64_trap(GL64_fn_glBindBufferRange,&a); }
+API void glBindBufferBase(GLenum t, GLuint idx, GLuint buf){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=idx; a.a[2]=buf; (void)gl64_trap(GL64_fn_glBindBufferBase,&a); }
+API GLuint glGetUniformBlockIndex(GLuint p, const GLchar* name){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uintptr_t)name; return (GLuint)gl64_trap(GL64_fn_glGetUniformBlockIndex,&a); }
+API void glUniformBlockBinding(GLuint p, GLuint idx, GLuint binding){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=idx; a.a[2]=binding; (void)gl64_trap(GL64_fn_glUniformBlockBinding,&a); }
+API void glGetActiveUniformBlockiv(GLuint p, GLuint idx, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=idx; a.a[2]=pname; a.a[3]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetActiveUniformBlockiv,&a); }
+API void glGetActiveUniformBlockName(GLuint p, GLuint idx, GLsizei bufSize, GLsizei* len, GLchar* name){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=idx; a.a[2]=(uint64_t)(uint32_t)bufSize; a.a[3]=(uint64_t)(uintptr_t)len; a.a[4]=(uint64_t)(uintptr_t)name; (void)gl64_trap(GL64_fn_glGetActiveUniformBlockName,&a); }
+API void glBufferStorage(GLenum t, GLsizeiptr size, const void* data, GLbitfield flags){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)size; a.a[2]=(uint64_t)(uintptr_t)data; a.a[3]=flags; (void)gl64_trap(GL64_fn_glBufferStorage,&a); }
+API void glCopyBufferSubData(GLenum rt, GLenum wt, GLintptr ro, GLintptr wo, GLsizeiptr size){ GL64Args a={{0}}; a.a[0]=rt; a.a[1]=wt; a.a[2]=(uint64_t)ro; a.a[3]=(uint64_t)wo; a.a[4]=(uint64_t)size; (void)gl64_trap(GL64_fn_glCopyBufferSubData,&a); }
+API void glGetBufferSubData(GLenum t, GLintptr off, GLsizeiptr size, void* data){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)off; a.a[2]=(uint64_t)size; a.a[3]=(uint64_t)(uintptr_t)data; (void)gl64_trap(GL64_fn_glGetBufferSubData,&a); }
+API void glGetBufferParameteriv(GLenum t, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetBufferParameteriv,&a); }
+
+// --- int uniforms / introspection ---
+API void glUniform2i(GLint l, GLint v0, GLint v1){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)v0; a.a[2]=(uint64_t)(uint32_t)v1; (void)gl64_trap(GL64_fn_glUniform2i,&a); }
+API void glUniform3i(GLint l, GLint v0, GLint v1, GLint v2){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)v0; a.a[2]=(uint64_t)(uint32_t)v1; a.a[3]=(uint64_t)(uint32_t)v2; (void)gl64_trap(GL64_fn_glUniform3i,&a); }
+API void glUniform4i(GLint l, GLint v0, GLint v1, GLint v2, GLint v3){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)v0; a.a[2]=(uint64_t)(uint32_t)v1; a.a[3]=(uint64_t)(uint32_t)v2; a.a[4]=(uint64_t)(uint32_t)v3; (void)gl64_trap(GL64_fn_glUniform4i,&a); }
+API void glUniform2iv(GLint l, GLsizei n, const GLint* v){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)n; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glUniform2iv,&a); }
+API void glUniform3iv(GLint l, GLsizei n, const GLint* v){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)n; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glUniform3iv,&a); }
+API void glUniform4iv(GLint l, GLsizei n, const GLint* v){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uint32_t)l; a.a[1]=(uint64_t)(uint32_t)n; a.a[2]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glUniform4iv,&a); }
+API void glGetUniformfv(GLuint p, const GLint* locs, GLfloat* vals){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uintptr_t)locs; a.a[2]=(uint64_t)(uintptr_t)vals; (void)gl64_trap(GL64_fn_glGetUniformfv,&a); }
+API void glGetUniformiv(GLuint p, const GLint* locs, GLint* vals){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uintptr_t)locs; a.a[2]=(uint64_t)(uintptr_t)vals; (void)gl64_trap(GL64_fn_glGetUniformiv,&a); }
+API void glGetActiveUniform(GLuint p, GLuint index, GLsizei bufSize, GLsizei* len, GLchar* name){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=index; a.a[2]=(uint64_t)(uint32_t)bufSize; a.a[3]=(uint64_t)(uintptr_t)len; a.a[4]=(uint64_t)(uintptr_t)name; (void)gl64_trap(GL64_fn_glGetActiveUniform,&a); }
+API void glGetAttachedShaders(GLuint p, GLsizei maxCount, GLsizei* count, GLuint* shaders){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uint32_t)maxCount; a.a[2]=(uint64_t)(uintptr_t)count; a.a[3]=(uint64_t)(uintptr_t)shaders; (void)gl64_trap(GL64_fn_glGetAttachedShaders,&a); }
+// NB: wined3d resolves the plain "glGetShaderSource" spelling; the host fn id is
+// GL64_fn_glGetShaderSourceImpl so it does not collide with the (unimplemented)
+// GL64_fn_glGetShaderSource from the original ABI.
+API void glGetShaderSource(GLuint sh, GLsizei bufSize, GLsizei* len, GLchar* src){ GL64Args a={{0}}; a.a[0]=sh; a.a[1]=(uint64_t)(uint32_t)bufSize; a.a[2]=(uint64_t)(uintptr_t)len; a.a[3]=(uint64_t)(uintptr_t)src; (void)gl64_trap(GL64_fn_glGetShaderSourceImpl,&a); }
+API void glGetTexParameteriv(GLenum t, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetTexParameteriv,&a); }
+API void glGetTexLevelParameteriv(GLenum t, GLint level, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=pname; a.a[3]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetTexLevelParameteriv,&a); }
+API void glGetTextureParameteriv(GLuint tex, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=tex; a.a[1]=pname; a.a[2]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetTextureParameteriv,&a); }
+API void glGetTextureLevelParameteriv(GLuint tex, GLint level, GLenum pname, GLint* params){ GL64Args a={{0}}; a.a[0]=tex; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=pname; a.a[3]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glGetTextureLevelParameteriv,&a); }
+API void glGetCompressedTexImage(GLenum t, GLint level, void* img){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)level; a.a[2]=(uint64_t)(uintptr_t)img; (void)gl64_trap(GL64_fn_glGetCompressedTexImage,&a); }
+API void glCompressedTexSubImage2D(GLenum t, GLint l, GLint x, GLint y, GLsizei w, GLsizei h, GLenum f, GLsizei s, const void* d){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=(uint64_t)(uint32_t)l; a.a[2]=(uint64_t)(uint32_t)x; a.a[3]=(uint64_t)(uint32_t)y; a.a[4]=(uint64_t)(uint32_t)w; a.a[5]=(uint64_t)(uint32_t)h; a.a[6]=f; a.a[7]=(uint64_t)(uint32_t)s; a.a[8]=(uint64_t)(uintptr_t)d; (void)gl64_trap(GL64_fn_glCompressedTexSubImage2D,&a); }
+
+// --- indexed state (GL 3.0 core / ARB_blend_func_extended) ---
+API void glEnablei(GLuint i, GLenum cap){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=cap; (void)gl64_trap(GL64_fn_glEnablei,&a); }
+API void glDisablei(GLuint i, GLenum cap){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=cap; (void)gl64_trap(GL64_fn_glDisablei,&a); }
+API GLboolean glIsEnabledi(GLuint i, GLenum cap){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=cap; return (GLboolean)gl64_trap(GL64_fn_glIsEnabledi,&a); }
+API void glBlendEquationi(GLuint buf, GLenum mode){ GL64Args a={{0}}; a.a[0]=buf; a.a[1]=mode; (void)gl64_trap(GL64_fn_glBlendEquationi,&a); }
+API void glBlendEquationSeparatei(GLuint buf, GLenum rgb, GLenum alpha){ GL64Args a={{0}}; a.a[0]=buf; a.a[1]=rgb; a.a[2]=alpha; (void)gl64_trap(GL64_fn_glBlendEquationSeparatei,&a); }
+API void glBlendFunci(GLuint buf, GLenum s, GLenum d){ GL64Args a={{0}}; a.a[0]=buf; a.a[1]=s; a.a[2]=d; (void)gl64_trap(GL64_fn_glBlendFunci,&a); }
+API void glBlendFuncSeparatei(GLuint buf, GLenum sr, GLenum dr, GLenum sa, GLenum da){ GL64Args a={{0}}; a.a[0]=buf; a.a[1]=sr; a.a[2]=dr; a.a[3]=sa; a.a[4]=da; (void)gl64_trap(GL64_fn_glBlendFuncSeparatei,&a); }
+API void glColorMaski(GLuint buf, GLboolean r, GLboolean g, GLboolean b, GLboolean al){ GL64Args a={{0}}; a.a[0]=buf; a.a[1]=r; a.a[2]=g; a.a[3]=b; a.a[4]=al; (void)gl64_trap(GL64_fn_glColorMaski,&a); }
+API void glMinSampleShading(GLfloat v){ GL64Args a={{0}}; a.a[0]=F2U(v); (void)gl64_trap(GL64_fn_glMinSampleShading,&a); }
+
+// --- instancing / base vertex ---
+API void glVertexAttribDivisor(GLuint i, GLuint d){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=d; (void)gl64_trap(GL64_fn_glVertexAttribDivisor,&a); }
+API void glVertexAttribDivisorARB(GLuint i, GLuint d){ glVertexAttribDivisor(i, d); }
+API void glDrawArraysInstanced(GLenum m, GLint first, GLsizei count, GLsizei prim){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)first; a.a[2]=(uint64_t)(uint32_t)count; a.a[3]=(uint64_t)(uint32_t)prim; (void)gl64_trap(GL64_fn_glDrawArraysInstanced,&a); }
+API void glDrawElementsInstanced(GLenum m, GLsizei count, GLenum type, const void* idx, GLsizei prim){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)count; a.a[2]=type; a.a[3]=(uint64_t)(uintptr_t)idx; a.a[4]=(uint64_t)(uint32_t)prim; (void)gl64_trap(GL64_fn_glDrawElementsInstanced,&a); }
+API void glDrawArraysInstancedARB(GLenum m, GLint first, GLsizei count, GLsizei prim){ glDrawArraysInstanced(m, first, count, prim); }
+API void glDrawElementsInstancedARB(GLenum m, GLsizei count, GLenum type, const void* idx, GLsizei prim){ glDrawElementsInstanced(m, count, type, idx, prim); }
+API void glDrawArraysInstancedBaseInstance(GLenum m, GLint f, GLsizei c, GLsizei p, GLuint bi){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)f; a.a[2]=(uint64_t)(uint32_t)c; a.a[3]=(uint64_t)(uint32_t)p; a.a[4]=bi; (void)gl64_trap(GL64_fn_glDrawArraysInstancedBaseInstance,&a); }
+API void glDrawElementsInstancedBaseVertexBaseInstance(GLenum m, GLsizei c, GLenum type, const void* idx, GLsizei p, GLint bv, GLuint bi){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)c; a.a[2]=type; a.a[3]=(uint64_t)(uintptr_t)idx; a.a[4]=(uint64_t)(uint32_t)p; a.a[5]=(uint64_t)(uint32_t)bv; a.a[6]=bi; (void)gl64_trap(GL64_fn_glDrawElementsInstancedBaseVertexBaseInstance,&a); }
+API void glDrawElementsBaseVertex(GLenum m, GLsizei c, GLenum type, const void* idx, GLint bv){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)c; a.a[2]=type; a.a[3]=(uint64_t)(uintptr_t)idx; a.a[4]=(uint64_t)(uint32_t)bv; (void)gl64_trap(GL64_fn_glDrawElementsBaseVertex,&a); }
+API void glDrawRangeElementsBaseVertex(GLenum m, GLuint s, GLuint e, GLsizei c, GLenum type, const void* idx, GLint bv){ GL64Args a={{0}}; a.a[0]=m; a.a[1]=s; a.a[2]=e; a.a[3]=(uint64_t)(uint32_t)c; a.a[4]=type; a.a[5]=(uint64_t)(uintptr_t)idx; a.a[6]=(uint64_t)(uint32_t)bv; (void)gl64_trap(GL64_fn_glDrawRangeElementsBaseVertex,&a); }
+API void glMultiDrawArrays(GLenum m, const GLint* first, const GLsizei* count, GLsizei n){
+    if (!first || !count || n <= 0) return;
+    for (GLsizei i = 0; i < n; i++) glDrawArrays(m, first[i], count[i]); }
+API void glMultiDrawElements(GLenum m, const GLsizei* count, GLenum type, const void* const* idx, GLsizei n){
+    if (!count || !idx || n <= 0) return;
+    for (GLsizei i = 0; i < n; i++) glDrawElements(m, count[i], type, idx[i]); }
+
+// --- misc / best-effort ---
+typedef void (*GLdebugproc)(GLenum, GLenum, GLuint, GLenum, GLsizei, const GLchar*, const void*);
+API void glDebugMessageCallback(GLdebugproc cb, const void* user){ GL64Args a={{0}}; a.a[0]=(uint64_t)(uintptr_t)cb; a.a[1]=(uint64_t)(uintptr_t)user; (void)gl64_trap(GL64_fn_glDebugMessageCallback,&a); }
+API void glDebugMessageControl(GLenum src, GLenum type, GLuint id, GLenum sev, GLsizei n, const GLuint* en, GLboolean enabled){
+    GL64Args a={{0}}; a.a[0]=src; a.a[1]=type; a.a[2]=id; a.a[3]=sev; a.a[4]=(uint64_t)(uint32_t)n; a.a[5]=(uint64_t)(uintptr_t)en; a.a[6]=enabled; (void)gl64_trap(GL64_fn_glDebugMessageControl,&a); }
+API void glDebugMessageInsert(GLenum src, GLenum type, GLuint id, GLenum sev, GLsizei len, const GLchar* buf){ GL64Args a={{0}}; a.a[0]=src; a.a[1]=type; a.a[2]=id; a.a[3]=sev; a.a[4]=(uint64_t)(uint32_t)len; a.a[5]=(uint64_t)(uintptr_t)buf; (void)gl64_trap(GL64_fn_glDebugMessageInsert,&a); }
+API GLuint glGetDebugMessageLog(GLuint count, GLenum* sources, GLenum* types, GLuint* ids, GLenum* sevs, GLsizei* lens, GLchar* log){
+    GL64Args a={{0}}; a.a[0]=count; a.a[1]=(uint64_t)(uintptr_t)sources; a.a[2]=(uint64_t)(uintptr_t)types; a.a[3]=(uint64_t)(uintptr_t)ids; a.a[4]=(uint64_t)(uintptr_t)sevs; a.a[5]=(uint64_t)(uintptr_t)lens; a.a[6]=(uint64_t)(uintptr_t)log;
+    (void)gl64_trap(GL64_fn_glGetDebugMessageLog,&a); return 0; }
+API void glBeginTransformFeedback(GLenum mode){ GL64Args a={{0}}; a.a[0]=mode; (void)gl64_trap(GL64_fn_glBeginTransformFeedback,&a); }
+API void glEndTransformFeedback(void){ (void)gl64_trap(GL64_fn_glEndTransformFeedback,0); }
+API void glTransformFeedbackVaryings(GLuint p, GLsizei n, const GLchar* const* vars, GLenum mode){ GL64Args a={{0}}; a.a[0]=p; a.a[1]=(uint64_t)(uint32_t)n; a.a[2]=(uint64_t)(uintptr_t)vars; a.a[3]=mode; (void)gl64_trap(GL64_fn_glTransformFeedbackVaryings,&a); }
+API void glPointParameteri(GLenum pname, GLint param){ GL64Args a={{0}}; a.a[0]=pname; a.a[1]=(uint64_t)(uint32_t)param; (void)gl64_trap(GL64_fn_glPointParameteri,&a); }
+API void glPointParameteriv(GLenum pname, const GLint* params){ GL64Args a={{0}}; a.a[0]=pname; a.a[1]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glPointParameteriv,&a); }
+API void glPointParameterf(GLenum pname, GLfloat param){ GL64Args a={{0}}; a.a[0]=pname; a.a[1]=F2U(param); (void)gl64_trap(GL64_fn_glPointParameterf,&a); }
+API void glPointParameterfv(GLenum pname, const GLfloat* params){ GL64Args a={{0}}; a.a[0]=pname; a.a[1]=(uint64_t)(uintptr_t)params; (void)gl64_trap(GL64_fn_glPointParameterfv,&a); }
+API void glTexBuffer(GLenum t, GLenum i, GLuint b){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=i; a.a[2]=b; (void)gl64_trap(GL64_fn_glTexBuffer,&a); }
+API void glTexBufferRange(GLenum t, GLenum i, GLuint b, GLintptr off, GLsizeiptr size){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=i; a.a[2]=b; a.a[3]=(uint64_t)off; a.a[4]=(uint64_t)size; (void)gl64_trap(GL64_fn_glTexBufferRange,&a); }
+API void glTexBufferARB(GLenum t, GLenum i, GLuint b){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=i; a.a[2]=b; (void)gl64_trap(GL64_fn_glTexBufferARB,&a); }
+API void glTexBufferRangeARB(GLenum t, GLenum i, GLuint b, GLintptr off, GLsizeiptr size){ GL64Args a={{0}}; a.a[0]=t; a.a[1]=i; a.a[2]=b; a.a[3]=(uint64_t)off; a.a[4]=(uint64_t)size; (void)gl64_trap(GL64_fn_glTexBufferRangeARB,&a); }
+API void glTextureBarrierNV(void){ (void)gl64_trap(GL64_fn_glTextureBarrierNV,0); }
+API void glFinalCombinerInputNV(GLenum target, GLenum input, GLenum inputName){ GL64Args a={{0}}; a.a[0]=target; a.a[1]=input; a.a[2]=inputName; (void)gl64_trap(GL64_fn_glFinalCombinerInputNV,&a); }
+API void glVertexAttrib1f(GLuint i, GLfloat v0){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=F2U(v0); (void)gl64_trap(GL64_fn_glVertexAttrib1f,&a); }
+API void glVertexAttrib2f(GLuint i, GLfloat x, GLfloat y){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=F2U(x); a.a[2]=F2U(y); (void)gl64_trap(GL64_fn_glVertexAttrib2f,&a); }
+API void glVertexAttrib3f(GLuint i, GLfloat x, GLfloat y, GLfloat z){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=F2U(x); a.a[2]=F2U(y); a.a[3]=F2U(z); (void)gl64_trap(GL64_fn_glVertexAttrib3f,&a); }
+API void glVertexAttrib1fv(GLuint i, const GLfloat* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib1fv,&a); }
+API void glVertexAttrib2fv(GLuint i, const GLfloat* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib2fv,&a); }
+API void glVertexAttrib3fv(GLuint i, const GLfloat* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib3fv,&a); }
+API void glVertexAttrib4fv(GLuint i, const GLfloat* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib4fv,&a); }
+API void glVertexAttrib1d(GLuint i, GLdouble v0){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=D2U(v0); (void)gl64_trap(GL64_fn_glVertexAttrib1d,&a); }
+API void glVertexAttrib2d(GLuint i, GLdouble v0, GLdouble v1){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=D2U(v0); a.a[2]=D2U(v1); (void)gl64_trap(GL64_fn_glVertexAttrib2d,&a); }
+API void glVertexAttrib3d(GLuint i, GLdouble v0, GLdouble v1, GLdouble v2){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=D2U(v0); a.a[2]=D2U(v1); a.a[3]=D2U(v2); (void)gl64_trap(GL64_fn_glVertexAttrib3d,&a); }
+API void glVertexAttrib4d(GLuint i, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=D2U(v0); a.a[2]=D2U(v1); a.a[3]=D2U(v2); a.a[4]=D2U(v3); (void)gl64_trap(GL64_fn_glVertexAttrib4d,&a); }
+API void glVertexAttrib1dv(GLuint i, const GLdouble* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib1dv,&a); }
+API void glVertexAttrib2dv(GLuint i, const GLdouble* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib2dv,&a); }
+API void glVertexAttrib3dv(GLuint i, const GLdouble* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib3dv,&a); }
+API void glVertexAttrib4dv(GLuint i, const GLdouble* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttrib4dv,&a); }
+API void glVertexAttribI4i(GLuint i, GLint x, GLint y, GLint z, GLint w){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uint32_t)x; a.a[2]=(uint64_t)(uint32_t)y; a.a[3]=(uint64_t)(uint32_t)z; a.a[4]=(uint64_t)(uint32_t)w; (void)gl64_trap(GL64_fn_glVertexAttribI4i,&a); }
+API void glVertexAttribI4ui(GLuint i, GLuint x, GLuint y, GLuint z, GLuint w){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=x; a.a[2]=y; a.a[3]=z; a.a[4]=w; (void)gl64_trap(GL64_fn_glVertexAttribI4ui,&a); }
+API void glVertexAttribI4iv(GLuint i, const GLint* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttribI4iv,&a); }
+API void glVertexAttribI4uiv(GLuint i, const GLuint* v){ GL64Args a={{0}}; a.a[0]=i; a.a[1]=(uint64_t)(uintptr_t)v; (void)gl64_trap(GL64_fn_glVertexAttribI4uiv,&a); }
+
+// --- A2 cycle 2 -----------------------------------------------------------------
+// glPolygonOffsetClamp is one of three feature_level_from_caps() gates for every
+// feature level >= 10_0 (adapter_gl.c: WINED3D_GL_VERSION_3_2 && ARB_POLYGON_OFFSET_CLAMP
+// && ARB_SAMPLER_OBJECTS). WebGL2 has no polygonOffsetClamp, so the host forwards
+// factor/units to glPolygonOffset and drops the clamp — a depth bias without the
+// clamp is visually identical over the range a float depth buffer can hold, and NOT
+// advertising it pins the D3D11 device at FL 9_3 no matter what else is real.
+API void glPolygonOffsetClamp(GLfloat factor, GLfloat units, GLfloat clamp){
+    GL64Args a={{0}}; a.a[0]=F2U(factor); a.a[1]=F2U(units); a.a[2]=F2U(clamp);
+    (void)gl64_trap(GL64_fn_glPolygonOffsetClamp,&a); }
+API void glDrawElementsInstancedBaseVertex(GLenum m, GLsizei c, GLenum type, const void* idx, GLsizei prim, GLint bv){
+    GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uint32_t)c; a.a[2]=type; a.a[3]=(uint64_t)(uintptr_t)idx; a.a[4]=(uint64_t)(uint32_t)prim; a.a[5]=(uint64_t)(uint32_t)bv;
+    (void)gl64_trap(GL64_fn_glDrawElementsInstancedBaseVertex,&a); }
+API void glMultiDrawElementsBaseVertex(GLenum m, const GLsizei* count, GLenum type, const void* const* idx, GLsizei prim, const GLint* bv){
+    GL64Args a={{0}}; a.a[0]=m; a.a[1]=(uint64_t)(uintptr_t)count; a.a[2]=type; a.a[3]=(uint64_t)(uintptr_t)idx; a.a[4]=(uint64_t)(uint32_t)prim; a.a[5]=(uint64_t)(uintptr_t)bv;
+    (void)gl64_trap(GL64_fn_glMultiDrawElementsBaseVertex,&a); }
+API void glTextureBarrier(void){ (void)gl64_trap(GL64_fn_glTextureBarrier,0); }
+
+// ===========================================================================
 // glXGetProcAddressARB — opengl32/winex11 resolve every gl*/glX* through here.
 // Return our own wrapper for names we implement, or a harmless no-op stub for
 // the rest (so an unimplemented call is silently ignored rather than crashing).
@@ -832,14 +1290,79 @@ static const struct procEntry g_procs[] = {
     E(glScissor), E(glPolygonOffset), E(glPolygonMode), E(glDepthRange),
     E(glLineWidth), E(glPixelStorei), E(glSampleCoverage),
     E(glActiveTexture), E(glGenTextures), E(glBindTexture), E(glDeleteTextures),
-    E(glTexParameteri), E(glTexParameterf), E(glTexImage2D), E(glTexSubImage2D),
-    E(glGenerateMipmap), E(glCompressedTexImage2D), E(glGetStringi),
+    E(glTexParameteri), E(glTexParameterf), E(glTexImage1D), E(glTexImage2D), E(glTexSubImage2D),
+    E(glGenerateMipmap), E(glCompressedTexImage2D), E(glGetStringi), E(glReadPixels), E(glGetTexImage),
     // --- ARB_sync + queries (wined3d Present/flush + occlusion) ---
     E(glFenceSync), E(glClientWaitSync), E(glWaitSync), E(glDeleteSync),
     E(glIsSync), E(glGetSynciv),
     E(glGenQueries), E(glDeleteQueries), E(glIsQuery), E(glBeginQuery),
     E(glEndQuery), E(glQueryCounter), E(glGetQueryiv), E(glGetQueryObjectiv),
     E(glGetQueryObjectuiv), E(glGetQueryObjectui64v),
+    // --- A2: the GL 3.x surface (FBO / samplers / 3D tex / MRT / UBO / ...) ---
+    // wined3d's load_gl_funcs binds these unconditionally; each used to fall
+    // through to gl64_noop and be silently dropped.
+    E(glGenFramebuffers), E(glDeleteFramebuffers), E(glBindFramebuffer),
+    E(glIsFramebuffer), E(glFramebufferTexture1D), E(glFramebufferTexture2D),
+    E(glFramebufferTexture3D), E(glFramebufferTexture), E(glFramebufferTextureLayer),
+    E(glFramebufferRenderbuffer), E(glCheckFramebufferStatus), E(glBlitFramebuffer),
+    E(glGenRenderbuffers), E(glDeleteRenderbuffers), E(glBindRenderbuffer),
+    E(glRenderbufferStorage), E(glRenderbufferStorageMultisample), E(glIsRenderbuffer),
+    E(glGetRenderbufferParameteriv), E(glGetFramebufferAttachmentParameteriv),
+    E(glDrawBuffers), E(glReadBuffer),
+    // ARB/EXT framebuffer aliases (wined3d's EXT fbo_ops fallback table)
+    E(glGenFramebuffersEXT), E(glDeleteFramebuffersEXT), E(glBindFramebufferEXT),
+    E(glIsFramebufferEXT), E(glFramebufferTexture1DEXT), E(glFramebufferTexture2DEXT),
+    E(glFramebufferTexture3DEXT), E(glFramebufferRenderbufferEXT),
+    E(glCheckFramebufferStatusEXT), E(glBlitFramebufferEXT),
+    E(glGetFramebufferAttachmentParameterivEXT), E(glGenRenderbuffersEXT),
+    E(glDeleteRenderbuffersEXT), E(glBindRenderbufferEXT), E(glRenderbufferStorageEXT),
+    E(glRenderbufferStorageMultisampleEXT), E(glIsRenderbufferEXT),
+    E(glGetRenderbufferParameterivEXT), E(glFramebufferTextureARB),
+    E(glFramebufferTextureLayerARB), E(glFramebufferTexture2DARB),
+    E(glFramebufferRenderbufferARB),
+    E(glGenSamplers), E(glDeleteSamplers), E(glBindSampler), E(glIsSampler),
+    E(glSamplerParameteri), E(glSamplerParameterf), E(glSamplerParameteriv),
+    E(glSamplerParameterfv), E(glSamplerParameterIiv), E(glSamplerParameterIuiv),
+    E(glGetSamplerParameteriv), E(glGetSamplerParameterfv),
+    E(glGetSamplerParameterIiv), E(glGetSamplerParameterIuiv),
+    E(glTexImage3D), E(glTexSubImage3D), E(glCompressedTexImage3D),
+    E(glCompressedTexSubImage3D), E(glTexImage3DEXT), E(glCompressedTexImage3DARB),
+    E(glTexImage2DMultisample), E(glTexImage3DMultisample),
+    E(glTexStorage2D), E(glTexStorage3D), E(glTexStorage1D),
+    E(glTexStorage2DMultisample), E(glTexStorage3DMultisample), E(glGetMultisamplefv),
+    E(glBindFragDataLocation), E(glGetFragDataIndex), E(glBindBufferRange),
+    E(glBindBufferBase), E(glGetUniformBlockIndex), E(glUniformBlockBinding),
+    E(glGetActiveUniformBlockiv), E(glGetActiveUniformBlockName), E(glBufferStorage),
+    E(glCopyBufferSubData), E(glGetBufferSubData), E(glGetBufferParameteriv),
+    E(glUniform2i), E(glUniform3i), E(glUniform4i), E(glUniform2iv), E(glUniform3iv),
+    E(glUniform4iv), E(glGetUniformfv), E(glGetUniformiv), E(glGetActiveUniform),
+    E(glGetAttachedShaders), E(glGetShaderSource), E(glGetTexParameteriv),
+    E(glGetTexLevelParameteriv), E(glGetTextureParameteriv),
+    E(glGetTextureLevelParameteriv), E(glGetCompressedTexImage),
+    E(glCompressedTexSubImage2D),
+    E(glEnablei), E(glDisablei), E(glIsEnabledi), E(glBlendEquationi),
+    E(glBlendEquationSeparatei), E(glBlendFunci), E(glBlendFuncSeparatei),
+    E(glColorMaski), E(glMinSampleShading),
+    E(glVertexAttribDivisor), E(glVertexAttribDivisorARB), E(glDrawArraysInstanced),
+    E(glDrawElementsInstanced), E(glDrawArraysInstancedARB),
+    E(glDrawElementsInstancedARB), E(glDrawArraysInstancedBaseInstance),
+    E(glDrawElementsInstancedBaseVertexBaseInstance), E(glDrawElementsBaseVertex),
+    E(glDrawRangeElementsBaseVertex), E(glMultiDrawArrays), E(glMultiDrawElements),
+    E(glDebugMessageCallback), E(glDebugMessageControl), E(glDebugMessageInsert),
+    E(glGetDebugMessageLog), E(glBeginTransformFeedback), E(glEndTransformFeedback),
+    E(glTransformFeedbackVaryings), E(glPointParameteri), E(glPointParameteriv),
+    E(glPointParameterf), E(glPointParameterfv), E(glTexBuffer), E(glTexBufferRange),
+    E(glTexBufferARB), E(glTexBufferRangeARB), E(glTextureBarrierNV),
+    E(glFinalCombinerInputNV), E(glVertexAttrib1f), E(glVertexAttrib2f),
+    E(glVertexAttrib3f), E(glVertexAttrib1fv), E(glVertexAttrib2fv),
+    E(glVertexAttrib3fv), E(glVertexAttrib4fv), E(glVertexAttrib1d),
+    E(glVertexAttrib2d), E(glVertexAttrib3d), E(glVertexAttrib4d),
+    E(glVertexAttrib1dv), E(glVertexAttrib2dv), E(glVertexAttrib3dv),
+    E(glVertexAttrib4dv), E(glVertexAttribI4i), E(glVertexAttribI4ui),
+E(glVertexAttribI4iv), E(glVertexAttribI4uiv),
+// --- A2 cycle 2 ---
+E(glPolygonOffsetClamp), E(glDrawElementsInstancedBaseVertex),
+E(glMultiDrawElementsBaseVertex), E(glTextureBarrier),
 };
 #undef E
 #define NPROCS (sizeof(g_procs)/sizeof(g_procs[0]))

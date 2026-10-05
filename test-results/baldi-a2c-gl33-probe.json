@@ -1,0 +1,33 @@
+{
+  "roots": [
+    "/root/home/username",
+    "/root/home/username/.",
+    "/root/home/username/..",
+    "/root/home/username/apps",
+    "/root/home/username/.wine"
+  ],
+  "/root/home/username/apps/BALDI_Data/Managed/mscorlib.dll": {
+    "size": 3906048,
+    "header": [
+      77,
+      90,
+      144,
+      0,
+      3,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0
+    ]
+  },
+  "/root/home/username/apps/BALDI_Data/boot.config": "wait-for-native-debugger=0\nhdr-display-enabled=0\n",
+  "/root/home/username/apps/player.log": "[object Object]",
+  "usertree": []
+}

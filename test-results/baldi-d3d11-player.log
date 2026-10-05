@@ -1,0 +1,24 @@
+Mono path[0] = 'Z:/home/username/apps/BALDI_Data/Managed'
+Mono config path = 'Z:/home/username/apps/MonoBleedingEdge/etc'
+Mono: Assembly Loader probing location: 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll'.
+Mono: Image addref mscorlib[0000000000295960] -> Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll[0000000000294400]: 2
+Mono: Prepared to set up assembly 'mscorlib' (Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll)
+Mono: Image 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll' has no debug directory.
+Mono: Assembly Loader loaded assembly from location: 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll'.
+Mono: Assembly mscorlib[0000000000295960] added to domain Unity Root Domain, ref_count=1
+Initialize engine version: 2020.3.38f1 (8f5fde82e2dc)
+[Subsystems] Discovering subsystems at path Z:/home/username/apps/BALDI_Data/UnitySubsystems
+Forcing GfxDevice: Direct3D 11
+d3d11: failed to create device and context (80004005).
+d3d11: failed to create device and context (80004005).
+d3d11: failed to create device and context (80004005).
+Failed to initialize graphics.
+
+Make sure you have DirectX 11 installed, have up to date
+
+drivers for your graphics card and have not disabled
+
+3D acceleration in display settings.
+InitializeEngineGraphics failed
+PlayerInitEngineGraphics: InitializeEngineGraphics failed
+

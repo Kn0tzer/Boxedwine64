@@ -58,3 +58,21 @@ project/mac-xcode/build_*/
 /s[0-9]*.png
 /s_*.png
 /saveas_*.png
+node_modules/
+/core/
+project/emscripten/build-wasm.log
+tools/browser/zig/
+tools/browser/slang/
+tools/browser/disasm/
+
+# published-fork: build artifacts excluded (see README)
+dist/runtime/wine64.zip
+web/runtime/wine64.zip
+web/runtime/wine64.zip.part*
+/core
+
+# published-fork: build artifacts excluded (see README)
+dist/runtime/wine64.zip
+web/runtime/wine64.zip
+web/runtime/wine64.zip.part*
+/core

@@ -1,0 +1,1313 @@
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+log: wine64-launcher: loading 64-bit rootfs from ./
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+log: loaded glibc-rootfs64.zip (9956610 bytes) into VFS
+log: loaded prefix64.zip (18516410 bytes) into VFS
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+log: lazy rootfs: wine64.zip will mount on demand (2 field(s))
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+error: WARNING: using emscripten GL emulation. This is a collection of limited workarounds, do not expect it to work.
+error: WARNING: using emscripten GL emulation unsafe opts. If weirdness happens, try -sGL_UNSAFE_OPTS=0
+log: wine64 argv: ["-root","/root","-zip","glibc-rootfs64.zip","-zip","bw64url:209683555;http://127.0.0.1:36997/runtime/wine64.zip|209683555","-zip","prefix64.zip","-w","/home/username/apps/","-env","HOME=/home/username","-env","WINEPREFIX=/home/username/.wine","-env","WINESERVER=/usr/lib/wine/wineserver64","-env","WINEDLLPATH=/usr/lib/x86_64-linux-gnu/wine","-env","WINE_D3D_CONFIG=csmt=0x0","-env","MONO_LOG_LEVEL=debug","-env","MONO_LOG_MASK=asm","/usr/lib/wine/wine64","Z:\\home\\username\\apps\\BALDI.exe","-screen-width","640","-screen-height","480","-screen-fullscreen","0"]
+log: Starting ...
+log: Command line arguments: "./this.program" "-root" "/root" "-zip" "glibc-rootfs64.zip" "-zip" "bw64url:209683555;http://127.0.0.1:36997/runtime/wine64.zip|209683555" "-zip" "prefix64.zip" "-w" "/home/username/apps/" "-env" "HOME=/home/username" "-env" "WINEPREFIX=/home/username/.wine" "-env" "WINESERVER=/usr/lib/wine/wineserver64" "-env" "WINEDLLPATH=/usr/lib/x86_64-linux-gnu/wine" "-env" "WINE_D3D_CONFIG=csmt=0x0" "-env" "MONO_LOG_LEVEL=debug" "-env" "MONO_LOG_MASK=asm" "/usr/lib/wine/wine64" "Z:\home\username\apps\BALDI.exe" "-screen-width" "640" "-screen-height" "480" "-screen-fullscreen" "0"
+log: Using root directory: /root
+log: fszipurl: mounted 199 MB zip lazily (1 part(s), 512KB blocks)
+log: Using zip file system: glibc-rootfs64.zip
+log: Using zip file system: bw64url:209683555;http://127.0.0.1:36997/runtime/wine64.zip|209683555
+log: Using zip file system: prefix64.zip
+log: Loaded glibc-rootfs64.zip in 31 ms
+log: Loaded bw64url:209683555;http://127.0.0.1:36997/runtime/wine64.zip|209683555 in 38 ms
+log: Loaded prefix64.zip in 95 ms
+log: Launching "/usr/lib/wine/wine64" "Z:\home\username\apps\BALDI.exe" "-screen-width" "640" "-screen-height" "480" "-screen-fullscreen" "0" 
+log: loadProgram64: entry=0x7d001380 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=0
+log: loadProgram64: load range [0x7d000000, 0x7d0040d8) span=16600 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x7d003de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d000000 len=0x1000 prot=0x1 filesz=0xc20
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d001000 len=0x1000 prot=0x5 filesz=0x501
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d002000 len=0x1000 prot=0x1 filesz=0x21c
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d003000 len=0x2000 prot=0x3 filesz=0x2d0
+log: loadProgram64[exe]: RELA table at 0x7d000980, 10 entries (entsize=24)
+log: loadProgram64[exe]: applied 3 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x7d003000..0x7d004000 -> RO
+log: loadProgram64: exe RIP=0x7d001380 (pages mapped: 5)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdc30 argc=8 envc=15 auxc=16
+log: wine64session: context captured (cwd=/home/username/apps/ uid=1 bootPid=10)
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=10] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: DLLTRACE pid=10 OPEN  '/usr/lib/wine/../x86_64-linux-gnu/wine/x86_64-unix/ntdll.so' -> fd 3
+log: FMMAP [pid=10] addr=0x7001e4000 aligned=0x7001e4000 len=0xc33c0 mapLen=0xc4000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x7001ee000 aligned=0x7001ee000 len=0x62000 mapLen=0x62000 prot=0x5 flags=0x812 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x700250000 aligned=0x700250000 len=0x20000 mapLen=0x20000 prot=0x1 flags=0x812 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x700270000 aligned=0x700270000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x812 off=0x8c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x7002a8000 aligned=0x7002a8000 len=0x1bbc8 mapLen=0x1c000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002ab000 aligned=0x7002ab000 len=0xa000 mapLen=0xa000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002b5000 aligned=0x7002b5000 len=0x3000 mapLen=0x3000 prot=0x1 flags=0x812 off=0xd000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002b8000 aligned=0x7002b8000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0xf000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002c4000 aligned=0x7002c4000 len=0x2e018 mapLen=0x2f000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002c8000 aligned=0x7002c8000 len=0x1d000 mapLen=0x1d000 prot=0x5 flags=0x812 off=0x4000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002e5000 aligned=0x7002e5000 len=0xc000 mapLen=0xc000 prot=0x1 flags=0x812 off=0x21000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002f1000 aligned=0x7002f1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2d000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: sys_execve64: pid=10 path='/usr/lib/wine/wine64-preloader' argv0='/usr/lib/wine/wine64-preloader' argc=9 envc=17
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: sys_execve64: pid=10 path='/usr/lib/wine/wine64' argv0='/usr/lib/wine/wine64' argc=8 envc=17
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: Showing Window
+error: WARNING: using emscripten GL immediate mode emulation. This is very limited in what it supports
+log: loadProgram64: entry=0x7d001380 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=0
+log: loadProgram64: load range [0x7d000000, 0x7d0040d8) span=16600 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x7d003de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d000000 len=0x1000 prot=0x1 filesz=0xc20
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d001000 len=0x1000 prot=0x5 filesz=0x501
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d002000 len=0x1000 prot=0x1 filesz=0x21c
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d003000 len=0x2000 prot=0x3 filesz=0x2d0
+log: loadProgram64[exe]: RELA table at 0x7d000980, 10 entries (entsize=24)
+log: loadProgram64[exe]: applied 3 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x7d003000..0x7d004000 -> RO
+log: loadProgram64: exe RIP=0x7d001380 (pages mapped: 5)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdbf0 argc=8 envc=17 auxc=16
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=10] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=10] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: DLLTRACE pid=10 OPEN  '/usr/lib/wine/../x86_64-linux-gnu/wine/x86_64-unix/ntdll.so' -> fd 3
+log: FMMAP [pid=10] addr=0x7001e4000 aligned=0x7001e4000 len=0xc33c0 mapLen=0xc4000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x7001ee000 aligned=0x7001ee000 len=0x62000 mapLen=0x62000 prot=0x5 flags=0x812 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x700250000 aligned=0x700250000 len=0x20000 mapLen=0x20000 prot=0x1 flags=0x812 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x700270000 aligned=0x700270000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x812 off=0x8c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=10] addr=0x7002a8000 aligned=0x7002a8000 len=0x1bbc8 mapLen=0x1c000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002ab000 aligned=0x7002ab000 len=0xa000 mapLen=0xa000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002b5000 aligned=0x7002b5000 len=0x3000 mapLen=0x3000 prot=0x1 flags=0x812 off=0xd000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002b8000 aligned=0x7002b8000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0xf000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=10] addr=0x7002c4000 aligned=0x7002c4000 len=0x2e018 mapLen=0x2f000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002c8000 aligned=0x7002c8000 len=0x1d000 mapLen=0x1d000 prot=0x5 flags=0x812 off=0x4000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002e5000 aligned=0x7002e5000 len=0xc000 mapLen=0xc000 prot=0x1 flags=0x812 off=0x21000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=10] addr=0x7002f1000 aligned=0x7002f1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2d000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: persist: sync loop armed (every 5s; ?persist=0 to disable)
+log: sys_execve64: bare wineserver spawn made persistent (-p) for boot reliability
+log: sys_execve64: pid=12 path='/usr/lib/wine/wineserver' argv0='/usr/lib/wine/wineserver' argc=2 envc=17
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: Interpreter not found: /bin/sh
+log: sys_execve64: bare wineserver spawn made persistent (-p) for boot reliability
+log: sys_execve64: pid=12 path='/usr/lib/wine/wineserver64' argv0='/usr/lib/wine/wineserver64' argc=2 envc=17
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: loadProgram64: entry=0x13c90 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=1
+log: loadProgram64: load range [0x0, 0x98910) span=624912 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x96de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x400000000 len=0x13000 prot=0x1 filesz=0x120b0
+log: loadProgram64[exe]:   mapped seg vaddr=0x400013000 len=0x5d000 prot=0x5 filesz=0x5c749
+log: loadProgram64[exe]:   mapped seg vaddr=0x400070000 len=0x20000 prot=0x1 filesz=0x1fdc0
+log: loadProgram64[exe]:   mapped seg vaddr=0x400090000 len=0x9000 prot=0x3 filesz=0x72c0
+log: loadProgram64[exe]: RELA table at 0x400001820, 2687 entries (entsize=24)
+log: loadProgram64[exe]: applied 2680 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x400090000..0x400097000 -> RO
+log: loadProgram64: exe RIP=0x400013c90 (pages mapped: 153)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdc70 argc=2 envc=17 auxc=16
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=12] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=12] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=12] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=12] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: CPU64: exit_group syscall, status=0  pid=12 exe='/usr/lib/wine/wineserver64' cmd='/usr/lib/wine/wineserver64-p'
+log: sys_openat64: open('/usr/lib/wine/../share/nls/l_intl.nls') -> -2
+log: sys_openat64: open('/usr/local/share/nls/l_intl.nls') -> -2
+log: sys_openat64: open('/usr/local/share/wine/nls/l_intl.nls') -> -2
+log: FMMAP [pid=14] addr=0x700000000 aligned=0x700000000 len=0x1000 mapLen=0x1000 prot=0x5 flags=0x2 off=0x0 fixed=0 file='/run/user/1000/wine/server-1-540/tmpmap-7d8317d3'
+log: FMMAP [pid=14] addr=0x700001000 aligned=0x700001000 len=0x1000 mapLen=0x1000 prot=0x2 flags=0x1 off=0x0 fixed=0 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: persist: synced 171 changed, 0 removed
+log: FMMAP [pid=10] addr=0x7ffe0000 aligned=0x7ffe0000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/physical_package_id') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings_list') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index0/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index1/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index2/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index3/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/node/online') -> -2
+log: DLLTRACE pid=10 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1' -> fd 8
+log: FMMAP [pid=10] addr=0x70748f000 aligned=0x70748f000 len=0x46e0 mapLen=0x5000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=10] addr=0x707490000 aligned=0x707490000 len=0x1000 mapLen=0x1000 prot=0x5 flags=0x812 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=10] addr=0x707491000 aligned=0x707491000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=10] addr=0x707492000 aligned=0x707492000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/wineboot.exe' -> fd 26
+log: CPU64: exit_group syscall, status=0  pid=16 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64Z:\home\username\apps\BALDI.exe-screen-width640-screen-height480-screen-fullscreen0'
+log: sys_execve64: pid=18 path='/usr/lib/wine/wine64-preloader' argv0='/usr/lib/wine/wine64-preloader' argc=4 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: sys_execve64: pid=18 path='/usr/lib/wine/wine64' argv0='/usr/lib/wine/wine64' argc=3 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: loadProgram64: entry=0x7d001380 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=0
+log: loadProgram64: load range [0x7d000000, 0x7d0040d8) span=16600 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x7d003de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d000000 len=0x1000 prot=0x1 filesz=0xc20
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d001000 len=0x1000 prot=0x5 filesz=0x501
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d002000 len=0x1000 prot=0x1 filesz=0x21c
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d003000 len=0x2000 prot=0x3 filesz=0x2d0
+log: loadProgram64[exe]: RELA table at 0x7d000980, 10 entries (entsize=24)
+log: loadProgram64[exe]: applied 3 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x7d003000..0x7d004000 -> RO
+log: loadProgram64: exe RIP=0x7d001380 (pages mapped: 5)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdc00 argc=3 envc=19 auxc=16
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=18] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=18] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=18] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=18] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: DLLTRACE pid=18 OPEN  '/usr/lib/wine/../x86_64-linux-gnu/wine/x86_64-unix/ntdll.so' -> fd 3
+log: FMMAP [pid=18] addr=0x7001e4000 aligned=0x7001e4000 len=0xc33c0 mapLen=0xc4000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=18] addr=0x7001ee000 aligned=0x7001ee000 len=0x62000 mapLen=0x62000 prot=0x5 flags=0x812 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=18] addr=0x700250000 aligned=0x700250000 len=0x20000 mapLen=0x20000 prot=0x1 flags=0x812 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=18] addr=0x700270000 aligned=0x700270000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x812 off=0x8c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=18] addr=0x7002a8000 aligned=0x7002a8000 len=0x1bbc8 mapLen=0x1c000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=18] addr=0x7002ab000 aligned=0x7002ab000 len=0xa000 mapLen=0xa000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=18] addr=0x7002b5000 aligned=0x7002b5000 len=0x3000 mapLen=0x3000 prot=0x1 flags=0x812 off=0xd000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=18] addr=0x7002b8000 aligned=0x7002b8000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0xf000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=18] addr=0x7002c4000 aligned=0x7002c4000 len=0x2e018 mapLen=0x2f000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=18] addr=0x7002c8000 aligned=0x7002c8000 len=0x1d000 mapLen=0x1d000 prot=0x5 flags=0x812 off=0x4000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=18] addr=0x7002e5000 aligned=0x7002e5000 len=0xc000 mapLen=0xc000 prot=0x1 flags=0x812 off=0x21000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=18] addr=0x7002f1000 aligned=0x7002f1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2d000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=18] addr=0x7ffe0000 aligned=0x7ffe0000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/physical_package_id') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings_list') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index0/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index1/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index2/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index3/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/node/online') -> -2
+log: DLLTRACE pid=18 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1' -> fd 5
+log: FMMAP [pid=18] addr=0x70748f000 aligned=0x70748f000 len=0x46e0 mapLen=0x5000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=18] addr=0x707490000 aligned=0x707490000 len=0x1000 mapLen=0x1000 prot=0x5 flags=0x812 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=18] addr=0x707491000 aligned=0x707491000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=18] addr=0x707492000 aligned=0x707492000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/wineboot.exe' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe' -> fd 31
+log: FMMAP [pid=18] addr=0x140000000 aligned=0x140000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140001000 aligned=0x140001000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140009000 aligned=0x140009000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x14000a000 aligned=0x14000a000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140016000 aligned=0x140016000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x16000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140017000 aligned=0x140017000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x17000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140018000 aligned=0x140018000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x18000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x14001a000 aligned=0x14001a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x14001c000 aligned=0x14001c000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x1b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140024000 aligned=0x140024000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x23000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140025000 aligned=0x140025000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x24000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140026000 aligned=0x140026000 len=0x35000 mapLen=0x35000 prot=0x3 flags=0x12 off=0x25000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x14005b000 aligned=0x14005b000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x5a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x14005d000 aligned=0x14005d000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x5c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140063000 aligned=0x140063000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x62000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140065000 aligned=0x140065000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x64000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140066000 aligned=0x140066000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x65000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: FMMAP [pid=18] addr=0x140074000 aligned=0x140074000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x73000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/wineboot.exe'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x170000000 aligned=0x170000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170001000 aligned=0x170001000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170069000 aligned=0x170069000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x69000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17006a000 aligned=0x17006a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17006c000 aligned=0x17006c000 len=0x12000 mapLen=0x12000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17007e000 aligned=0x17007e000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x7e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170082000 aligned=0x170082000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x82000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17008a000 aligned=0x17008a000 len=0x13000 mapLen=0x13000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17009d000 aligned=0x17009d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17009e000 aligned=0x17009e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17009f000 aligned=0x17009f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x1700a0000 aligned=0x1700a0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x1700a1000 aligned=0x1700a1000 len=0x11d000 mapLen=0x11d000 prot=0x3 flags=0x12 off=0x9d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x1701be000 aligned=0x1701be000 len=0xf000 mapLen=0xf000 prot=0x3 flags=0x12 off=0x1ba000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x1701cd000 aligned=0x1701cd000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x1c9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170220000 aligned=0x170220000 len=0x1b000 mapLen=0x1b000 prot=0x3 flags=0x12 off=0x21c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x17023b000 aligned=0x17023b000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x237000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170240000 aligned=0x170240000 len=0x100000 mapLen=0x100000 prot=0x3 flags=0x12 off=0x23c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=18] addr=0x170340000 aligned=0x170340000 len=0x21000 mapLen=0x21000 prot=0x3 flags=0x12 off=0x33c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x320000 aligned=0x320000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernel32.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x7b600000 aligned=0x7b600000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b601000 aligned=0x7b601000 len=0x2f000 mapLen=0x2f000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b630000 aligned=0x7b630000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x30000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b631000 aligned=0x7b631000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b633000 aligned=0x7b633000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b637000 aligned=0x7b637000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x37000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b639000 aligned=0x7b639000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x39000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b63c000 aligned=0x7b63c000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b64a000 aligned=0x7b64a000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x49000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b654000 aligned=0x7b654000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x53000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b65c000 aligned=0x7b65c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b65d000 aligned=0x7b65d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b65e000 aligned=0x7b65e000 len=0xa3000 mapLen=0xa3000 prot=0x3 flags=0x12 off=0x5d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b701000 aligned=0x7b701000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x100000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b70b000 aligned=0x7b70b000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x10a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b729000 aligned=0x7b729000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x128000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b735000 aligned=0x7b735000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x134000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b737000 aligned=0x7b737000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x136000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=18] addr=0x7b78a000 aligned=0x7b78a000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x189000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernelbase.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x7b000000 aligned=0x7b000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b001000 aligned=0x7b001000 len=0x85000 mapLen=0x85000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b086000 aligned=0x7b086000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b088000 aligned=0x7b088000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b08a000 aligned=0x7b08a000 len=0x17000 mapLen=0x17000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b0a1000 aligned=0x7b0a1000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b0a6000 aligned=0x7b0a6000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b0ae000 aligned=0x7b0ae000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0xab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b0d3000 aligned=0x7b0d3000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xd0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b0d8000 aligned=0x7b0d8000 len=0x1be000 mapLen=0x1be000 prot=0x3 flags=0x12 off=0xd5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b296000 aligned=0x7b296000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x293000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b297000 aligned=0x7b297000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x294000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b298000 aligned=0x7b298000 len=0x157000 mapLen=0x157000 prot=0x3 flags=0x12 off=0x295000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b3ef000 aligned=0x7b3ef000 len=0x9000 mapLen=0x9000 prot=0x3 flags=0x12 off=0x3ec000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b3f8000 aligned=0x7b3f8000 len=0x64000 mapLen=0x64000 prot=0x3 flags=0x12 off=0x3f5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b45c000 aligned=0x7b45c000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x459000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b481000 aligned=0x7b481000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x47e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b485000 aligned=0x7b485000 len=0x139000 mapLen=0x139000 prot=0x3 flags=0x12 off=0x482000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x7b5be000 aligned=0x7b5be000 len=0x27000 mapLen=0x27000 prot=0x3 flags=0x12 off=0x5bb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=18] addr=0x740000 aligned=0x740000 len=0xac000 mapLen=0xac000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/locale.nls'
+log: FMMAP [pid=18] addr=0x10000 aligned=0x10000 len=0x2000 mapLen=0x2000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/l_intl.nls'
+log: FMMAP [pid=18] addr=0x7f0000 aligned=0x7f0000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_1252.nls'
+log: FMMAP [pid=18] addr=0x810000 aligned=0x810000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_437.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/advapi32.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x1d8c90000 aligned=0x1d8c90000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8c91000 aligned=0x1d8c91000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cb6000 aligned=0x1d8cb6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x26000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cb7000 aligned=0x1d8cb7000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cb8000 aligned=0x1d8cb8000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x28000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cbe000 aligned=0x1d8cbe000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cbf000 aligned=0x1d8cbf000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x2f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cc1000 aligned=0x1d8cc1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cc4000 aligned=0x1d8cc4000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8ccc000 aligned=0x1d8ccc000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cd0000 aligned=0x1d8cd0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x3f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cd1000 aligned=0x1d8cd1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x40000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cd2000 aligned=0x1d8cd2000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x41000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8cd3000 aligned=0x1d8cd3000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x42000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8d3b000 aligned=0x1d8d3b000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xaa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8d41000 aligned=0x1d8d41000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0xb0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8d5e000 aligned=0x1d8d5e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0xcd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8d6a000 aligned=0x1d8d6a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xd9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8d6c000 aligned=0x1d8d6c000 len=0x4f000 mapLen=0x4f000 prot=0x3 flags=0x12 off=0xdb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=18] addr=0x1d8dbb000 aligned=0x1d8dbb000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x12a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/msvcrt.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x228280000 aligned=0x228280000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228281000 aligned=0x228281000 len=0x6b000 mapLen=0x6b000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2282ec000 aligned=0x2282ec000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2282ee000 aligned=0x2282ee000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2282f0000 aligned=0x2282f0000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2282fb000 aligned=0x2282fb000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2282fc000 aligned=0x2282fc000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x7c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228301000 aligned=0x228301000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x81000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228308000 aligned=0x228308000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228316000 aligned=0x228316000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x94000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228318000 aligned=0x228318000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x96000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228319000 aligned=0x228319000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x22831a000 aligned=0x22831a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x22831b000 aligned=0x22831b000 len=0xd1000 mapLen=0xd1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2283ec000 aligned=0x2283ec000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x16a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x2283f8000 aligned=0x2283f8000 len=0x58000 mapLen=0x58000 prot=0x3 flags=0x12 off=0x176000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228450000 aligned=0x228450000 len=0x20000 mapLen=0x20000 prot=0x3 flags=0x12 off=0x1ce000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228470000 aligned=0x228470000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1ee000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x228472000 aligned=0x228472000 len=0x128000 mapLen=0x128000 prot=0x3 flags=0x12 off=0x1f0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=18] addr=0x22859a000 aligned=0x22859a000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0x318000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/sechost.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x1eaf60000 aligned=0x1eaf60000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf61000 aligned=0x1eaf61000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf79000 aligned=0x1eaf79000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf7a000 aligned=0x1eaf7a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf7b000 aligned=0x1eaf7b000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf7f000 aligned=0x1eaf7f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf80000 aligned=0x1eaf80000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x20000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf81000 aligned=0x1eaf81000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x21000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf83000 aligned=0x1eaf83000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf88000 aligned=0x1eaf88000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf8a000 aligned=0x1eaf8a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x29000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf8b000 aligned=0x1eaf8b000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaf8c000 aligned=0x1eaf8c000 len=0x45000 mapLen=0x45000 prot=0x3 flags=0x12 off=0x2b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eafd1000 aligned=0x1eafd1000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eafd5000 aligned=0x1eafd5000 len=0x16000 mapLen=0x16000 prot=0x3 flags=0x12 off=0x74000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eafeb000 aligned=0x1eafeb000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaff1000 aligned=0x1eaff1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x90000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eaff2000 aligned=0x1eaff2000 len=0x2b000 mapLen=0x2b000 prot=0x3 flags=0x12 off=0x91000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=18] addr=0x1eb01d000 aligned=0x1eb01d000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/ucrtbase.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x2c7470000 aligned=0x2c7470000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7471000 aligned=0x2c7471000 len=0x83000 mapLen=0x83000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c74f4000 aligned=0x2c74f4000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x84000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c74f6000 aligned=0x2c74f6000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c74fa000 aligned=0x2c74fa000 len=0xd000 mapLen=0xd000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7507000 aligned=0x2c7507000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7508000 aligned=0x2c7508000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c750e000 aligned=0x2c750e000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x9e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7516000 aligned=0x2c7516000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0xa3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c752f000 aligned=0x2c752f000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7531000 aligned=0x2c7531000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7532000 aligned=0x2c7532000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbf000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7533000 aligned=0x2c7533000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c7534000 aligned=0x2c7534000 len=0xea000 mapLen=0xea000 prot=0x3 flags=0x12 off=0xc1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c761e000 aligned=0x2c761e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x1ab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c762a000 aligned=0x2c762a000 len=0x62000 mapLen=0x62000 prot=0x3 flags=0x12 off=0x1b7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c768c000 aligned=0x2c768c000 len=0x24000 mapLen=0x24000 prot=0x3 flags=0x12 off=0x219000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c76b0000 aligned=0x2c76b0000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x23d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c76b2000 aligned=0x2c76b2000 len=0x14a000 mapLen=0x14a000 prot=0x3 flags=0x12 off=0x23f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=18] addr=0x2c77fc000 aligned=0x2c77fc000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x389000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/ws2_32.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll' -> fd 31
+log: FMMAP [pid=18] addr=0x370f70000 aligned=0x370f70000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f71000 aligned=0x370f71000 len=0x14000 mapLen=0x14000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f85000 aligned=0x370f85000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x15000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f86000 aligned=0x370f86000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x16000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f87000 aligned=0x370f87000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x17000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f8c000 aligned=0x370f8c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f8d000 aligned=0x370f8d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f8e000 aligned=0x370f8e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f90000 aligned=0x370f90000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f93000 aligned=0x370f93000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f94000 aligned=0x370f94000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x23000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f97000 aligned=0x370f97000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x26000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f98000 aligned=0x370f98000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370f99000 aligned=0x370f99000 len=0x36000 mapLen=0x36000 prot=0x3 flags=0x12 off=0x28000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370fcf000 aligned=0x370fcf000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x5e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370fd2000 aligned=0x370fd2000 len=0x10000 mapLen=0x10000 prot=0x3 flags=0x12 off=0x61000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370fe2000 aligned=0x370fe2000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x71000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370fe8000 aligned=0x370fe8000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x77000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x370fe9000 aligned=0x370fe9000 len=0x2e000 mapLen=0x2e000 prot=0x3 flags=0x12 off=0x78000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x371017000 aligned=0x371017000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ws2_32.dll'
+log: FMMAP [pid=18] addr=0x930000 aligned=0x930000 len=0x339000 mapLen=0x339000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/sortdefault.nls'
+log: fszipurl: 16 MB fetched lazily so far
+log: FMMAP [pid=18] addr=0xc70000 aligned=0xc70000 len=0xf000 mapLen=0xf000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/normnfc.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 48
+log: FMMAP [pid=18] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=18] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 31
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 48
+log: FMMAP [pid=18] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=18] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=18] addr=0x1080000 aligned=0x1080000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_20127.nls'
+log: DLLTRACE pid=18 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ws2_32.so' -> fd 10
+log: FMMAP [pid=18] addr=0x707794000 aligned=0x707794000 len=0x50d8 mapLen=0x6000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ws2_32.so'
+log: FMMAP [pid=18] addr=0x707795000 aligned=0x707795000 len=0x2000 mapLen=0x2000 prot=0x5 flags=0x812 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ws2_32.so'
+log: FMMAP [pid=18] addr=0x707797000 aligned=0x707797000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x812 off=0x3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ws2_32.so'
+log: FMMAP [pid=18] addr=0x707798000 aligned=0x707798000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ws2_32.so'
+log: FMMAP [pid=18] addr=0x14a0000 aligned=0x14a0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x11 off=0x0 fixed=1 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_date') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/sys_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_name') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_serial') -> -2
+log: sys_openat64: open('/var/lib/dbus/machine-id') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_sku') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_family') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_name') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_serial') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_asset_tag') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_type') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_serial') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_tag') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/bios_date') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/sys_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_name') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_serial') -> -2
+log: sys_openat64: open('/var/lib/dbus/machine-id') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_sku') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/product_family') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_name') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_serial') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/board_asset_tag') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_vendor') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_type') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_version') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_serial') -> -2
+log: sys_openat64: open('/sys/class/dmi/id/chassis_tag') -> -2
+log: sys_openat64: open('/etc/nsswitch.conf') -> -2
+log: sys_openat64: open('/etc/host.conf') -> -2
+log: sys_openat64: open('/etc/resolv.conf') -> -2
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/services.exe' -> fd 26
+log: CPU64: exit_group syscall, status=0  pid=20 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64C:\windows\system32\wineboot.exe--init'
+log: sys_execve64: pid=22 path='/usr/lib/wine/wine64-preloader' argv0='/usr/lib/wine/wine64-preloader' argc=3 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: sys_execve64: pid=22 path='/usr/lib/wine/wine64' argv0='/usr/lib/wine/wine64' argc=2 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: loadProgram64: entry=0x7d001380 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=0
+log: loadProgram64: load range [0x7d000000, 0x7d0040d8) span=16600 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x7d003de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d000000 len=0x1000 prot=0x1 filesz=0xc20
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d001000 len=0x1000 prot=0x5 filesz=0x501
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d002000 len=0x1000 prot=0x1 filesz=0x21c
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d003000 len=0x2000 prot=0x3 filesz=0x2d0
+log: loadProgram64[exe]: RELA table at 0x7d000980, 10 entries (entsize=24)
+log: loadProgram64[exe]: applied 3 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x7d003000..0x7d004000 -> RO
+log: loadProgram64: exe RIP=0x7d001380 (pages mapped: 5)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdc10 argc=2 envc=19 auxc=16
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=22] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=22] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=22] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=22] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: DLLTRACE pid=22 OPEN  '/usr/lib/wine/../x86_64-linux-gnu/wine/x86_64-unix/ntdll.so' -> fd 3
+log: FMMAP [pid=22] addr=0x7001e4000 aligned=0x7001e4000 len=0xc33c0 mapLen=0xc4000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=22] addr=0x7001ee000 aligned=0x7001ee000 len=0x62000 mapLen=0x62000 prot=0x5 flags=0x812 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=22] addr=0x700250000 aligned=0x700250000 len=0x20000 mapLen=0x20000 prot=0x1 flags=0x812 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=22] addr=0x700270000 aligned=0x700270000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x812 off=0x8c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=22] addr=0x7002a8000 aligned=0x7002a8000 len=0x1bbc8 mapLen=0x1c000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=22] addr=0x7002ab000 aligned=0x7002ab000 len=0xa000 mapLen=0xa000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=22] addr=0x7002b5000 aligned=0x7002b5000 len=0x3000 mapLen=0x3000 prot=0x1 flags=0x812 off=0xd000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=22] addr=0x7002b8000 aligned=0x7002b8000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0xf000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=22] addr=0x7002c4000 aligned=0x7002c4000 len=0x2e018 mapLen=0x2f000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=22] addr=0x7002c8000 aligned=0x7002c8000 len=0x1d000 mapLen=0x1d000 prot=0x5 flags=0x812 off=0x4000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=22] addr=0x7002e5000 aligned=0x7002e5000 len=0xc000 mapLen=0xc000 prot=0x1 flags=0x812 off=0x21000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=22] addr=0x7002f1000 aligned=0x7002f1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2d000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=22] addr=0x7ffe0000 aligned=0x7ffe0000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/physical_package_id') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings_list') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index0/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index1/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index2/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index3/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/node/online') -> -2
+log: DLLTRACE pid=22 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1' -> fd 6
+log: FMMAP [pid=22] addr=0x70748f000 aligned=0x70748f000 len=0x46e0 mapLen=0x5000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=22] addr=0x707490000 aligned=0x707490000 len=0x1000 mapLen=0x1000 prot=0x5 flags=0x812 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=22] addr=0x707491000 aligned=0x707491000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=22] addr=0x707492000 aligned=0x707492000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/services.exe' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe' -> fd 52
+log: FMMAP [pid=22] addr=0x140000000 aligned=0x140000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140001000 aligned=0x140001000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140019000 aligned=0x140019000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14001a000 aligned=0x14001a000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14001d000 aligned=0x14001d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14001e000 aligned=0x14001e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140020000 aligned=0x140020000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140022000 aligned=0x140022000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x21000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140023000 aligned=0x140023000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140024000 aligned=0x140024000 len=0x45000 mapLen=0x45000 prot=0x3 flags=0x12 off=0x23000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140069000 aligned=0x140069000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x68000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14006c000 aligned=0x14006c000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x6b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x140084000 aligned=0x140084000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x83000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14008a000 aligned=0x14008a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x89000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x14008c000 aligned=0x14008c000 len=0x26000 mapLen=0x26000 prot=0x3 flags=0x12 off=0x8b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: FMMAP [pid=22] addr=0x1400b2000 aligned=0x1400b2000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0xb1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/services.exe'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x170000000 aligned=0x170000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170001000 aligned=0x170001000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170069000 aligned=0x170069000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x69000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17006a000 aligned=0x17006a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17006c000 aligned=0x17006c000 len=0x12000 mapLen=0x12000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17007e000 aligned=0x17007e000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x7e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170082000 aligned=0x170082000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x82000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17008a000 aligned=0x17008a000 len=0x13000 mapLen=0x13000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17009d000 aligned=0x17009d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17009e000 aligned=0x17009e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17009f000 aligned=0x17009f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x1700a0000 aligned=0x1700a0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x1700a1000 aligned=0x1700a1000 len=0x11d000 mapLen=0x11d000 prot=0x3 flags=0x12 off=0x9d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x1701be000 aligned=0x1701be000 len=0xf000 mapLen=0xf000 prot=0x3 flags=0x12 off=0x1ba000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x1701cd000 aligned=0x1701cd000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x1c9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170220000 aligned=0x170220000 len=0x1b000 mapLen=0x1b000 prot=0x3 flags=0x12 off=0x21c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x17023b000 aligned=0x17023b000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x237000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170240000 aligned=0x170240000 len=0x100000 mapLen=0x100000 prot=0x3 flags=0x12 off=0x23c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=22] addr=0x170340000 aligned=0x170340000 len=0x21000 mapLen=0x21000 prot=0x3 flags=0x12 off=0x33c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x320000 aligned=0x320000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernel32.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x7b600000 aligned=0x7b600000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b601000 aligned=0x7b601000 len=0x2f000 mapLen=0x2f000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b630000 aligned=0x7b630000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x30000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b631000 aligned=0x7b631000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b633000 aligned=0x7b633000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b637000 aligned=0x7b637000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x37000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b639000 aligned=0x7b639000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x39000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b63c000 aligned=0x7b63c000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b64a000 aligned=0x7b64a000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x49000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b654000 aligned=0x7b654000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x53000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b65c000 aligned=0x7b65c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b65d000 aligned=0x7b65d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b65e000 aligned=0x7b65e000 len=0xa3000 mapLen=0xa3000 prot=0x3 flags=0x12 off=0x5d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b701000 aligned=0x7b701000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x100000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b70b000 aligned=0x7b70b000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x10a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b729000 aligned=0x7b729000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x128000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b735000 aligned=0x7b735000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x134000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b737000 aligned=0x7b737000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x136000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=22] addr=0x7b78a000 aligned=0x7b78a000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x189000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernelbase.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x7b000000 aligned=0x7b000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b001000 aligned=0x7b001000 len=0x85000 mapLen=0x85000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b086000 aligned=0x7b086000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b088000 aligned=0x7b088000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b08a000 aligned=0x7b08a000 len=0x17000 mapLen=0x17000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b0a1000 aligned=0x7b0a1000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b0a6000 aligned=0x7b0a6000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b0ae000 aligned=0x7b0ae000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0xab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b0d3000 aligned=0x7b0d3000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xd0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b0d8000 aligned=0x7b0d8000 len=0x1be000 mapLen=0x1be000 prot=0x3 flags=0x12 off=0xd5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b296000 aligned=0x7b296000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x293000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b297000 aligned=0x7b297000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x294000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b298000 aligned=0x7b298000 len=0x157000 mapLen=0x157000 prot=0x3 flags=0x12 off=0x295000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b3ef000 aligned=0x7b3ef000 len=0x9000 mapLen=0x9000 prot=0x3 flags=0x12 off=0x3ec000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b3f8000 aligned=0x7b3f8000 len=0x64000 mapLen=0x64000 prot=0x3 flags=0x12 off=0x3f5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b45c000 aligned=0x7b45c000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x459000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b481000 aligned=0x7b481000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x47e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b485000 aligned=0x7b485000 len=0x139000 mapLen=0x139000 prot=0x3 flags=0x12 off=0x482000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x7b5be000 aligned=0x7b5be000 len=0x27000 mapLen=0x27000 prot=0x3 flags=0x12 off=0x5bb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=22] addr=0x740000 aligned=0x740000 len=0xac000 mapLen=0xac000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/locale.nls'
+log: FMMAP [pid=22] addr=0x10000 aligned=0x10000 len=0x2000 mapLen=0x2000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/l_intl.nls'
+log: FMMAP [pid=22] addr=0x7f0000 aligned=0x7f0000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_1252.nls'
+log: FMMAP [pid=22] addr=0x810000 aligned=0x810000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_437.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/advapi32.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x1d8c90000 aligned=0x1d8c90000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8c91000 aligned=0x1d8c91000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cb6000 aligned=0x1d8cb6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x26000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cb7000 aligned=0x1d8cb7000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cb8000 aligned=0x1d8cb8000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x28000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cbe000 aligned=0x1d8cbe000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cbf000 aligned=0x1d8cbf000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x2f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cc1000 aligned=0x1d8cc1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cc4000 aligned=0x1d8cc4000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8ccc000 aligned=0x1d8ccc000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cd0000 aligned=0x1d8cd0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x3f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cd1000 aligned=0x1d8cd1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x40000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cd2000 aligned=0x1d8cd2000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x41000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8cd3000 aligned=0x1d8cd3000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x42000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8d3b000 aligned=0x1d8d3b000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xaa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8d41000 aligned=0x1d8d41000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0xb0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8d5e000 aligned=0x1d8d5e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0xcd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8d6a000 aligned=0x1d8d6a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xd9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8d6c000 aligned=0x1d8d6c000 len=0x4f000 mapLen=0x4f000 prot=0x3 flags=0x12 off=0xdb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=22] addr=0x1d8dbb000 aligned=0x1d8dbb000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x12a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/msvcrt.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x228280000 aligned=0x228280000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228281000 aligned=0x228281000 len=0x6b000 mapLen=0x6b000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2282ec000 aligned=0x2282ec000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2282ee000 aligned=0x2282ee000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2282f0000 aligned=0x2282f0000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2282fb000 aligned=0x2282fb000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2282fc000 aligned=0x2282fc000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x7c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228301000 aligned=0x228301000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x81000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228308000 aligned=0x228308000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228316000 aligned=0x228316000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x94000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228318000 aligned=0x228318000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x96000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228319000 aligned=0x228319000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x22831a000 aligned=0x22831a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x22831b000 aligned=0x22831b000 len=0xd1000 mapLen=0xd1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2283ec000 aligned=0x2283ec000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x16a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x2283f8000 aligned=0x2283f8000 len=0x58000 mapLen=0x58000 prot=0x3 flags=0x12 off=0x176000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228450000 aligned=0x228450000 len=0x20000 mapLen=0x20000 prot=0x3 flags=0x12 off=0x1ce000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228470000 aligned=0x228470000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1ee000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x228472000 aligned=0x228472000 len=0x128000 mapLen=0x128000 prot=0x3 flags=0x12 off=0x1f0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=22] addr=0x22859a000 aligned=0x22859a000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0x318000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/sechost.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x1eaf60000 aligned=0x1eaf60000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf61000 aligned=0x1eaf61000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf79000 aligned=0x1eaf79000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf7a000 aligned=0x1eaf7a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf7b000 aligned=0x1eaf7b000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf7f000 aligned=0x1eaf7f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf80000 aligned=0x1eaf80000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x20000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf81000 aligned=0x1eaf81000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x21000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf83000 aligned=0x1eaf83000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf88000 aligned=0x1eaf88000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf8a000 aligned=0x1eaf8a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x29000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf8b000 aligned=0x1eaf8b000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaf8c000 aligned=0x1eaf8c000 len=0x45000 mapLen=0x45000 prot=0x3 flags=0x12 off=0x2b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eafd1000 aligned=0x1eafd1000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eafd5000 aligned=0x1eafd5000 len=0x16000 mapLen=0x16000 prot=0x3 flags=0x12 off=0x74000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eafeb000 aligned=0x1eafeb000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaff1000 aligned=0x1eaff1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x90000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eaff2000 aligned=0x1eaff2000 len=0x2b000 mapLen=0x2b000 prot=0x3 flags=0x12 off=0x91000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=22] addr=0x1eb01d000 aligned=0x1eb01d000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/ucrtbase.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x2c7470000 aligned=0x2c7470000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7471000 aligned=0x2c7471000 len=0x83000 mapLen=0x83000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c74f4000 aligned=0x2c74f4000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x84000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c74f6000 aligned=0x2c74f6000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c74fa000 aligned=0x2c74fa000 len=0xd000 mapLen=0xd000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7507000 aligned=0x2c7507000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7508000 aligned=0x2c7508000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c750e000 aligned=0x2c750e000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x9e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7516000 aligned=0x2c7516000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0xa3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c752f000 aligned=0x2c752f000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7531000 aligned=0x2c7531000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7532000 aligned=0x2c7532000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbf000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7533000 aligned=0x2c7533000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c7534000 aligned=0x2c7534000 len=0xea000 mapLen=0xea000 prot=0x3 flags=0x12 off=0xc1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c761e000 aligned=0x2c761e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x1ab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c762a000 aligned=0x2c762a000 len=0x62000 mapLen=0x62000 prot=0x3 flags=0x12 off=0x1b7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c768c000 aligned=0x2c768c000 len=0x24000 mapLen=0x24000 prot=0x3 flags=0x12 off=0x219000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c76b0000 aligned=0x2c76b0000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x23d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c76b2000 aligned=0x2c76b2000 len=0x14a000 mapLen=0x14a000 prot=0x3 flags=0x12 off=0x23f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=22] addr=0x2c77fc000 aligned=0x2c77fc000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x389000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/rpcrt4.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x368420000 aligned=0x368420000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368421000 aligned=0x368421000 len=0x46000 mapLen=0x46000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368467000 aligned=0x368467000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x47000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368468000 aligned=0x368468000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x48000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x36846a000 aligned=0x36846a000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0x4a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368483000 aligned=0x368483000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x63000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368484000 aligned=0x368484000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x64000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x368487000 aligned=0x368487000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x67000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x36848b000 aligned=0x36848b000 len=0x1c000 mapLen=0x1c000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3684a7000 aligned=0x3684a7000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3684a9000 aligned=0x3684a9000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3684aa000 aligned=0x3684aa000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x89000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3684ab000 aligned=0x3684ab000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3684ac000 aligned=0x3684ac000 len=0xf5000 mapLen=0xf5000 prot=0x3 flags=0x12 off=0x8b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3685a1000 aligned=0x3685a1000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x180000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3685ac000 aligned=0x3685ac000 len=0x39000 mapLen=0x39000 prot=0x3 flags=0x12 off=0x18b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3685e5000 aligned=0x3685e5000 len=0x15000 mapLen=0x15000 prot=0x3 flags=0x12 off=0x1c4000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3685fa000 aligned=0x3685fa000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1d9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3685fe000 aligned=0x3685fe000 len=0xa3000 mapLen=0xa3000 prot=0x3 flags=0x12 off=0x1dd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=22] addr=0x3686a1000 aligned=0x3686a1000 len=0x13000 mapLen=0x13000 prot=0x3 flags=0x12 off=0x280000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/setupapi.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x36d860000 aligned=0x36d860000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d861000 aligned=0x36d861000 len=0x35000 mapLen=0x35000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d896000 aligned=0x36d896000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x36000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d897000 aligned=0x36d897000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x37000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d89a000 aligned=0x36d89a000 len=0x11000 mapLen=0x11000 prot=0x3 flags=0x12 off=0x3a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8ab000 aligned=0x36d8ab000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8ac000 aligned=0x36d8ac000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x4c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8ae000 aligned=0x36d8ae000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x4e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8b1000 aligned=0x36d8b1000 len=0x1c000 mapLen=0x1c000 prot=0x3 flags=0x12 off=0x50000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8cd000 aligned=0x36d8cd000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8d0000 aligned=0x36d8d0000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x6f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8dc000 aligned=0x36d8dc000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8dd000 aligned=0x36d8dd000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d8de000 aligned=0x36d8de000 len=0xa4000 mapLen=0xa4000 prot=0x3 flags=0x12 off=0x7d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d982000 aligned=0x36d982000 len=0x7000 mapLen=0x7000 prot=0x3 flags=0x12 off=0x121000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d989000 aligned=0x36d989000 len=0x2d000 mapLen=0x2d000 prot=0x3 flags=0x12 off=0x128000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d9b6000 aligned=0x36d9b6000 len=0x10000 mapLen=0x10000 prot=0x3 flags=0x12 off=0x155000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d9c6000 aligned=0x36d9c6000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x165000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36d9c8000 aligned=0x36d9c8000 len=0x7c000 mapLen=0x7c000 prot=0x3 flags=0x12 off=0x167000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: FMMAP [pid=22] addr=0x36da44000 aligned=0x36da44000 len=0x12000 mapLen=0x12000 prot=0x3 flags=0x12 off=0x1e3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/setupapi.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/version.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x25dc30000 aligned=0x25dc30000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc31000 aligned=0x25dc31000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc34000 aligned=0x25dc34000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc35000 aligned=0x25dc35000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc36000 aligned=0x25dc36000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc37000 aligned=0x25dc37000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc38000 aligned=0x25dc38000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3a000 aligned=0x25dc3a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3b000 aligned=0x25dc3b000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3c000 aligned=0x25dc3c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3d000 aligned=0x25dc3d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3e000 aligned=0x25dc3e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc3f000 aligned=0x25dc3f000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc45000 aligned=0x25dc45000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x14000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc46000 aligned=0x25dc46000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x15000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc48000 aligned=0x25dc48000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x17000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc49000 aligned=0x25dc49000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x18000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc4a000 aligned=0x25dc4a000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=22] addr=0x25dc4f000 aligned=0x25dc4f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/userenv.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll' -> fd 52
+log: FMMAP [pid=22] addr=0x244fc0000 aligned=0x244fc0000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc1000 aligned=0x244fc1000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc5000 aligned=0x244fc5000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc6000 aligned=0x244fc6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc7000 aligned=0x244fc7000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc8000 aligned=0x244fc8000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fc9000 aligned=0x244fc9000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fcb000 aligned=0x244fcb000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fcc000 aligned=0x244fcc000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fcd000 aligned=0x244fcd000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fce000 aligned=0x244fce000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fcf000 aligned=0x244fcf000 len=0xd000 mapLen=0xd000 prot=0x3 flags=0x12 off=0xe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fdc000 aligned=0x244fdc000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fdd000 aligned=0x244fdd000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fe0000 aligned=0x244fe0000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fe2000 aligned=0x244fe2000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x21000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244fe3000 aligned=0x244fe3000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x244feb000 aligned=0x244feb000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/userenv.dll'
+log: FMMAP [pid=22] addr=0x930000 aligned=0x930000 len=0x339000 mapLen=0x339000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/sortdefault.nls'
+log: FMMAP [pid=22] addr=0xc70000 aligned=0xc70000 len=0xf000 mapLen=0xf000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/normnfc.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 59
+log: FMMAP [pid=22] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=22] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 52
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 59
+log: FMMAP [pid=22] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=22] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=22] addr=0x1080000 aligned=0x1080000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_20127.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/winedevice.exe' -> fd 60
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/winedevice.exe' -> fd 60
+log: CPU64: exit_group syscall, status=0  pid=25 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64C:\windows\system32\services.exe'
+log: sys_execve64: pid=27 path='/usr/lib/wine/wine64-preloader' argv0='/usr/lib/wine/wine64-preloader' argc=3 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: sys_execve64: pid=27 path='/usr/lib/wine/wine64' argv0='/usr/lib/wine/wine64' argc=2 envc=19
+log: sys_execve64:   env WINELOADER=/usr/lib/wine/wine64
+log: loadProgram64: entry=0x7d001380 phoff=0x40 phnum=13 segments=4 interp=/lib64/ld-linux-x86-64.so.2 pie=0
+log: loadProgram64: load range [0x7d000000, 0x7d0040d8) span=16600 bytes
+log: loadProgram64: PT_DYNAMIC vaddr=0x7d003de0 memsz=480
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d000000 len=0x1000 prot=0x1 filesz=0xc20
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d001000 len=0x1000 prot=0x5 filesz=0x501
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d002000 len=0x1000 prot=0x1 filesz=0x21c
+log: loadProgram64[exe]:   mapped seg vaddr=0x7d003000 len=0x2000 prot=0x3 filesz=0x2d0
+log: loadProgram64[exe]: RELA table at 0x7d000980, 10 entries (entsize=24)
+log: loadProgram64[exe]: applied 3 RELATIVE relocs (deferred 7 symbol-bound)
+log: loadProgram64: PT_GNU_RELRO 0x7d003000..0x7d004000 -> RO
+log: loadProgram64: exe RIP=0x7d001380 (pages mapped: 5)
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fce000 len=0x1000 prot=0x1 filesz=0xd58
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fcf000 len=0x26000 prot=0x5 filesz=0x25111
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7ff5000 len=0xa000 prot=0x1 filesz=0x9c7c
+log: loadProgram64[interp]:   mapped seg vaddr=0x7ffff7fff000 len=0x4000 prot=0x3 filesz=0x2810
+log: loadProgram64[interp]: RELA table at 0x7ffff7fcecc8, 1 entries (entsize=24)
+log: loadProgram64[interp]: applied 0 RELATIVE relocs (deferred 1 symbol-bound)
+log: loadProgram64: interp '/lib64/ld-linux-x86-64.so.2' mapped at base 0x7ffff7fce000, RIP=0x7ffff7fe8b70
+log: loadProgram64: stack built, RSP=0x7fffffffdc10 argc=2 envc=19 auxc=16
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/x86_64/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/tls/libc.so.6') -> -2
+log: sys_openat64: open('/lib/x86_64-linux-gnu/x86_64/libc.so.6') -> -2
+log: FMMAP [pid=27] addr=0x700000000 aligned=0x700000000 len=0x1e1f50 mapLen=0x1e2000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=27] addr=0x700026000 aligned=0x700026000 len=0x156000 mapLen=0x156000 prot=0x5 flags=0x812 off=0x26000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=27] addr=0x70017c000 aligned=0x70017c000 len=0x53000 mapLen=0x53000 prot=0x1 flags=0x812 off=0x17c000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: FMMAP [pid=27] addr=0x7001cf000 aligned=0x7001cf000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x812 off=0x1cf000 fixed=1 file='/lib/x86_64-linux-gnu/libc.so.6'
+log: DLLTRACE pid=27 OPEN  '/usr/lib/wine/../x86_64-linux-gnu/wine/x86_64-unix/ntdll.so' -> fd 3
+log: FMMAP [pid=27] addr=0x7001e4000 aligned=0x7001e4000 len=0xc33c0 mapLen=0xc4000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=27] addr=0x7001ee000 aligned=0x7001ee000 len=0x62000 mapLen=0x62000 prot=0x5 flags=0x812 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=27] addr=0x700250000 aligned=0x700250000 len=0x20000 mapLen=0x20000 prot=0x1 flags=0x812 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=27] addr=0x700270000 aligned=0x700270000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x812 off=0x8c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/ntdll.so'
+log: FMMAP [pid=27] addr=0x7002a8000 aligned=0x7002a8000 len=0x1bbc8 mapLen=0x1c000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=27] addr=0x7002ab000 aligned=0x7002ab000 len=0xa000 mapLen=0xa000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=27] addr=0x7002b5000 aligned=0x7002b5000 len=0x3000 mapLen=0x3000 prot=0x1 flags=0x812 off=0xd000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=27] addr=0x7002b8000 aligned=0x7002b8000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0xf000 fixed=1 file='/lib/x86_64-linux-gnu/libunwind.so.8'
+log: FMMAP [pid=27] addr=0x7002c4000 aligned=0x7002c4000 len=0x2e018 mapLen=0x2f000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=27] addr=0x7002c8000 aligned=0x7002c8000 len=0x1d000 mapLen=0x1d000 prot=0x5 flags=0x812 off=0x4000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=27] addr=0x7002e5000 aligned=0x7002e5000 len=0xc000 mapLen=0xc000 prot=0x1 flags=0x812 off=0x21000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=27] addr=0x7002f1000 aligned=0x7002f1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2d000 fixed=1 file='/lib/x86_64-linux-gnu/liblzma.so.5'
+log: FMMAP [pid=27] addr=0x7ffe0000 aligned=0x7ffe0000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/run/user/1000/wine/server-1-540/tmpmap-fb064e07'
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/physical_package_id') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/topology/thread_siblings_list') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index0/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index1/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index2/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/cpu/cpu0/cache/index3/shared_cpu_map') -> -2
+log: sys_openat64: open('/sys/devices/system/node/online') -> -2
+log: DLLTRACE pid=27 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1' -> fd 5
+log: FMMAP [pid=27] addr=0x70748f000 aligned=0x70748f000 len=0x46e0 mapLen=0x5000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=27] addr=0x707490000 aligned=0x707490000 len=0x1000 mapLen=0x1000 prot=0x5 flags=0x812 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=27] addr=0x707491000 aligned=0x707491000 len=0x1000 mapLen=0x1000 prot=0x1 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: FMMAP [pid=27] addr=0x707492000 aligned=0x707492000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x2000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-unix/libwine.so.1'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/winedevice.exe' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe' -> fd 65
+log: FMMAP [pid=27] addr=0x140000000 aligned=0x140000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140001000 aligned=0x140001000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140003000 aligned=0x140003000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140004000 aligned=0x140004000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140005000 aligned=0x140005000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140006000 aligned=0x140006000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140008000 aligned=0x140008000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140009000 aligned=0x140009000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x14000a000 aligned=0x14000a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x14000b000 aligned=0x14000b000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140016000 aligned=0x140016000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x15000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140017000 aligned=0x140017000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x16000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x140019000 aligned=0x140019000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x18000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x14001a000 aligned=0x14001a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x14001b000 aligned=0x14001b000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: FMMAP [pid=27] addr=0x14001f000 aligned=0x14001f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/winedevice.exe'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x170000000 aligned=0x170000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170001000 aligned=0x170001000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170069000 aligned=0x170069000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x69000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17006a000 aligned=0x17006a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17006c000 aligned=0x17006c000 len=0x12000 mapLen=0x12000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17007e000 aligned=0x17007e000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x7e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170082000 aligned=0x170082000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x82000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17008a000 aligned=0x17008a000 len=0x13000 mapLen=0x13000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17009d000 aligned=0x17009d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17009e000 aligned=0x17009e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17009f000 aligned=0x17009f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x1700a0000 aligned=0x1700a0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x1700a1000 aligned=0x1700a1000 len=0x11d000 mapLen=0x11d000 prot=0x3 flags=0x12 off=0x9d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x1701be000 aligned=0x1701be000 len=0xf000 mapLen=0xf000 prot=0x3 flags=0x12 off=0x1ba000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x1701cd000 aligned=0x1701cd000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x1c9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170220000 aligned=0x170220000 len=0x1b000 mapLen=0x1b000 prot=0x3 flags=0x12 off=0x21c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x17023b000 aligned=0x17023b000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x237000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170240000 aligned=0x170240000 len=0x100000 mapLen=0x100000 prot=0x3 flags=0x12 off=0x23c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: FMMAP [pid=27] addr=0x170340000 aligned=0x170340000 len=0x21000 mapLen=0x21000 prot=0x3 flags=0x12 off=0x33c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntdll.dll'
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x320000 aligned=0x320000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/apisetschema.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernel32.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x7b600000 aligned=0x7b600000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b601000 aligned=0x7b601000 len=0x2f000 mapLen=0x2f000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b630000 aligned=0x7b630000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x30000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b631000 aligned=0x7b631000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b633000 aligned=0x7b633000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b637000 aligned=0x7b637000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x37000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b639000 aligned=0x7b639000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x39000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b63c000 aligned=0x7b63c000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b64a000 aligned=0x7b64a000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x49000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b654000 aligned=0x7b654000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x53000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b65c000 aligned=0x7b65c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b65d000 aligned=0x7b65d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b65e000 aligned=0x7b65e000 len=0xa3000 mapLen=0xa3000 prot=0x3 flags=0x12 off=0x5d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b701000 aligned=0x7b701000 len=0xa000 mapLen=0xa000 prot=0x3 flags=0x12 off=0x100000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b70b000 aligned=0x7b70b000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x10a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b729000 aligned=0x7b729000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x128000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b735000 aligned=0x7b735000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x134000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b737000 aligned=0x7b737000 len=0x53000 mapLen=0x53000 prot=0x3 flags=0x12 off=0x136000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: FMMAP [pid=27] addr=0x7b78a000 aligned=0x7b78a000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x189000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernel32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/kernelbase.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x7b000000 aligned=0x7b000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b001000 aligned=0x7b001000 len=0x85000 mapLen=0x85000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b086000 aligned=0x7b086000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b088000 aligned=0x7b088000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b08a000 aligned=0x7b08a000 len=0x17000 mapLen=0x17000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b0a1000 aligned=0x7b0a1000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b0a6000 aligned=0x7b0a6000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xa6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b0ae000 aligned=0x7b0ae000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0xab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b0d3000 aligned=0x7b0d3000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xd0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b0d8000 aligned=0x7b0d8000 len=0x1be000 mapLen=0x1be000 prot=0x3 flags=0x12 off=0xd5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b296000 aligned=0x7b296000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x293000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b297000 aligned=0x7b297000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x294000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b298000 aligned=0x7b298000 len=0x157000 mapLen=0x157000 prot=0x3 flags=0x12 off=0x295000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b3ef000 aligned=0x7b3ef000 len=0x9000 mapLen=0x9000 prot=0x3 flags=0x12 off=0x3ec000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b3f8000 aligned=0x7b3f8000 len=0x64000 mapLen=0x64000 prot=0x3 flags=0x12 off=0x3f5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b45c000 aligned=0x7b45c000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x459000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b481000 aligned=0x7b481000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x47e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b485000 aligned=0x7b485000 len=0x139000 mapLen=0x139000 prot=0x3 flags=0x12 off=0x482000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x7b5be000 aligned=0x7b5be000 len=0x27000 mapLen=0x27000 prot=0x3 flags=0x12 off=0x5bb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/kernelbase.dll'
+log: FMMAP [pid=27] addr=0x740000 aligned=0x740000 len=0xac000 mapLen=0xac000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/locale.nls'
+log: FMMAP [pid=27] addr=0x10000 aligned=0x10000 len=0x2000 mapLen=0x2000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/l_intl.nls'
+log: FMMAP [pid=27] addr=0x7f0000 aligned=0x7f0000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_1252.nls'
+log: FMMAP [pid=27] addr=0x810000 aligned=0x810000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_437.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/advapi32.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x1d8c90000 aligned=0x1d8c90000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8c91000 aligned=0x1d8c91000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cb6000 aligned=0x1d8cb6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x26000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cb7000 aligned=0x1d8cb7000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cb8000 aligned=0x1d8cb8000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x28000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cbe000 aligned=0x1d8cbe000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cbf000 aligned=0x1d8cbf000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x2f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cc1000 aligned=0x1d8cc1000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x31000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cc4000 aligned=0x1d8cc4000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8ccc000 aligned=0x1d8ccc000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x3b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cd0000 aligned=0x1d8cd0000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x3f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cd1000 aligned=0x1d8cd1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x40000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cd2000 aligned=0x1d8cd2000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x41000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8cd3000 aligned=0x1d8cd3000 len=0x68000 mapLen=0x68000 prot=0x3 flags=0x12 off=0x42000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8d3b000 aligned=0x1d8d3b000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xaa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8d41000 aligned=0x1d8d41000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0xb0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8d5e000 aligned=0x1d8d5e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0xcd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8d6a000 aligned=0x1d8d6a000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xd9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8d6c000 aligned=0x1d8d6c000 len=0x4f000 mapLen=0x4f000 prot=0x3 flags=0x12 off=0xdb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: FMMAP [pid=27] addr=0x1d8dbb000 aligned=0x1d8dbb000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x12a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/advapi32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/msvcrt.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x228280000 aligned=0x228280000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228281000 aligned=0x228281000 len=0x6b000 mapLen=0x6b000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2282ec000 aligned=0x2282ec000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2282ee000 aligned=0x2282ee000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x6e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2282f0000 aligned=0x2282f0000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2282fb000 aligned=0x2282fb000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2282fc000 aligned=0x2282fc000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x7c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228301000 aligned=0x228301000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x81000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228308000 aligned=0x228308000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228316000 aligned=0x228316000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x94000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228318000 aligned=0x228318000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x96000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228319000 aligned=0x228319000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x22831a000 aligned=0x22831a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x22831b000 aligned=0x22831b000 len=0xd1000 mapLen=0xd1000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2283ec000 aligned=0x2283ec000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x16a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x2283f8000 aligned=0x2283f8000 len=0x58000 mapLen=0x58000 prot=0x3 flags=0x12 off=0x176000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228450000 aligned=0x228450000 len=0x20000 mapLen=0x20000 prot=0x3 flags=0x12 off=0x1ce000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228470000 aligned=0x228470000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x1ee000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x228472000 aligned=0x228472000 len=0x128000 mapLen=0x128000 prot=0x3 flags=0x12 off=0x1f0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: FMMAP [pid=27] addr=0x22859a000 aligned=0x22859a000 len=0x1d000 mapLen=0x1d000 prot=0x3 flags=0x12 off=0x318000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/msvcrt.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/sechost.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x1eaf60000 aligned=0x1eaf60000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf61000 aligned=0x1eaf61000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf79000 aligned=0x1eaf79000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf7a000 aligned=0x1eaf7a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf7b000 aligned=0x1eaf7b000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf7f000 aligned=0x1eaf7f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf80000 aligned=0x1eaf80000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x20000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf81000 aligned=0x1eaf81000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x21000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf83000 aligned=0x1eaf83000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x22000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf88000 aligned=0x1eaf88000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf8a000 aligned=0x1eaf8a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x29000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf8b000 aligned=0x1eaf8b000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x2a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaf8c000 aligned=0x1eaf8c000 len=0x45000 mapLen=0x45000 prot=0x3 flags=0x12 off=0x2b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eafd1000 aligned=0x1eafd1000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x70000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eafd5000 aligned=0x1eafd5000 len=0x16000 mapLen=0x16000 prot=0x3 flags=0x12 off=0x74000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eafeb000 aligned=0x1eafeb000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaff1000 aligned=0x1eaff1000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x90000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eaff2000 aligned=0x1eaff2000 len=0x2b000 mapLen=0x2b000 prot=0x3 flags=0x12 off=0x91000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: FMMAP [pid=27] addr=0x1eb01d000 aligned=0x1eb01d000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/sechost.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/ucrtbase.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x2c7470000 aligned=0x2c7470000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7471000 aligned=0x2c7471000 len=0x83000 mapLen=0x83000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c74f4000 aligned=0x2c74f4000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x84000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c74f6000 aligned=0x2c74f6000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c74fa000 aligned=0x2c74fa000 len=0xd000 mapLen=0xd000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7507000 aligned=0x2c7507000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x97000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7508000 aligned=0x2c7508000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c750e000 aligned=0x2c750e000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x9e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7516000 aligned=0x2c7516000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0xa3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c752f000 aligned=0x2c752f000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0xbc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7531000 aligned=0x2c7531000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7532000 aligned=0x2c7532000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xbf000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7533000 aligned=0x2c7533000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc0000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c7534000 aligned=0x2c7534000 len=0xea000 mapLen=0xea000 prot=0x3 flags=0x12 off=0xc1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c761e000 aligned=0x2c761e000 len=0xc000 mapLen=0xc000 prot=0x3 flags=0x12 off=0x1ab000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c762a000 aligned=0x2c762a000 len=0x62000 mapLen=0x62000 prot=0x3 flags=0x12 off=0x1b7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c768c000 aligned=0x2c768c000 len=0x24000 mapLen=0x24000 prot=0x3 flags=0x12 off=0x219000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c76b0000 aligned=0x2c76b0000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x23d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c76b2000 aligned=0x2c76b2000 len=0x14a000 mapLen=0x14a000 prot=0x3 flags=0x12 off=0x23f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: FMMAP [pid=27] addr=0x2c77fc000 aligned=0x2c77fc000 len=0x1e000 mapLen=0x1e000 prot=0x3 flags=0x12 off=0x389000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ucrtbase.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/ntoskrnl.exe' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe' -> fd 65
+log: FMMAP [pid=27] addr=0x31ca90000 aligned=0x31ca90000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31ca91000 aligned=0x31ca91000 len=0x25000 mapLen=0x25000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cab6000 aligned=0x31cab6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x26000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cab7000 aligned=0x31cab7000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x27000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cabd000 aligned=0x31cabd000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0x2d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cac3000 aligned=0x31cac3000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x33000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cac4000 aligned=0x31cac4000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x34000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cac6000 aligned=0x31cac6000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x36000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cac9000 aligned=0x31cac9000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x38000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cae1000 aligned=0x31cae1000 len=0x7000 mapLen=0x7000 prot=0x3 flags=0x12 off=0x50000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cae8000 aligned=0x31cae8000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x57000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cae9000 aligned=0x31cae9000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x58000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31caea000 aligned=0x31caea000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x59000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31caeb000 aligned=0x31caeb000 len=0x6c000 mapLen=0x6c000 prot=0x3 flags=0x12 off=0x5a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cb57000 aligned=0x31cb57000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0xc6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cb5b000 aligned=0x31cb5b000 len=0x15000 mapLen=0x15000 prot=0x3 flags=0x12 off=0xca000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cb70000 aligned=0x31cb70000 len=0x9000 mapLen=0x9000 prot=0x3 flags=0x12 off=0xdf000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cb79000 aligned=0x31cb79000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xe8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cb7e000 aligned=0x31cb7e000 len=0x37000 mapLen=0x37000 prot=0x3 flags=0x12 off=0xed000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x31cbb5000 aligned=0x31cbb5000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x124000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/ntoskrnl.exe'
+log: FMMAP [pid=27] addr=0x930000 aligned=0x930000 len=0x339000 mapLen=0x339000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/sortdefault.nls'
+log: FMMAP [pid=27] addr=0xc70000 aligned=0xc70000 len=0xf000 mapLen=0xf000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/normnfc.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 69
+log: FMMAP [pid=27] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=27] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/tzres.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll' -> fd 69
+log: FMMAP [pid=27] addr=0x10000000 aligned=0x10000000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=27] addr=0x10001000 aligned=0x10001000 len=0x73000 mapLen=0x73000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/tzres.dll'
+log: FMMAP [pid=27] addr=0x1080000 aligned=0x1080000 len=0x11000 mapLen=0x11000 prot=0x1 flags=0x11 off=0x0 fixed=1 file='/usr/share/wine/nls/c_20127.nls'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/rpcrt4.dll' -> fd 65
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll' -> fd 65
+log: FMMAP [pid=27] addr=0x368420000 aligned=0x368420000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368421000 aligned=0x368421000 len=0x46000 mapLen=0x46000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368467000 aligned=0x368467000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x47000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368468000 aligned=0x368468000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x48000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x36846a000 aligned=0x36846a000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0x4a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368483000 aligned=0x368483000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x63000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368484000 aligned=0x368484000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x64000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x368487000 aligned=0x368487000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x67000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x36848b000 aligned=0x36848b000 len=0x1c000 mapLen=0x1c000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3684a7000 aligned=0x3684a7000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3684a9000 aligned=0x3684a9000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3684aa000 aligned=0x3684aa000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x89000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3684ab000 aligned=0x3684ab000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3684ac000 aligned=0x3684ac000 len=0xf5000 mapLen=0xf5000 prot=0x3 flags=0x12 off=0x8b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3685a1000 aligned=0x3685a1000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0x180000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3685ac000 aligned=0x3685ac000 len=0x39000 mapLen=0x39000 prot=0x3 flags=0x12 off=0x18b000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3685e5000 aligned=0x3685e5000 len=0x15000 mapLen=0x15000 prot=0x3 flags=0x12 off=0x1c4000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3685fa000 aligned=0x3685fa000 len=0x4000 mapLen=0x4000 prot=0x3 flags=0x12 off=0x1d9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3685fe000 aligned=0x3685fe000 len=0xa3000 mapLen=0xa3000 prot=0x3 flags=0x12 off=0x1dd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: FMMAP [pid=27] addr=0x3686a1000 aligned=0x3686a1000 len=0x13000 mapLen=0x13000 prot=0x3 flags=0x12 off=0x280000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/rpcrt4.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/shell32.dll' -> fd 85
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll' -> fd 87
+log: FMMAP [pid=18] addr=0x23bc00000 aligned=0x23bc00000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23bc01000 aligned=0x23bc01000 len=0x83000 mapLen=0x83000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/mscoree.dll' -> fd 87
+log: FMMAP [pid=18] addr=0x23bc84000 aligned=0x23bc84000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x84000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23bc86000 aligned=0x23bc86000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23bc88000 aligned=0x23bc88000 len=0x2e000 mapLen=0x2e000 prot=0x3 flags=0x12 off=0x88000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=27] addr=0x7177a4000 aligned=0x7177a4000 len=0x1f2c8 mapLen=0x20000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bcb6000 aligned=0x23bcb6000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xb6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=27] addr=0x7177a7000 aligned=0x7177a7000 len=0x17000 mapLen=0x17000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bcb7000 aligned=0x23bcb7000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xb7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=22] addr=0x7277a4000 aligned=0x7277a4000 len=0x1f2c8 mapLen=0x20000 prot=0x1 flags=0x802 off=0x0 fixed=0 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=27] addr=0x7177be000 aligned=0x7177be000 len=0x4000 mapLen=0x4000 prot=0x1 flags=0x812 off=0x1a000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bcbd000 aligned=0x23bcbd000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xbd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=22] addr=0x7277a7000 aligned=0x7277a7000 len=0x17000 mapLen=0x17000 prot=0x5 flags=0x812 off=0x3000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=27] addr=0x7177c2000 aligned=0x7177c2000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x1d000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bcc4000 aligned=0x23bcc4000 len=0x19000 mapLen=0x19000 prot=0x3 flags=0x12 off=0xc3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=22] addr=0x7277be000 aligned=0x7277be000 len=0x4000 mapLen=0x4000 prot=0x1 flags=0x812 off=0x1a000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bcdd000 aligned=0x23bcdd000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0xdc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: BW64_WILDJUMP: RIP=0x3226 entered low memory @ insn #1186139 — dumping last 32 instructions (oldest first):
+log:   [ 0] RIP=0x7177ba775 48 89 df 4c  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcfc38 rdi=67fcfaf8 rsp=67fcf838 rbp=700091500
+log:   [ 1] RIP=0x7177ba778 4c 89 ee 48  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcfc38 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log:   [ 2] RIP=0x7177ba77b 48 8b 84 24  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log:   [ 3] RIP=0x7177ba783 48 89 83 98  rax=7177bb0ba rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log:   [ 4] RIP=0x7177ba78a 48 b8 00 00  rax=7177bb0ba rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log:   [ 5] RIP=0x7177ba794 48 89 83 c0  rax=4000000000000000 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log: FMMAP [pid=22] addr=0x7277c2000 aligned=0x7277c2000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x812 off=0x1d000 fixed=1 file='/lib/x86_64-linux-gnu/libgcc_s.so.1'
+log: FMMAP [pid=18] addr=0x23bce2000 aligned=0x23bce2000 len=0x83b000 mapLen=0x83b000 prot=0x3 flags=0x12 off=0xe1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log:   [ 6] RIP=0x7177ba79b e8 00 ed ff  rax=4000000000000000 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf838 rbp=700091500
+log:   [ 7] RIP=0x7177b94a0 41 57 b9 30  rax=4000000000000000 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf830 rbp=700091500
+log:   [ 8] RIP=0x7177b94a2 b9 30 00 00  rax=4000000000000000 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf828 rbp=700091500
+log:   [ 9] RIP=0x7177b94a7 31 c0 41 56  rax=4000000000000000 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf828 rbp=700091500
+log:   [10] RIP=0x7177b94a9 41 56 41 55  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf828 rbp=700091500
+log:   [11] RIP=0x7177b94ab 41 55 41 54  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf820 rbp=700091500
+log:   [12] RIP=0x7177b94ad 41 54 55 48  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf818 rbp=700091500
+log:   [13] RIP=0x7177b94af 55 48 89 fd  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf810 rbp=700091500
+log:   [14] RIP=0x7177b94b0 48 89 fd 48  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf808 rbp=700091500
+log:   [15] RIP=0x7177b94b3 48 89 f7 53  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcfa08 rsp=67fcf808 rbp=67fcfa08
+log:   [16] RIP=0x7177b94b6 53 48 83 ec  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcf848 rsp=67fcf808 rbp=67fcfa08
+log:   [17] RIP=0x7177b94b7 48 83 ec 18  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcf848 rsp=67fcf800 rbp=67fcfa08
+log:   [18] RIP=0x7177b94bb f3 48 ab 48  rax=0 rbx=67fcfa08 rcx=30 rdx=700091500 rsi=67fcf848 rdi=67fcf848 rsp=67fcf7e8 rbp=67fcfa08
+log:   [19] RIP=0x7177b94be 48 c7 85 d0  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [20] RIP=0x7177b94c9 48 c7 85 a0  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [21] RIP=0x7177b94d4 48 8b 95 98  rax=0 rbx=67fcfa08 rcx=0 rdx=700091500 rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [22] RIP=0x7177b94db 48 85 d2 0f  rax=0 rbx=67fcfa08 rcx=0 rdx=7177bb0ba rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [23] RIP=0x7177b94de 0f 84 7c 03  rax=0 rbx=67fcfa08 rcx=0 rdx=7177bb0ba rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [24] RIP=0x7177b94e4 48 8b 85 c0  rax=0 rbx=67fcfa08 rcx=0 rdx=7177bb0ba rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [25] RIP=0x7177b94eb 48 89 f3 48  rax=4000000000000000 rbx=67fcfa08 rcx=0 rdx=7177bb0ba rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log: CPU64: exit syscall, status=0  pid=22 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64C:\windows\system32\services.exe'
+log:   [26] RIP=0x7177b94ee 48 8d b5 a8  rax=4000000000000000 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcf848 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [27] RIP=0x7177b94f5 48 c1 e8 3f  rax=4000000000000000 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcfab0 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [28] RIP=0x7177b94f9 48 8d 7c 02  rax=0 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcfab0 rdi=67fcf9c8 rsp=67fcf7e8 rbp=67fcfa08
+log:   [29] RIP=0x7177b94fe e8 1d dd fe  rax=0 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcfab0 rdi=7177bb0b9 rsp=67fcf7e8 rbp=67fcfa08
+log:   [30] RIP=0x7177a7220 ff 25 d2 be  rax=0 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcfab0 rdi=7177bb0b9 rsp=67fcf7e0 rbp=67fcfa08
+log:   [31] RIP=0x3226 00 00 00 00  rax=0 rbx=67fcf848 rcx=0 rdx=7177bb0ba rsi=67fcfab0 rdi=7177bb0b9 rsp=67fcf7e0 rbp=67fcfa08
+log: CPU64: unimpl opcode at RIP=0x10270 bytes=6d 03 7c 03 4e 02 8c (rex=0x00 osz=0 asz=0 seg=00 rep=00)
+log:   UNIMPLDUMP pid=27 rip=0x10270 rsp=0x67fcf440 rax=0x67fc4298 rbx=0x67fcf848 rcx=0x5151 rdx=0x4d08fe9e rsi=0x0 rdi=0x7177bb0b9 rbp=0x67fcf598
+log:   UNIMPLDUMP exe='/usr/lib/wine/wine64'
+log:   UNIMPLDUMP   [rsp+0x00] = 0x4e024e02
+log:   UNIMPLDUMP   [rsp+0x08] = 0x0
+log:   UNIMPLDUMP   [rsp+0x10] = 0x0
+log:   UNIMPLDUMP   [rsp+0x18] = 0x0
+log:   UNIMPLDUMP   [rsp+0x20] = 0x0
+log:   UNIMPLDUMP   [rsp+0x28] = 0x0
+log:   UNIMPLDUMP   [rsp+0x30] = 0x0
+log:   UNIMPLDUMP   [rsp+0x38] = 0x0
+log:   UNIMPLDUMP RIP  @0x10270: 6d 03 7c 03 4e 02 8c 03  11 02 11 02 11 02 35 02  35 02 9c 03 4e 02 4e 02  ac 03 4e 02 4e 02 4e 02
+log:   UNIMPLDUMP RIP- @0x10260: 11 02 11 02 11 02 4f 03  11 02 11 02 5d 03 20 02  6d 03 7c 03 4e 02 8c 03  11 02 11 02 11 02 35 02
+log:   UNIMPLDUMP RBX  @0x67fcf848: 00 6a ab 78 7f 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+log:   UNIMPLDUMP RBP  @0x67fcf598: 00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+log: FMMAP [pid=18] addr=0x23c51d000 aligned=0x23c51d000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x91c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c51f000 aligned=0x23c51f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x91e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c520000 aligned=0x23c520000 len=0x223000 mapLen=0x223000 prot=0x3 flags=0x12 off=0x91f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c743000 aligned=0x23c743000 len=0x15000 mapLen=0x15000 prot=0x3 flags=0x12 off=0xb42000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c758000 aligned=0x23c758000 len=0x70000 mapLen=0x70000 prot=0x3 flags=0x12 off=0xb57000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c7c8000 aligned=0x23c7c8000 len=0x31000 mapLen=0x31000 prot=0x3 flags=0x12 off=0xbc7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c7f9000 aligned=0x23c7f9000 len=0xb000 mapLen=0xb000 prot=0x3 flags=0x12 off=0xbf8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c804000 aligned=0x23c804000 len=0x173000 mapLen=0x173000 prot=0x3 flags=0x12 off=0xc03000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: FMMAP [pid=18] addr=0x23c977000 aligned=0x23c977000 len=0x2b000 mapLen=0x2b000 prot=0x3 flags=0x12 off=0xd76000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/shell32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/gdi32.dll' -> fd 60
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll' -> fd 60
+log: FMMAP [pid=18] addr=0x2bb0a0000 aligned=0x2bb0a0000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb0a1000 aligned=0x2bb0a1000 len=0x4b000 mapLen=0x4b000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb0ec000 aligned=0x2bb0ec000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb0ed000 aligned=0x2bb0ed000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb0ee000 aligned=0x2bb0ee000 len=0x18000 mapLen=0x18000 prot=0x3 flags=0x12 off=0x4e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb106000 aligned=0x2bb106000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x66000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb107000 aligned=0x2bb107000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x67000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb10a000 aligned=0x2bb10a000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x6a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb10e000 aligned=0x2bb10e000 len=0x9000 mapLen=0x9000 prot=0x3 flags=0x12 off=0x6d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb117000 aligned=0x2bb117000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x76000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb11a000 aligned=0x2bb11a000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x79000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb11f000 aligned=0x2bb11f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb120000 aligned=0x2bb120000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7f000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb121000 aligned=0x2bb121000 len=0xde000 mapLen=0xde000 prot=0x3 flags=0x12 off=0x80000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb1ff000 aligned=0x2bb1ff000 len=0x8000 mapLen=0x8000 prot=0x3 flags=0x12 off=0x15e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb207000 aligned=0x2bb207000 len=0x3d000 mapLen=0x3d000 prot=0x3 flags=0x12 off=0x166000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb244000 aligned=0x2bb244000 len=0x15000 mapLen=0x15000 prot=0x3 flags=0x12 off=0x1a3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb259000 aligned=0x2bb259000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1b8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb25c000 aligned=0x2bb25c000 len=0xc8000 mapLen=0xc8000 prot=0x3 flags=0x12 off=0x1bb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: FMMAP [pid=18] addr=0x2bb324000 aligned=0x2bb324000 len=0x1c000 mapLen=0x1c000 prot=0x3 flags=0x12 off=0x283000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/gdi32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/user32.dll' -> fd 60
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll' -> fd 60
+log: FMMAP [pid=18] addr=0x2169d0000 aligned=0x2169d0000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x2169d1000 aligned=0x2169d1000 len=0x83000 mapLen=0x83000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a54000 aligned=0x216a54000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x84000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a55000 aligned=0x216a55000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x85000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a56000 aligned=0x216a56000 len=0x12000 mapLen=0x12000 prot=0x3 flags=0x12 off=0x86000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a68000 aligned=0x216a68000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x98000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a69000 aligned=0x216a69000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x99000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a6e000 aligned=0x216a6e000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x9e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a74000 aligned=0x216a74000 len=0xe000 mapLen=0xe000 prot=0x3 flags=0x12 off=0xa3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a82000 aligned=0x216a82000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xb1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216a88000 aligned=0x216a88000 len=0xe5000 mapLen=0xe5000 prot=0x3 flags=0x12 off=0xb7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216b6d000 aligned=0x216b6d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19c000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216b6e000 aligned=0x216b6e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x19d000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216b6f000 aligned=0x216b6f000 len=0x1dc000 mapLen=0x1dc000 prot=0x3 flags=0x12 off=0x19e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216d4b000 aligned=0x216d4b000 len=0x16000 mapLen=0x16000 prot=0x3 flags=0x12 off=0x37a000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216d61000 aligned=0x216d61000 len=0x63000 mapLen=0x63000 prot=0x3 flags=0x12 off=0x390000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216dc4000 aligned=0x216dc4000 len=0x26000 mapLen=0x26000 prot=0x3 flags=0x12 off=0x3f3000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216dea000 aligned=0x216dea000 len=0x17000 mapLen=0x17000 prot=0x3 flags=0x12 off=0x419000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216e01000 aligned=0x216e01000 len=0x144000 mapLen=0x144000 prot=0x3 flags=0x12 off=0x430000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: FMMAP [pid=18] addr=0x216f45000 aligned=0x216f45000 len=0x23000 mapLen=0x23000 prot=0x3 flags=0x12 off=0x574000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/user32.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/zlib1.dll' -> fd 60
+log: fszipurl: 32 MB fetched lazily so far
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/zlib1.dll' -> fd 60
+log: FMMAP [pid=18] addr=0x241b90000 aligned=0x241b90000 len=0x400 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/zlib1.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/version.dll' -> fd 60
+log: DLLTRACE pid=14 OPEN  '/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll' -> fd 60
+log: FMMAP [pid=18] addr=0x25dc30000 aligned=0x25dc30000 len=0x1000 mapLen=0x1000 prot=0x7 flags=0x12 off=0x0 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc31000 aligned=0x25dc31000 len=0x3000 mapLen=0x3000 prot=0x3 flags=0x12 off=0x1000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc34000 aligned=0x25dc34000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x4000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc35000 aligned=0x25dc35000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x5000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc36000 aligned=0x25dc36000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x6000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc37000 aligned=0x25dc37000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x7000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc38000 aligned=0x25dc38000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x8000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3a000 aligned=0x25dc3a000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x9000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3b000 aligned=0x25dc3b000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xa000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3c000 aligned=0x25dc3c000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xb000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3d000 aligned=0x25dc3d000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xc000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3e000 aligned=0x25dc3e000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0xd000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc3f000 aligned=0x25dc3f000 len=0x6000 mapLen=0x6000 prot=0x3 flags=0x12 off=0xe000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc45000 aligned=0x25dc45000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x14000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc46000 aligned=0x25dc46000 len=0x2000 mapLen=0x2000 prot=0x3 flags=0x12 off=0x15000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc48000 aligned=0x25dc48000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x17000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc49000 aligned=0x25dc49000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x18000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc4a000 aligned=0x25dc4a000 len=0x5000 mapLen=0x5000 prot=0x3 flags=0x12 off=0x19000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: FMMAP [pid=18] addr=0x25dc4f000 aligned=0x25dc4f000 len=0x1000 mapLen=0x1000 prot=0x3 flags=0x12 off=0x1e000 fixed=1 file='/usr/lib/x86_64-linux-gnu/wine/x86_64-windows/version.dll'
+log: DLLTRACE pid=14 OPEN  '/home/username/.wine/dosdevices/c:/windows/system32/win32u.dll' -> fd 60

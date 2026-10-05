@@ -1,0 +1,18 @@
+DIAGNOSTICS {
+  status: 'Booting Wine. First launch can take 30–120 seconds.',
+  frames: 0,
+  gpuErrors: [],
+  runtime: 'Running...',
+  fallback: null
+}
+RUNTIME { ready: true, gpu: 'function', capture: 'function', fs: true }
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 90000ms exceeded.
+    at /home/ubuntu/boxedwine64/web/tests/browser.mjs:33:14 {
+  name: 'TimeoutError'
+}
+
+Node.js v22.22.3

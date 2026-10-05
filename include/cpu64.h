@@ -205,6 +205,22 @@ public:
     void push64(U64 value);
     U64  pop64();
 
+    // ---- Phase-1 JIT hook (source/emulation/cpu/jit64.cpp, include/jit64.h).
+    // tryJitStep() is the JIT fast-path attempt, called from run()/runBounded()
+    // when BW64_JIT=1. Returns instructions executed, or 0 to fall back to
+    // the interpreter. Default behavior (BW64_JIT unset) is unchanged: the
+    // hook is never entered. Phase 1 compiles the block plan and validates
+    // it against the interpreter BBlock path, then executes via execBlock so
+    // semantics stay bit-identical; phase 2 will emit wasm from the plan.
+    U32 tryJitStep(U64 maxInsn = ~0ULL);
+    struct Jit64State* jit() { return m_jit; }
+    const struct Jit64State* jit() const { return m_jit; }
+    void ensureJit();
+    void freeJit();
+    // Owned JIT state (nullptr until first BW64_JIT=1 use). Forward-declared
+    // in jit64.h; included via cpu64.cpp only, keeping this header light.
+    struct Jit64State* m_jit = nullptr;
+
 private:
     U32 step();
 
@@ -286,8 +302,8 @@ private:
     bool decodeModRMRecipe(U64 modrmAddr, const Prefixes& p, U32 trailingImmBytes, BRecipe& out);
     ModRM resolveRecipe(const BRecipe& r);
     bool buildBlock(U64 startRip, BBlock& b);
-    U32  execBlock(const BBlock& b);           // returns instructions executed
-    U32  tryBlockStep();                       // probe/build/exec; 0 = interpret
+    U32  execBlock(const BBlock& b, U64 maxInsn = ~0ULL); // instructions executed
+    U32  tryBlockStep(U64 maxInsn = ~0ULL); // probe/build/exec; 0 = interpret
 #endif
 
     // Read prefixes starting at rip; advance an internal cursor. Returns

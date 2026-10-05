@@ -71,8 +71,9 @@
 // environment (HOME, WINEPREFIX, WINESERVER, WINEDLLPATH, PATH, USER, …) the boot
 // app got, or wine inside it can't find the prefix / wineserver socket and hangs
 // after connecting to X11 (observed: glcube stalled with only envc=6 vs the boot
-// app's envc=16). So the bridge ignores any env passed from JS and always uses
-// g_sessionCtx.env.
+// app's envc=16). So the bridge STARTS from g_sessionCtx.env for every spawn; an
+// env passed from JS (bw64_spawn's envJoined) is merged OVER it per-key (O2) so
+// diagnostic vars like WINEDEBUG can reach spawned guests — see mergeSpawnEnv.
 struct Wine64SessionCtx {
     std::atomic<bool> valid{false};
     BString workingDir;
@@ -160,6 +161,42 @@ uint32_t bw64TakeOutgoingAppPid();
 void bw64ClipboardSetHost(const char* text);
 const char* bw64ClipboardGetHost();
 
+// O2: build the env for an in-session spawn. Base is ALWAYS the captured boot
+// env (full wine environment — see Wine64SessionCtx); every K=V the launcher
+// passed in req.env then overrides (or adds to) that base, per key. An empty
+// req.env returns the boot env unchanged, which is exactly the pre-O2 behavior,
+// so this is opt-in and backward compatible. This is the channel that lets the
+// launcher's prefixEnv() (?winedbg -> WINEDEBUG, BW64_* knobs) reach spawned
+// guest processes instead of being silently dropped.
+static std::vector<BString> mergeSpawnEnv(const std::vector<BString>& bootEnv, const std::vector<BString>& spawnEnv) {
+    if (spawnEnv.empty()) return bootEnv;
+    std::vector<BString> merged = bootEnv;
+    for (const auto& kv : spawnEnv) {
+        int eq = kv.indexOf('=');
+        if (eq < 0) {
+            // No '=' — not a K=V pair; keep boot env authoritative, append only
+            // if the exact entry isn't already there.
+            bool present = false;
+            for (const auto& e : merged) {
+                if (e == kv) { present = true; break; }
+            }
+            if (!present) merged.push_back(kv);
+            continue;
+        }
+        BString prefix = kv.substr(0, eq + 1); // "KEY=" — compare with '=' so
+        bool replaced = false;                 // HOME= never matches HOMEDRIVE=
+        for (auto& e : merged) {
+            if (e.startsWith(prefix.c_str())) {
+                e = kv;
+                replaced = true;
+                break;
+            }
+        }
+        if (!replaced) merged.push_back(kv);
+    }
+    return merged;
+}
+
 // The actual spawn — runs on the main-loop thread (see THREADING note).
 static void doSpawn(const Wine64Req& req) {
     if (req.argv.empty()) {
@@ -177,9 +214,10 @@ static void doSpawn(const Wine64Req& req) {
     KThread* saved = KThread::currentThread();
     {
         KProcessPtr process = KProcess::create();
-        // Always use the captured BOOT env (not req.env) so a spawned app gets
-        // the identical wine environment the boot app had — see Wine64SessionCtx.
-        KThread* thread = process->startProcess(g_sessionCtx.workingDir, req.argv, g_sessionCtx.env,
+        // Boot env as the base, with the launcher's per-spawn env merged over it
+        // (O2 — see mergeSpawnEnv): spawned apps keep the full boot wine env AND
+        // honor per-spawn overrides such as WINEDEBUG.
+        KThread* thread = process->startProcess(g_sessionCtx.workingDir, req.argv, mergeSpawnEnv(g_sessionCtx.env, req.env),
                                                 g_sessionCtx.userId, g_sessionCtx.groupId,
                                                 g_sessionCtx.effectiveUserId,
                                                 g_sessionCtx.effectiveGroupId);

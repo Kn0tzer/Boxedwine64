@@ -1,0 +1,3 @@
+MyTiny.dll: load=ok gle=0
+mytiny.dll: load=ok gle=0
+MYTINY.DLL: load=ok gle=0

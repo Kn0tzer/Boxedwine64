@@ -1,0 +1,28 @@
+PASS real uploaded Windows GUI, sibling asset, keyboard and save count 1
+PASS real uploaded Windows GUI, sibling asset, keyboard and save count 2
+PASS real uploaded Windows GUI, sibling asset, keyboard and save count 3
+PASS real uploaded Windows GUI, sibling asset, keyboard and save count 3
+STATUS Stopped; writable files saved locally.
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'ErrorEvent',
++   'Exception'
++ ]
+- []
+
+    at file:///home/ubuntu/boxedwine64/web/tests/upload.mjs:77:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [ 'ErrorEvent', 'Exception' ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.22.3

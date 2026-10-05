@@ -1,0 +1,38 @@
+log: [guest fd=2 pid=22 wine64] 003c:err:winediag:getaddrinfo Failed to resolve your host name IP
+log: 003c:err:winediag:getaddrinfo Failed to resolve your host name IP
+log: [guest fd=2 pid=31 wine64] 005c:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\MountMgr": c0000142
+log: 005c:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\MountMgr": c0000142
+log: tri9: WinMain start (D3D9 clear + indexed trianglCPU64: exit_group syscall, status=0  pid=40 exe='/usr/lib/wine/wine64' cmd='/usr/lib/wine/wine64Z:\home\username\deskpin.exe'
+log: [guest fd=2 pid=42 wine64] 0074:err:ole:start_rpcss Failed to open RpcSs service
+log: 0074:err:ole:start_rpcss Failed to open RpcSs service
+log: [guest fd=2 pid=49 wine64] 0084:err:ole:start_rpcss Failed to open RpcSs service
+log: 0084:err:ole:start_rpcss Failed to open RpcSs service
+log: [guest fd=2 pid=49 wine64] 0084:err:ole:start_rpcss Failed to open RpcSs service
+log: 0084:err:ole:start_rpcss Failed to open RpcSs service
+log: tri9: calling Direct3DCreate9...
+log: [guest fd=2 pid=12 wine64] info:  Game: tri9.exe
+log: info:  Game: tri9.exe
+log: [guest fd=2 pid=12 wine64] info:  DXVK: v2.4.1+
+log: info:  DXVK: v2.4.1+
+log: [guest fd=2 pid=12 wine64] info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x2d4ad3f30
+log: info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x2d4ad3f30
+log: [guest fd=2 pid=12 wine64] info:  Built-in extension providers:
+log: info:  Built-in extension providers:
+log: [guest fd=2 pid=12 wine64] info:    Platform WSI
+log: info:    Platform WSI
+log: [guest fd=2 pid=12 wine64] info:    OpenVR
+log: info:    OpenVR
+log: [guest fd=2 pid=12 wine64] info:    OpenXR
+log: info:    OpenXR
+log: [guest fd=2 pid=12 wine64] info:  OpenVR: could not open registry key, status 2
+log: info:  OpenVR: could not open registry key, status 2
+log: [guest fd=2 pid=12 wine64] info:  OpenVR: Failed to locate module
+log: info:  OpenVR: Failed to locate module
+log: vk64: FIRST trap - guest libvulkan.so.1 mapped (witness fnId=0)
+log: [guest fd=2 pid=12 wine64] 0024:err:vulkan:init_vulkan Failed to load Wine graphics driver supporting Vulkan.
+log: 0024:err:vulkan:init_vulkan Failed to load Wine graphics driver supporting Vulkan.
+log: [guest fd=2 pid=12 wine64] 0024:err:vulkan:init_vulkan Failed to load Wine graphics driver supporting Vulkan.
+log: 0024:err:vulkan:init_vulkan Failed to load Wine graphics driver supporting Vulkan.
+log: [guest fd=2 pid=12 wine64] info:  Required Vulkan extension VK_KHR_surface not supported
+log: info:  Required Vulkan extension VK_KHR_surface not supported
+log: terminate called after throwing an instance of 'dxvk::DxvkError'

@@ -1,0 +1,23 @@
+importing /tmp/stage/baldi
+IMPORT OK: Imported 171 files. Select the executable and press Start.
+executable: UnityCrashHandler64.exe
+selected: BALDI.exe
+runtime iframe up; waiting for guest window
+MAPPED
+STATUS Guest window mapped. Rendering…
+STATUS Guest window mapped. Rendering…
+RUNTIME Running...
+ERRORS []
+CHECKPOINT: window mapped; gameplay/input verification is still required.
+PLAYERLOG Mono path[0] = 'Z:/home/username/apps/BALDI_Data/Managed'
+Mono config path = 'Z:/home/username/apps/MonoBleedingEdge/etc'
+Mono: Assembly Loader probing location: 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll'.
+Mono: Image addref mscorlib[0000000000295960] -> Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll[0000000000294400]: 2
+Mono: Prepared to set up assembly 'mscorlib' (Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll)
+Mono: Image 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll' has no debug directory.
+Mono: Assembly Loader loaded assembly from location: 'Z:\home\username\apps\BALDI_Data\Managed\mscorlib.dll'.
+Mono: Assembly mscorlib[0000000000295960] added to domain Unity Root Domain, ref_count=1
+Initialize engine version: 2020.3.38f1 (8f5fde82e2dc)
+[Subsystems] Discovering subsystems at path Z:/home/username/apps/BALDI_Data/UnitySubsystems
+Forcing GfxDevice: Direct3D 11
+

@@ -52,6 +52,11 @@ BString socketAddressName(KMemory* memory, U32 address, U32 len) {
 }
 
 U32 ksocket(U32 domain, U32 type, U32 protocol) {
+#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_GUEST_X64)
+    // Browser experiment is offline: Wine IPC remains in-process, but guest
+    // internet sockets must never become WebSockets to arbitrary host ports.
+    if (domain != K_AF_UNIX && domain != K_AF_NETLINK) return -K_EAFNOSUPPORT;
+#endif
     if (domain==K_AF_UNIX) {
         std::shared_ptr<KUnixSocketObject> kSocket = std::make_shared<KUnixSocketObject>(domain, type, protocol);
         KFileDescriptorPtr result = KThread::currentThread()->process->allocFileDescriptor(kSocket, K_O_RDWR, 0, -1, 0);

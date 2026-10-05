@@ -1,0 +1,12 @@
+make: Entering directory '/home/ubuntu/boxedwine64/project/emscripten'
+MAKEFLAGS is -j 3
+make[1]: Entering directory '/home/ubuntu/boxedwine64/project/emscripten'
+MAKEFLAGS 
+em++: warning: -pthread + ALLOW_MEMORY_GROWTH may run non-wasm code slowly, see https://github.com/WebAssembly/design/issues/1271 [-Wpthreads-mem-growth]
+make[1]: Leaving directory '/home/ubuntu/boxedwine64/project/emscripten'
+make: Leaving directory '/home/ubuntu/boxedwine64/project/emscripten'
+
+> boxedwine64-browser-lab@ build /home/ubuntu/boxedwine64
+> node tools/browser/build.mjs
+
+Browser export: /home/ubuntu/boxedwine64/dist
