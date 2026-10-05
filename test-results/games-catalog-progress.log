@@ -1,4 +1,0 @@
-2026-10-04T01:31:46.839Z status="Ready to import. First boot loads roughly 80 MB on demand." card={"busy":"true","disabled":true,"state":"Download and install on this device","width":""}
-2026-10-04T01:31:50.851Z status="Extracting Baldi's Basics…" card={"busy":"true","disabled":true,"state":"Extracting 132 MB…","width":"100%"}
-2026-10-04T01:31:54.862Z status="Extracting Baldi's Basics…" card={"busy":"true","disabled":true,"state":"Extracting 132 MB…","width":"100%"}
-2026-10-04T01:31:58.868Z status="Imported Baldi's Basics: 171 files, BALDI.exe selected. Override in the picker if needed, then press Start." card={"busy":null,"disabled":false,"state":"Installed","width":"100%"}

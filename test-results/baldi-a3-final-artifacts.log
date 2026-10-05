@@ -1,9 +1,0 @@
-MATCH web/runtime glibc-rootfs64 lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH web/runtime glibc-rootfs64 usr/lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH web/runtime wine64 lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH web/runtime wine64 usr/lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH dist/runtime glibc-rootfs64 lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH dist/runtime glibc-rootfs64 usr/lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH dist/runtime wine64 lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH dist/runtime wine64 usr/lib/x86_64-linux-gnu/libGL.so.1 4ff557eb8d1ea6637a350bc5b80e60da76d2ae7524e1cb9c8e5171f15bb62a77
-MATCH exported WASM

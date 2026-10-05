@@ -1,6 +1,0 @@
-make: Entering directory '/home/ubuntu/boxedwine64/project/emscripten'
-MAKEFLAGS is -j 3
-make[1]: Entering directory '/home/ubuntu/boxedwine64/project/emscripten'
-MAKEFLAGS 
-make[1]: Leaving directory '/home/ubuntu/boxedwine64/project/emscripten'
-make: Leaving directory '/home/ubuntu/boxedwine64/project/emscripten'

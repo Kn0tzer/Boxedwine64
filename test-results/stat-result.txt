@@ -1,2 +1,0 @@
-stat32=0 errno=0 size=11 mtime=1790997959
-stat64=0 errno=0 size=11 mtime=1790997959

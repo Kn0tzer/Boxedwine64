@@ -1,7 +1,0 @@
-baldi-a3-pixel-test: /home/ubuntu/boxedwine64/test-results/baldi-a3-pixel-test.cpp:93: main()::<lambda(GLint, GLenum, GLenum, std::vector<unsigned char>, GLenum, const std::vector<unsigned char>&)>: Assertion `type == expectedType' failed.
-Traceback (most recent call last):
-  File "/home/ubuntu/boxedwine64/test-results/baldi-a3-pixel-test.py", line 44, in <module>
-    subprocess.run([str(exe)], check=True)
-  File "/usr/lib/python3.12/subprocess.py", line 571, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/home/ubuntu/boxedwine64/test-results/baldi-a3-pixel-test']' died with <Signals.SIGABRT: 6>.

@@ -1,6 +1,0 @@
-
-> boxedwine64-browser-lab@ typecheck /home/ubuntu/boxedwine64
-> tsc --noEmit
-
-web/games.mjs(47,43): error TS2339: Property 'id' does not exist on type '{ archive: string; size?: number; title: string; }'.
- ELIFECYCLE  Command failed with exit code 2.
