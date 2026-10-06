@@ -77,13 +77,40 @@ def pe_exec_sections(path: str):
     return out
 
 
-# The 20 opcode keys the phase-1 JIT claims as fast (jit64.cpp kCovered).
-# POP/PUSH register rows and MOV r,imm are counted as classes (58..5F,
-# 50..57, B8..BF); NOP padding (90, 0F1F) is excluded from the profile.
+# Opcode keys with a JIT fast path, verified against the decoder
+# (jit64.cpp), classifier, and emitter. POP/PUSH register rows and MOV r,imm
+# are counted as classes (58..5F, 50..57, B8..BF); NOP padding (90, 0F1F) is
+# excluded from the profile.
+#   ALU r/m,r + r,r/m: the whole 00..3B range ((op&6)!=6, (op&7)<=3)
+#   ALU acc,imm: 04..3D step 8, plus A8/A9 (TEST acc,imm, sub 8)
+#   ALU r/m,imm: 80/81/83; TEST r/m,r: 84/85
+#   MOV: 88/89/8A/8B, B8..BF, C7; MOVZX/MOVSX: 0FB6/0FB7/0FBE/0FBF; MOVSXD: 63
+#   IMUL: 0FAF (2-op, reg-direct), 69/6B (3-op, reg-direct); mem forms fall back
+#   Control flow (decoded + classified fast; they terminate blocks by design):
+#   JMP rel8 (EB), Jcc rel8 (70..7F), Jcc rel32 (0F80..0F8F)
 COVERED = {
     "89", "8B", "83", "8D", "E8", "85", "E9", "31", "74", "39",
     "0F84", "C7", "75", "C3", "0F85", "01", "C1", "0FB6", "58..5F", "29",
-    "50..57", "B8..BF",
+    "50..57", "B8..BF", "63",
+    "F6", "F7", "98", "D0", "D1", "99", "C6", "D2", "D3",
+    "AB", "C0",
+    "A4", "A5", "A6", "A7", "AA", "AE", "AF",
+    "69", "6B", "0FAF",
+    "00", "02", "03", "08", "09", "0A", "0B", "10", "11", "12", "13",
+    "18", "19", "1A", "1B", "20", "21", "22", "23", "28", "2A", "2B",
+    "30", "32", "33", "38", "3A", "3B",
+    "04", "05", "0C", "0D", "14", "15", "1C", "1D", "24", "25",
+    "2C", "2D", "34", "35", "3C", "3D", "A8", "A9",
+    "80", "81", "84",
+    "88", "8A",
+    "0FB7", "0FBE", "0FBF",
+    "EB",
+    "70", "71", "72", "73", "76", "77", "78", "79", "7A", "7B",
+    "7C", "7D", "7E", "7F",
+    "0F40", "0F41", "0F42", "0F43", "0F44", "0F45", "0F46", "0F47", "0F48", "0F49", "0F4A", "0F4B", "0F4C", "0F4D", "0F4E", "0F4F", "0F80", "0F81", "0F82", "0F83", "0F86", "0F87", "0F88", "0F89",
+    "0F8A", "0F8B", "0F8C", "0F8D", "0F8E", "0F8F",
+    "0F90", "0F91", "0F92", "0F93", "0F94", "0F95", "0F96", "0F97", "0F98", "0F99", "0F9A", "0F9B", "0F9C", "0F9D", "0F9E", "0F9F",
+    "0FA3", "0FAB", "0FB3", "0FBB",
 }
 
 

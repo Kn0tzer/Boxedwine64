@@ -18,6 +18,8 @@
 
 #include <cstdio>
 #include <cstring>
+#include <ctime>
+#include <cstdlib>
 #include <vector>
 
 // Minimal in-process smoke test for the x86-64 interpreter. Builds tiny
@@ -39,6 +41,8 @@ struct TestResult {
     int failed = 0;
     U64 jitBlocks = 0;
     U64 jitInsns = 0;
+    U64 wasmBlocks = 0;
+    U64 wasmInsns = 0;
 };
 
 void loadCode(KMemory64& mem, U64 addr, const std::vector<U8>& bytes) {
@@ -69,6 +73,8 @@ void runAndCheck(TestResult& r, const char* name,
     if (cpu.jit()) {
         r.jitBlocks += cpu.jit()->blocksExecuted;
         r.jitInsns += cpu.jit()->insnsFast;
+        r.wasmBlocks += cpu.jit()->wasmBlocks;
+        r.wasmInsns += cpu.jit()->wasmInsns;
     }
     bool hung = (!cpu.yield && cpu.instructionCount >= INSN_LIMIT);
     if (hung) {
@@ -6438,9 +6444,228 @@ int runX64SelfTest() {
             printf("  FAIL: required JIT path did not execute any blocks\n");
             r.failed++;
         }
+        printf("WASM64: blocks=%llu insns=%llu\n",
+               (unsigned long long)r.wasmBlocks, (unsigned long long)r.wasmInsns);
+        if (!r.wasmBlocks || !r.wasmInsns) {
+            printf("  FAIL: required wasm-module path did not execute any blocks\n");
+            r.failed++;
+        }
     }
     printf("=== self-test summary: %d passed, %d failed ===\n\n", r.passed, r.failed);
     return r.failed == 0 ? 0 : 1;
+}
+
+
+// ---- Dispatch benchmark + threaded-tier differential fuzz ----
+// Invoked via:
+//   --x64-bench-dispatch <step|block> [reps]   one dispatch config per process;
+//                                              shell sets BW64_THREADED=1 for the
+//                                              threaded variant of "block".
+//   --x64-fuzz-threaded <step|block> <seeds>   differential fuzz: same seeds
+//                                              under each config; outputs are
+//                                              diffed (state hashes must match).
+// "step"  = tier 1: BW64_NOBLOCK=1 forces runBounded onto step().
+// "block" = runBounded -> tryBlockStep -> execBlock (switch, or threaded
+//           when BW64_THREADED=1 in the environment).
+namespace {
+
+U64 splitmix64(U64& s) {
+    U64 z = (s += 0x9E3779B97F4A7C15ULL);
+    z = (z ^ (z >> 30)) * 0xBF58476D1CE4E5B9ULL;
+    z = (z ^ (z >> 27)) * 0x94D049BB133111EBULL;
+    return z ^ (z >> 31);
+}
+
+U64 benchNowNs() {
+    struct timespec ts;
+    clock_gettime(CLOCK_MONOTONIC, &ts);
+    return (U64)ts.tv_sec * 1000000000ULL + (U64)ts.tv_nsec;
+}
+
+// Tight block-friendly loop. All ops are buildBlock-supported; the loop body
+// (add/shl/sub/jnz) forms one 4-record block executed ~2M times, so dispatch
+// overhead dominates the measurement.
+//
+//   0x400000: 48 C7 C2 00 00 20 00   mov rdx, 0x200000
+//   0x400007: 48 31 C0              xor rax, rax
+//   0x40000A: 48 89 D9              mov rcx, rbx
+//   0x40000D: 48 01 C8              add rax, rcx      (loop)
+//   0x400010: 48 C1 E0 02           shl rax, 2
+//   0x400014: 48 83 EA 01           sub rdx, 1
+//   0x400018: 75 F3                 jnz 0x40000D
+//   0x40001A: CC                    int3 -> yield
+const std::vector<U8> BENCH_CODE = {
+    0x48, 0xC7, 0xC2, 0x00, 0x00, 0x20, 0x00,
+    0x48, 0x31, 0xC0,
+    0x48, 0x89, 0xD9,
+    0x48, 0x01, 0xC8,
+    0x48, 0xC1, 0xE0, 0x02,
+    0x48, 0x83, 0xEA, 0x01,
+    0x75, 0xF3,
+    0xCC,
+};
+const U64 BENCH_ITERS = 0x200000ULL;
+const U64 BENCH_INSNS = 3 + 4 * BENCH_ITERS;
+
+U64 benchOne(bool useStep) {
+    KMemory64 mem(nullptr);
+    mem.mmapAnonymousFixed(CODE_BASE, 0x1000, 7);
+    mem.mmapAnonymousFixed(STACK_TOP - 0x1000, 0x1000, 3);
+    loadCode(mem, CODE_BASE, BENCH_CODE);
+    CPU64 cpu(&mem);
+    cpu.rip = CODE_BASE;
+    cpu.reg[X64_RSP].setU64(STACK_TOP - 16);
+    cpu.reg[X64_RBX].setU64(0x123456789ABCDEF0ULL);
+
+    // Tier-1 mode: BW64_NOBLOCK=1 makes tryBlockStep decline so runBounded
+    // falls through to step() (pure interpreter, no block cache).
+    if (useStep) setenv("BW64_NOBLOCK", "1", 1);
+    U64 t0 = benchNowNs();
+    cpu.runBounded(4 * BENCH_ITERS + 100);
+    U64 ns = benchNowNs() - t0;
+
+    bool ok = cpu.yield && cpu.reg[X64_RDX].u64 == 0;
+    printf("  BENCH %s: %s insns=%llu ns=%llu ns/insn=%.3f blocks=%llu\n",
+           useStep ? "step" : "block", ok ? "OK" : "FAIL",
+           (unsigned long long)BENCH_INSNS, (unsigned long long)ns,
+           (double)ns / (double)BENCH_INSNS,
+           (unsigned long long)cpu.blockExecCount());
+    fflush(stdout);
+    return ok ? ns : 0;
+}
+
+// FNV-1a over full CPU + memory state.
+U64 fuzzHash(CPU64& cpu, KMemory64& mem) {
+    U64 h = 0xCBF29CE484222325ULL;
+    auto mix = [&](U64 v) {
+        h ^= v; h *= 0x100000001B3ULL;
+    };
+    for (int i = 0; i < 16; i++) mix(cpu.reg[i].u64);
+    mix(cpu.rip);
+    mix(cpu.rflags);
+    for (U64 a = CODE_BASE; a < CODE_BASE + 0x1000; a++) mix(mem.readb(a));
+    for (U64 a = STACK_TOP - 0x1000; a < STACK_TOP; a++) mix(mem.readb(a));
+    return h;
+}
+
+// Random block-friendly programs: straight-line runs of buildBlock-supported
+// ops, then INT3. Data regs avoid RSP/RBP; memory operands stay in-bounds.
+void fuzzGenProgram(U64 seed, std::vector<U8>& code, U64 initRegs[16], U8 stackImg[0x1000]) {
+    static const int DREGS[] = {0, 1, 2, 3, 6, 7, 8, 9, 10, 11}; // rax..r11 minus rsp/rbp
+    U64 s = seed * 0x9E3779B97F4A7C15ULL + 0x12345;
+    for (int i = 0; i < 16; i++) initRegs[i] = splitmix64(s);
+    for (int i = 0; i < 0x1000; i++) stackImg[i] = (U8)splitmix64(s);
+    code.clear();
+    auto modrm = [](int mod, int reg, int rm) -> U8 {
+        return (U8)((mod << 6) | (reg << 3) | rm);
+    };
+    int nops = 2 + (int)(splitmix64(s) % 7); // 2..8 ops
+    for (int k = 0; k < nops; k++) {
+        int d = DREGS[splitmix64(s) % 10];
+        int e = DREGS[splitmix64(s) % 10];
+        int pick = (int)(splitmix64(s) % 12);
+        switch (pick) {
+        case 0: // mov r64, r64
+            code.insert(code.end(), {0x48, 0x89, modrm(3, e, d)});
+            break;
+        case 1: { // mov r64, imm32
+            U32 imm = (U32)splitmix64(s);
+            code.insert(code.end(), {0x48, 0xC7, modrm(3, 0, d),
+                                     (U8)imm, (U8)(imm >> 8), (U8)(imm >> 16), (U8)(imm >> 24)});
+            break;
+        }
+        case 2: case 3: { // add/sub/xor r64, r64
+            U8 ops[3] = {0x01, 0x29, 0x31};
+            code.insert(code.end(), {0x48, ops[splitmix64(s) % 3], modrm(3, e, d)});
+            break;
+        }
+        case 4: { // add/sub r64, imm8
+            U8 sub = (splitmix64(s) & 1) ? 5 : 0;
+            code.insert(code.end(), {0x48, 0x83, modrm(3, sub, d), (U8)splitmix64(s)});
+            break;
+        }
+        case 5: // shl r64, imm8
+            code.insert(code.end(), {0x48, 0xC1, modrm(3, 4, d), (U8)(1 + splitmix64(s) % 63)});
+            break;
+        case 6: // imul r64, r64
+            code.insert(code.end(), {0x48, 0x0F, 0xAF, modrm(3, d, e)});
+            break;
+        case 7: // test r64, r64
+            code.insert(code.end(), {0x48, 0x85, modrm(3, e, d)});
+            break;
+        case 8: // push r64; pop r64 (paired, keeps rsp balanced)
+            code.insert(code.end(), {(U8)(0x50 + (d & 7)), (U8)(0x58 + (e & 7))});
+            break;
+        case 9: { // lea r64, [rip+disp32] (target inside code page)
+            U64 at = CODE_BASE + code.size();
+            S32 disp = (S32)((CODE_BASE + (splitmix64(s) % 256)) - (at + 7));
+            code.insert(code.end(), {0x48, 0x8D, modrm(0, d, 5),
+                                     (U8)disp, (U8)(disp >> 8), (U8)(disp >> 16), (U8)(disp >> 24)});
+            break;
+        }
+        case 10: { // mov r64, [rsp+disp8]
+            S8 disp = (S8)(-8 - 8 * (int)(splitmix64(s) % 14)); // -8..-120
+            code.insert(code.end(), {0x48, 0x8B, modrm(1, d, 4), 0x24, (U8)disp});
+            break;
+        }
+        default: { // mov [rsp+disp8], r64
+            S8 disp = (S8)(-8 - 8 * (int)(splitmix64(s) % 14));
+            code.insert(code.end(), {0x48, 0x89, modrm(1, e, 4), 0x24, (U8)disp});
+            break;
+        }
+        }
+    }
+    code.push_back(0xCC); // int3 -> yield
+}
+
+} // anonymous namespace
+
+int runX64BenchDispatch(int which, int reps) {
+    // which: 0 = tier 1 (step via BW64_NOBLOCK), 1 = block path (env selects switch/threaded).
+    printf("\n=== CPU64 dispatch benchmark (%s) ===\n", which == 0 ? "step" : "block");
+    U64 best = 0;
+    for (int r = 0; r < reps; r++) {
+        U64 ns = benchOne(which == 0);
+        if (ns == 0) { printf("BENCH: run failed\n"); return 1; }
+        if (best == 0 || ns < best) best = ns;
+    }
+    printf("BENCH %s: best-of-%d ns/insn=%.3f\n\n",
+           which == 0 ? "step" : "block", reps, (double)best / (double)BENCH_INSNS);
+    return 0;
+}
+
+int runX64FuzzThreaded(int which, int nseeds) {
+    // which: 0 = tier 1 (step via BW64_NOBLOCK), 1 = block path (env selects switch/threaded).
+    printf("\n=== CPU64 threaded-tier differential fuzz (%s, %d seeds) ===\n",
+           which == 0 ? "step" : "block", nseeds);
+    int blockSeeds = 0;
+    for (int seed = 0; seed < nseeds; seed++) {
+        std::vector<U8> code;
+        U64 initRegs[16];
+        U8 stackImg[0x1000];
+        fuzzGenProgram((U64)seed, code, initRegs, stackImg);
+
+        KMemory64 mem(nullptr);
+        mem.mmapAnonymousFixed(CODE_BASE, 0x1000, 7);
+        mem.mmapAnonymousFixed(STACK_TOP - 0x1000, 0x1000, 3);
+        loadCode(mem, CODE_BASE, code);
+        mem.memcpyToGuest(STACK_TOP - 0x1000, stackImg, 0x1000);
+        CPU64 cpu(&mem);
+        cpu.rip = CODE_BASE;
+        for (int i = 0; i < 16; i++) cpu.reg[i].setU64(initRegs[i]);
+        cpu.reg[X64_RSP].setU64(STACK_TOP - 16);
+        cpu.rflags = initRegs[0] & 0xFFF;
+
+        if (which == 0) setenv("BW64_NOBLOCK", "1", 1);
+        cpu.runBounded(100000);
+        if (cpu.blockExecCount() > 0) blockSeeds++;
+        printf("FUZZ seed=%d hash=%016llx blocks=%llu\n", seed,
+               (unsigned long long)fuzzHash(cpu, mem),
+               (unsigned long long)cpu.blockExecCount());
+        fflush(stdout);
+    }
+    printf("FUZZ summary: %d/%d seeds executed >=1 block\n\n", blockSeeds, nseeds);
+    return 0;
 }
 
 #endif // BOXEDWINE_GUEST_X64

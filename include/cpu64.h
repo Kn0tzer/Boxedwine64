@@ -213,8 +213,15 @@ public:
     // it against the interpreter BBlock path, then executes via execBlock so
     // semantics stay bit-identical; phase 2 will emit wasm from the plan.
     U32 tryJitStep(U64 maxInsn = ~0ULL);
+    // Phase-2 wasm vehicle for tryJitStep (source/emulation/cpu/cpu64.cpp).
+    // Returns nOps if the block ran in its instantiated wasm module, 0 to
+    // fall back to the interpreter. No-op (returns 0) on native builds.
+    U32 tryWasmExec(struct Jit64Block& block, U32 nOps);
     struct Jit64State* jit() { return m_jit; }
     const struct Jit64State* jit() const { return m_jit; }
+#ifdef BOXEDWINE_BLOCK_EXEC
+    U64  blockExecCount() const { return blockStatsExec; } // diagnostic: blocks run via tryBlockStep
+#endif
     void ensureJit();
     void freeJit();
     // Owned JIT state (nullptr until first BW64_JIT=1 use). Forward-declared
@@ -274,17 +281,29 @@ private:
     enum BKind : U8 {
         BK_MOV_RM_R, BK_MOV_R_RM, BK_ALU_RM_R, BK_ALU_R_RM,
         BK_ALU_RM_IMM, BK_SHIFT_IMM, BK_IMUL_R_RM, BK_JCC8,
-        BK_TEST_RM_R, BK_LEA, BK_MOV_RM_IMM, BK_MOV_R_IMM, BK_PUSH, BK_POP
+        BK_TEST_RM_R, BK_LEA, BK_MOV_RM_IMM, BK_MOV_R_IMM, BK_PUSH, BK_POP,
+        BK_STRING, BK_ALU_ACC_IMM, BK_MOVX, BK_IMUL_1OP, BK_IMUL_3OP,
+        BK_GRP3, // F6/F7 group 3: sub = ModRM reg field (0=TEST,2=NOT,3=NEG,4=MUL)
+        BK_CBW, // 0x98 CBW/CWDE/CDQE: sign-extend AL->AX/AX->EAX/EAX->RAX
+        BK_CMOV, // 0F 40..4F CMOVcc r, r/m: sub = condition 0..15
+        BK_CQO, // 0x99 CWD/CDQ/CQO: sign-extend AX->DX / EAX->EDX:EAX / RAX->RDX:RAX
+        BK_SHIFT_CL, // 0xD2/0xD3 shift/rotate r/m, CL: count from CL at runtime
+        BK_SETCC // 0F 90..9F SETcc r/m8: sub = condition 0..15
     };
     struct BRec {
         U8  kind = 0;
-        U8  size = 4;          // operand size (4/8 only in v1)
-        U8  sub = 0;           // aluOp / shift sub-op / jcc condition
+        U8  size = 4;          // operand size (1/2/4/8; string ops use 1/2/4)
+        U8  sub = 0;           // aluOp / shift sub-op / jcc condition /
+                               // string op (0=MOVS,1=STOS,2=CMPS,3=SCAS) /
+                               // BK_ALU_ACC_IMM: 0..7 aluOp, 8=TEST /
+                               // BK_MOVX: 0=zx8,1=zx16,2=sx8,3=sx16
         U8  rexPresent = 0;
         U8  len = 0;           // full instruction byte length
         BRecipe mr;
         U64 imm = 0;           // finalized immediate (sign/mask applied at build)
         S32 jccDelta = 0;
+        U8  rep = 0;           // REP prefix for BK_STRING (0/0xF2/0xF3)
+        bool asize32 = false;  // 0x67 prefix for BK_STRING
     };
     static constexpr U32 BBLOCK_MAX_RECS = 24;
     struct BBlock {
@@ -303,6 +322,7 @@ private:
     ModRM resolveRecipe(const BRecipe& r);
     bool buildBlock(U64 startRip, BBlock& b);
     U32  execBlock(const BBlock& b, U64 maxInsn = ~0ULL); // instructions executed
+    U32  execBlockThreaded(const BBlock& b, U64 maxInsn = ~0ULL); // threaded dispatch tier
     U32  tryBlockStep(U64 maxInsn = ~0ULL); // probe/build/exec; 0 = interpret
 #endif
 
@@ -334,6 +354,12 @@ private:
     // depending on destIsRM). CMP discards the result.
     void runAlu(U8 aluOp, U32 size, bool destIsRM, U64 lhs, U64 rhs,
                 const ModRM& m, bool rexPresentLocal);
+
+    // String ops (MOVS/STOS/CMPS/SCAS). Factored from dsp_43/dsp_44; the
+    // single-step dispatcher and execBlock's BK_STRING case share it, so
+    // jitted and interpreted execution are identical by construction.
+    // sub: 0=MOVS, 1=STOS, 2=CMPS, 3=SCAS.
+    void runStringOp(U8 sub, U32 size, U8 rep, bool asize32);
 
     // Evaluate a 4-bit condition code (Jcc/CMOVcc/SETcc share the same
     // encoding: 0=O 1=NO 2=B 3=AE 4=E 5=NE 6=BE 7=A 8=S 9=NS A=P B=NP
