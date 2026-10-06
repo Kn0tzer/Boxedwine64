@@ -15,6 +15,12 @@ if (!/^[\w.-]+$/.test(tag)) throw new Error("TAG must contain only letters, numb
 const dir = `test-results/dxvk-${tag}`;
 await mkdir(dir, { recursive: true });
 
+// Draw mode: TRI12DRAW_PATH set -> tri12draw.exe (RGB triangle) instead of tri12.exe (clear-only).
+const drawMode = !!process.env.TRI12DRAW_PATH;
+const triExeName = drawMode ? "tri12draw.exe" : "tri12.exe";
+const triExePath = drawMode ? process.env.TRI12DRAW_PATH
+  : (process.env.TRI12_PATH || "tools/vkd3d/probe/tri12.exe");
+
 // Simple clear-color analysis: count pixels far from the page-tier default
 // background (0,40,100). A working clear shows cornflower (100,149,237).
 function clearPixels(png) {
@@ -52,6 +58,44 @@ function clearPixels(png) {
     center: at(Math.floor(width / 2), Math.floor(height / 2)) };
 }
 
+// Draw-mode pixel analysis: tri12draw clears to dark blue (0,51,102) and draws
+// an RGB triangle. Count pixels far from both the clear color and the page
+// background (0,40,100) -- those are the triangle pixels.
+function drawPixels(png) {
+  let width, height, channels, pos = 8;
+  const data = [];
+  while (pos + 12 <= png.length) {
+    const n = png.readUInt32BE(pos), type = png.toString("ascii", pos + 4, pos + 8), b = png.subarray(pos + 8, pos + 8 + n);
+    if (type === "IHDR") {
+      width = b.readUInt32BE(0); height = b.readUInt32BE(4);
+      channels = ({ 2: 3, 6: 4 })[b[9]];
+      if (b[8] !== 8 || !channels) throw new Error("Unsupported PNG pixel encoding");
+    } else if (type === "IDAT") data.push(b);
+    pos += 12 + n;
+  }
+  const raw = inflateSync(Buffer.concat(data)), stride = width * channels, rgb = Buffer.alloc(stride * height);
+  for (let y = 0; y < height; y++) for (let x = 0; x < stride; x++) {
+    const a = x >= channels ? rgb[y * stride + x - channels] : 0;
+    const b2 = y ? rgb[(y - 1) * stride + x] : 0;
+    const c = y && x >= channels ? rgb[(y - 1) * stride + x - channels] : 0;
+    const p = a + b2 - c, pa = Math.abs(p - a), pb = Math.abs(p - b2), pc = Math.abs(p - c);
+    const f = raw[y * (stride + 1)];
+    const predictor = [0, a, b2, (a + b2) >> 1, pa <= pb && pa <= pc ? a : pb <= pc ? b2 : c][f];
+    if (predictor === undefined) throw new Error("Invalid PNG row filter");
+    rgb[y * stride + x] = (raw[y * (stride + 1) + x + 1] + predictor) & 255;
+  }
+  const at = (x, y) => [...rgb.subarray((y * width + x) * channels, (y * width + x) * channels + 3)];
+  const bg = [0, 40, 100], darkBlue = [0, 51, 102];
+  const close = (a, b) => a.every((v, i) => Math.abs(v - b[i]) < 24);
+  let trianglePx = 0;
+  for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+    const px = at(x, y);
+    if (!close(px, darkBlue) && !close(px, bg)) trianglePx++;
+  }
+  return { width, height, trianglePx,
+    center: at(Math.floor(width / 2), Math.floor(height / 2)) };
+}
+
 const server = await serve(process.env.WINE_DIST_DIR || "dist");
 const browser = await chromium.launch({
   executablePath: process.env.CHROME_PATH || "/usr/local/bin/chromium", headless: true,
@@ -85,10 +129,11 @@ try {
   await page.waitForFunction(() => window.bwRuntime?.ready?.() === true, null, { timeout });
   console.log("SESSION READY");
   const assets = [
-    ["tri12.exe", process.env.TRI12_PATH || "tools/vkd3d/probe/tri12.exe"],
+    [triExeName, triExePath],
     ["d3d12.dll", process.env.D3D12_PATH || "/home/ubuntu/wt-vkd3d/tools/vkd3d/build.w64/libs/d3d12/d3d12.dll"],
     ["d3d12core.dll", process.env.D3D12CORE_PATH || "/home/ubuntu/wt-vkd3d/tools/vkd3d/build.w64/libs/d3d12core/d3d12core.dll"],
-    ["libvulkan.so.1", process.env.VK_SHIM_PATH || "tools/rootfs64/libvk64/libvulkan.so.1"]];
+    ["libvulkan.so.1", process.env.VK_SHIM_PATH || "tools/rootfs64/libvk64/libvulkan.so.1"],
+    ["bw64vulkan.dll", process.env.WINEVULKAN_PATH || "tools/vkd3d/probe/bw64vulkan.dll"]];
   for (const [name, path] of assets) {
     const bytes = await readFile(path);
     provenance.push({ name, path, bytes: bytes.length, sha256: createHash("sha256").update(bytes).digest("hex") });
@@ -121,8 +166,8 @@ try {
       return original(bytes, flags);
     };
   });
-  const spawn = await page.evaluate(() => window.bwRuntime.call("bw64_spawn", ["string", "string"],
-    ["/usr/lib/wine/wine64\nZ:\\\\home\\\\username\\\\tri12.exe", "BW64_VKTRACE=2\nBW64_VKFRAME=1\nWINEDLLOVERRIDES=d3d12=n,d3d12core=n\nLD_LIBRARY_PATH=/home/username"]));
+  const spawn = await page.evaluate((exeName) => window.bwRuntime.call("bw64_spawn", ["string", "string"],
+    ["/usr/lib/wine/wine64\nZ:\\\\home\\\\username\\\\" + exeName, "BW64_VKTRACE=2\nBW64_VKFRAME=1\nWINEDLLOVERRIDES=d3d12=n,d3d12core=n\nLD_LIBRARY_PATH=/home/username"]), triExeName);
   console.log("SPAWN", spawn);
   const until = Date.now() + timeout;
   let lastPrint = 0, lastRendered = 0, shot = null;
@@ -138,11 +183,11 @@ try {
       console.log("PROGRESS", JSON.stringify({ chunks: chunkFiles.length, stats, tail: logs.slice(-2) }));
       await flush();
     }
-    if (logs.some(l => /tri12: RESULT [01]/.test(l))) {
+    if (logs.some(l => (drawMode ? /tri12draw: RESULT [01]/ : /tri12: RESULT [01]/).test(l))) {
       await page.waitForTimeout(3000);
       break;
     }
-    if (logs.some(l => /exit_group syscall, status=[1-9]\d*.*cmd=.*tri12\.exe/.test(l))) break;
+    if (logs.some(l => new RegExp('exit_group syscall, status=[1-9]\\d*.*cmd=.*' + triExeName.replace('.', '\\.')).test(l))) break;
     if (errors.some(l => /unreachable|memory access out of bounds|Aborted/.test(l))) break;
     await page.waitForTimeout(250);
   }
@@ -151,21 +196,26 @@ try {
   if (shot) {
     const bytes = Buffer.from(shot.split(",")[1], "base64");
     await writeFile(`${dir}/canvas.png`, bytes);
-    pixels = clearPixels(bytes);
+    pixels = drawMode ? drawPixels(bytes) : clearPixels(bytes);
   }
   const joined = logs.join("\n");
   const renderErrors = logs.filter(l => /page tier WebGPU error|frame rejected|chunk rejected|cannot translate/.test(l));
   // vkd3d gate diagnostics: capture the exact failing requirement from guest log
   const gateLines = logs.filter(l => /not supported|Lacking support|required|E_INVALIDARG|is not supported/i.test(l)).slice(0, 20);
   summary = {
-    passed: /tri12: RESULT 0/.test(joined) && !errors.length && !renderErrors.length
-      && stats?.v2?.rendered > 0 && pixels && pixels.cornflowerPx > 1000,
-    tri12Result: /tri12: RESULT 0/.test(joined) ? 0 : /tri12: RESULT 1/.test(joined) ? 1 : null,
-    tri12FailLines: logs.filter(l => /tri12: FAIL/.test(l)),
+    passed: drawMode
+      ? /tri12draw: RESULT 0/.test(joined) && !errors.length && !renderErrors.length
+        && stats?.v2?.rendered > 0 && pixels && pixels.trianglePx > 1000
+      : /tri12: RESULT 0/.test(joined) && !errors.length && !renderErrors.length
+        && stats?.v2?.rendered > 0 && pixels && pixels.cornflowerPx > 1000,
+    tri12Result: drawMode
+      ? (/tri12draw: RESULT 0/.test(joined) ? 0 : /tri12draw: RESULT 1/.test(joined) ? 1 : null)
+      : (/tri12: RESULT 0/.test(joined) ? 0 : /tri12: RESULT 1/.test(joined) ? 1 : null),
+    tri12FailLines: logs.filter(l => (drawMode ? /tri12draw: FAIL/ : /tri12: FAIL/).test(l)),
     gateLines,
     framesBuilt: (joined.match(/vk64: FRAME \d+ built/g) || []).length,
     chunksCaptured: chunkFiles.length, decodedFrames,
-    guestExitLines: logs.filter(l => /exit_group syscall.*cmd=.*tri12\.exe/.test(l)),
+    guestExitLines: logs.filter(l => new RegExp('exit_group syscall.*cmd=.*' + triExeName.replace('.', '\\.')).test(l)),
     provenance, stats, pixels, errors, renderErrors,
   };
 } catch (e) {

@@ -133,6 +133,10 @@ public:
     std::mutex regMutex;
     std::unordered_map<uint32_t, XWireWindow> windows;
     uint32_t presentWindow = 0;     // base window composited under any overlays
+    uint32_t focusWindow = 0;       // last window granted keyboard focus (FocusIn).
+                                    // Input delivery falls back to this when no
+                                    // window has presented yet (Vulkan/GL apps
+                                    // never PutImage, so presentWindow stays 0).
     // Persistent-session app switch: when set, the next real (non-override-
     // redirect) window OWNED BY A CONNECTION OPENED AFTER THE ARM (ownerClientBase
     // >= adoptArmClientBase) is forcibly adopted as the base presentWindow,

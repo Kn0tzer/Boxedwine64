@@ -104,6 +104,15 @@ void tickXWirePresent();
 union SDL_Event;
 void xwireForwardSdlEvent(const SDL_Event& e);
 
+// SDL scancode -> X11 keycode (evdev code + 8). Defined in xwirepresentSDL.cpp.
+uint32_t sdlScancodeToX11(int scancode);
+
+// Inject one key event (SDL scancode, down!=0 press else release) directly
+// into the XWire input queue, bypassing SDL event capture. For headless
+// (-novideo) browser operation where Emscripten SDL never sees DOM keys.
+// Exposed to JS as bw64_xwire_key. Defined in xwirepresentSDL.cpp.
+void xwireInjectKey(uint32_t sdlScancode, int down);
+
 // Run `fn` on the platform MAIN thread and block until it completes. macOS
 // requires SDL_CreateWindow / NSWindow on the main thread, but the gl64 bridge
 // runs on a guest thread — so it hands window creation here. The work is drained

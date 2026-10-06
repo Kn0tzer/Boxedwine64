@@ -6339,6 +6339,16 @@ typedef struct VkGraphicsPipelineCreateInfo {
     int32_t                                          basePipelineIndex;
 } VkGraphicsPipelineCreateInfo;
 
+typedef struct VkComputePipelineCreateInfo {
+    VkStructureType                     sType;
+    uint64_t pNext;
+    VkPipelineCreateFlags               flags;
+    VkPipelineShaderStageCreateInfo     stage;
+    VkPipelineLayout                    layout;
+    VkPipeline                          basePipelineHandle;
+    int32_t                             basePipelineIndex;
+} VkComputePipelineCreateInfo;
+
 typedef struct VkPipelineLayoutCreateInfo {
     VkStructureType                 sType;
     uint64_t pNext;

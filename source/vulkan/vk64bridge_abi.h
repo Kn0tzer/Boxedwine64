@@ -148,6 +148,7 @@ enum {
     VK64_fn_vkCreateRenderPass,                      // (device, pCreateInfo*, pAllocator, out VkRenderPass*)
     VK64_fn_vkCreateFramebuffer,                     // (device, pCreateInfo*, pAllocator, out VkFramebuffer*)
     VK64_fn_vkCreateGraphicsPipelines,               // (device, cache, n, pCreateInfos*, pAllocator, out VkPipeline*)
+    VK64_fn_vkCreateComputePipelines,                // (device, cache, n, pCreateInfos*, pAllocator, out VkPipeline*)
     VK64_fn_vkCreatePipelineLayout,                  // (device, pCreateInfo*, pAllocator, out VkPipelineLayout*)
     VK64_fn_vkCreateDescriptorSetLayout,             // (device, pCreateInfo*, pAllocator, out VkDescriptorSetLayout*)
     VK64_fn_vkCreateDescriptorPool,                  // (device, pCreateInfo*, pAllocator, out VkDescriptorPool*)
@@ -282,6 +283,10 @@ enum {
     VK64_fn_vkFlushMappedMemoryRanges = 800,       // (device, count, pRanges*)
     VK64_fn_vkInvalidateMappedMemoryRanges,       // (device, count, pRanges*)
     VK64_fn_vkCmdBindVertexBuffers2,
+    VK64_fn_vkBindBufferMemory2,                  // (device, bindInfoCount, pBindInfos*) -> records buffer binds
+    VK64_fn_vkBindBufferMemory2KHR,               // alias
+    VK64_fn_vkBindImageMemory2,                   // (device, bindInfoCount, pBindInfos*) -> records image binds
+    VK64_fn_vkBindImageMemory2KHR,                // alias
     VK64_fn__MAX
 };
 

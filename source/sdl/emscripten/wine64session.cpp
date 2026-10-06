@@ -59,6 +59,7 @@
 #include "ksignal.h" // K_SIGTERM
 #include "../../io/fs.h"      // Fs::getNodeFromLocalPath / addFileNode (VFS registration)
 #include "../../io/fsnode.h"
+#include "../../x11wire/xwirepresent.h" // xwireInjectKey (bw64_xwire_key)
 
 #include <atomic>
 #include <vector>
@@ -265,7 +266,8 @@ static bool terminatePid(U32 pid, const char* why) {
     BString cmd = process->commandLine;
     if (cmd.contains("wineserver") || cmd.contains("services.exe") ||
         cmd.contains("winedevice") || cmd.contains("plugplay") ||
-        cmd.contains("rpcss") || cmd.contains("explorer.exe")) {
+        cmd.contains("rpcss") || cmd.contains("explorer.exe") ||
+        cmd.contains("deskpin.exe")) {
         klog_fmt("wine64session: REFUSING to kill pid=%d (%s) — system process (%s)",
                  (int)pid, cmd.c_str(), why);
         return false;
@@ -374,6 +376,16 @@ extern "C" EMSCRIPTEN_KEEPALIVE int bw64_spawn(const char* argvJoined, const cha
     g_pending.push_back(std::move(req));
     pendingLockRelease();
     return 1;
+}
+
+// bw64_xwire_key: inject one key event into the guest's XWire input queue.
+// Called via Module.ccall("bw64_xwire_key",null,["number","number"],[scancode,down]).
+// scancode is an SDL scancode (USB HID usage); down!=0 presses, 0 releases.
+// Lets the browser page drive guest keyboard input headless (-novideo), where
+// Emscripten SDL never captures DOM keys. Safe from the browser main thread:
+// the sink queue push is mutex-guarded. No-op until the session is up.
+extern "C" EMSCRIPTEN_KEEPALIVE void bw64_xwire_key(int sdlScancode, int down) {
+    xwireInjectKey((uint32_t)sdlScancode, down);
 }
 
 // bw64_register_file: register a file JS already wrote into MEMFS (e.g. an

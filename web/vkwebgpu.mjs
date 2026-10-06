@@ -229,7 +229,10 @@ export function createShaderCache({ translate = toWGSL, log = defaultLog } = {})
     stats,
     async get(stage, mod, options = {}) {
       if (!mod) return null;
-      const key = stage + ':' + mod.hash + ':' + mod.size + ':topology:' + (options.rasterTopology ?? 'unknown');
+      // Specialization values are part of the cache key: the same SPIR-V
+      // module with different spec constants produces different WGSL.
+      const specKey = (options.specOverrides || []).map(e => e.constantID + ':' + Array.from(e.value).join(',')).join(';');
+      const key = stage + ':' + mod.hash + ':' + mod.size + ':topology:' + (options.rasterTopology ?? 'unknown') + ':spec:' + specKey;
       if (wgsl.has(key)) { stats.hits++; return wgsl.get(key); }
       const override = FS_OVERRIDES.get(mod.hash + ':' + mod.size);
       if (override) { wgsl.set(key, override); stats.overridden++; return override; }
@@ -472,6 +475,21 @@ export function installVkPageTier({ canvas, log = defaultLog } = {}) {
   const v2state = { chunksReceived: 0, framesReceived: 0, rendered: 0,
     droppedConsumer: 0, chunkGaps: 0, rejected: 0 };
   let renderer2 = null, starting2 = null, pump2 = Promise.resolve();
+  // Pump debouncing: the bridge hops every queued frame's chunks on present
+  // (intermediate renders + the presented frame) via separate proxied calls
+  // that may be interleaved with event-loop turns. A setTimeout(0) is not
+  // enough: the timer can fire before the present batch's later chunks arrive
+  // (worker postMessage ordering), rendering a stale intermediate frame and
+  // thrashing the canvas size every present. Debounce 8ms so takeLatest()
+  // sees the full present batch and keeps only the presented frame.
+  let pumpTimer = null;
+  function queuePump() {
+    if (pumpTimer) clearTimeout(pumpTimer);
+    pumpTimer = setTimeout(() => {
+      pumpTimer = null;
+      pump2 = pump2.then(() => pumpChunks());
+    }, 8);
+  }
 
   // Canvas-resize hook: frames recorded at the old size would misconfigure
   // the targets, so the queue drains and the targets are invalidated; the
@@ -567,7 +585,7 @@ export function installVkPageTier({ canvas, log = defaultLog } = {}) {
     v2state.framesReceived++;
     v2queue.push(decoded); // drop-oldest past V2_QUEUE_CAP
     v2state.droppedConsumer = v2queue.dropped;
-    pump2 = pump2.then(() => pumpChunks());
+    queuePump();
     return pump2;
   }
 
@@ -873,8 +891,28 @@ export function decodeV2Frame(records, counters = {}) {
         const vb = [], va = [];
         for (let k = 0; k < nVb; k++) vb.push({ binding: r.u32(), stride: r.u32(), inputRate: r.u32() });
         for (let k = 0; k < nVa; k++) va.push({ location: r.u32(), binding: r.u32(), format: r.u32(), offset: r.u32() });
+        // Append-only specialization tail (2026-10-06): per-stage list of
+        // {constantID, size, value bytes}. Absent in frames from older bridges.
+        const readSpec = () => {
+          const n = r.u32();
+          if (n > 16) throw new Error('vk64: v2 PIPELINE spec count out of range');
+          const entries = [];
+          for (let i = 0; i < n; i++) {
+            const constantID = r.u32(), size = r.u32();
+            if (size !== 1 && size !== 2 && size !== 4 && size !== 8)
+              throw new Error('vk64: v2 PIPELINE spec size out of range');
+            const value = r.bytes(size);
+            entries.push({ constantID, size, value });
+          }
+          return entries;
+        };
+        let vsSpec = [], fsSpec = [];
+        if (r.p < r.dv.byteLength) {
+          vsSpec = readSpec();
+          fsSpec = readSpec();
+        }
         r.done('PIPELINE');
-        const pipe = { pipeId, vsHash, fsHash, topology, cull, front, depthTest, depthWrite, depthOp, blend, vb, va };
+        const pipe = { pipeId, vsHash, fsHash, topology, cull, front, depthTest, depthWrite, depthOp, blend, vb, va, vsSpec, fsSpec };
         frame.pipelines.set(pipeId, pipe);
         needPass().ops.push({ op: 'bindPipe', pipe });
         break;
@@ -1332,9 +1370,9 @@ export async function createVkRenderer2(canvas, { translate, log = defaultLog, o
     if (pipelines.has(key)) return pipelines.get(key);
     const vsm = F.shaders.get(pipe.vsHash), fsm = F.shaders.get(pipe.fsHash);
     if (!vsm || !fsm) return { skip: 'missing-shader' };
-    let vsWgsl = await shaders.get('vertex', { hash: pipe.vsHash, size: vsm.code.length, code: vsm.code }, { rasterTopology: pipe.topology });
+    let vsWgsl = await shaders.get('vertex', { hash: pipe.vsHash, size: vsm.code.length, code: vsm.code }, { rasterTopology: pipe.topology, specOverrides: pipe.vsSpec });
     if (unnegated) vsWgsl = stripNagaYNegation(vsWgsl);
-    const fsWgsl = await shaders.get('fragment', { hash: pipe.fsHash, size: fsm.code.length, code: fsm.code }, { rasterTopology: pipe.topology });
+    const fsWgsl = await shaders.get('fragment', { hash: pipe.fsHash, size: fsm.code.length, code: fsm.code }, { rasterTopology: pipe.topology, specOverrides: pipe.fsSpec });
     if (!vsWgsl || !fsWgsl) return { skip: 'shader-translation' };
     const vsR = rewritePushConstantsWGSL(vsWgsl), fsR = rewritePushConstantsWGSL(fsWgsl);
     const pushBlocks = vsR.pushBlocks + fsR.pushBlocks;
@@ -1526,9 +1564,15 @@ export async function createVkRenderer2(canvas, { translate, log = defaultLog, o
     F.shaders = frame.shaders; F.images = frame.images;
     F.views = frame.views; F.samplers = frame.samplers; F.buffers = frame.buffers;
     F.texCache.clear(); F.bufCache.clear(); F.sampCache.clear(); F.live.length = 0;
+    if (typeof window !== 'undefined' && window.__bwDbgRender)
+      console.log('bwDbg render f' + frame.frameNo + ' ' + frame.width + 'x' + frame.height +
+        ' canvas ' + canvas.width + 'x' + canvas.height);
     if (canvas.width !== frame.width || canvas.height !== frame.height) {
       canvas.width = frame.width; canvas.height = frame.height;
       obsW = frame.width; obsH = frame.height;
+      // Reconfigure the WebGPU context for the new canvas size; without
+      // this getCurrentTexture() may return a stale-sized texture.
+      context.configure({ device, format, alphaMode: 'opaque', usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_DST });
     }
 
     let presentTex = null, presentW = frame.width, presentH = frame.height, lastClear = [0, 0, 0, 1];
@@ -1595,6 +1639,7 @@ export async function createVkRenderer2(canvas, { translate, log = defaultLog, o
         pipeRec: null, pipeDesc: null, pipeNeg: false, sets: new Map(), setVer: new Map(), inlineMap: new Map(),
         pushBlock: new Uint8Array(V2_PUSH_SIZE), pushDirty: false,
         vbinds: [], ibind: null, viewport: null, scissor: null,
+        pipeBad: false, badPipes: new Map(),
       };
       const bump = si => st.setVer.set(si, (st.setVer.get(si) || 0) + 1);
       let skipped = null;
@@ -1602,8 +1647,17 @@ export async function createVkRenderer2(canvas, { translate, log = defaultLog, o
       for (const op of p.ops) {
         switch (op.op) {
           case 'bindPipe': {
-            const rec = await getPipelineFor(op.pipe, passSamples);
-            if (rec.skip) { skipped = rec.skip; break; }
+            let rec;
+            try { rec = await getPipelineFor(op.pipe, passSamples); }
+            catch (e) { rec = { skip: 'pipeline-threw' }; }
+            if (rec.skip) {
+              if (!st.badPipes.has(op.pipe.pipeId)) {
+                st.badPipes.set(op.pipe.pipeId, rec.skip);
+                stats.skippedDraws = (stats.skippedDraws || 0) + 1;
+              }
+              st.pipeRec = null; st.pipeBad = true;
+              break;
+            }
             st.pipeRec = rec; st.pipeDesc = op.pipe; st.pipeNeg = false;
             passEnc.setPipeline(rec.pipeline);
             break;
@@ -1618,7 +1672,7 @@ export async function createVkRenderer2(canvas, { translate, log = defaultLog, o
           case 'ibind': st.ibind = op; break;
           case 'draw': {
             if (skipped) break;
-            if (!st.pipeRec) { skipped = 'draw-without-pipeline'; break; }
+            if (st.pipeBad || !st.pipeRec) break;
             if (st.viewport) {
               const [x, y, w, h, md, xmd] = st.viewport;
               if (w > 0 && h !== 0) {

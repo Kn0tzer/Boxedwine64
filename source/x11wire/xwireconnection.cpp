@@ -1963,7 +1963,11 @@ void XWireConnection::deliverInputEvents() {
     int16_t baseX = 0, baseY = 0;
     {
         std::lock_guard<std::mutex> lk(srv.regMutex);
-        pw = srv.presentWindow;
+        // Keys follow the focus window per X semantics; presentWindow is only
+        // set by the GDI PutImage path, so Vulkan/GL apps would otherwise never
+        // receive input. Fall back to the last FocusIn window when nothing has
+        // presented yet.
+        pw = srv.presentWindow ? srv.presentWindow : srv.focusWindow;
         if (!pw) return;
         // Owner check: the presented (base) window's id base must match ours, so
         // only one connection drains the shared host input queue.
@@ -2654,6 +2658,8 @@ void XWireConnection::sendFocusIn(uint32_t window) {
     // FocusIn (event code 9). winex11 listens for this to mark the window
     // active; without it wine never routes keystrokes to the focused control,
     // so typing appears dead even though KeyPress events are delivered.
+    // Also record it server-wide: input delivery falls back to the focus
+    // window when no window has presented yet (Vulkan apps never PutImage).
     uint8_t e[32] = {0};
     e[0] = 9;                                  // FocusIn
     e[1] = 3;                                  // detail = NotifyNonlinear (a real
@@ -2665,6 +2671,11 @@ void XWireConnection::sendFocusIn(uint32_t window) {
     e[3] = (uint8_t)(sequence >> 8);
     memcpy(e + 4, &window, 4);                 // event window
     e[8] = 0;                                  // mode = NotifyNormal
+    {
+        XWireServer& srv = XWireServer::instance();
+        std::lock_guard<std::mutex> lk(srv.regMutex);
+        srv.focusWindow = window;
+    }
     writeToClient(e, sizeof(e));
 }
 

@@ -71,12 +71,6 @@ web/runtime/wine64.zip
 web/runtime/wine64.zip.part*
 /core
 
-# published-fork: build artifacts excluded (see README)
-dist/runtime/wine64.zip
-web/runtime/wine64.zip
-web/runtime/wine64.zip.part*
-/core
-
 # published fork: regenerable / working debris, kept in local dev only
 dist/
 test-results/

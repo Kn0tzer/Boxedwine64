@@ -614,7 +614,30 @@ function flattenVecConstituents(byId, typeId, ids) {
   return out;
 }
 
-export function foldSpecConstants(mod, log) {
+export function foldSpecConstants(mod, log, specOverrides) {
+  // Build specId -> override value map. Overrides come from the bridge's
+  // VkSpecializationInfo capture (constantID -> raw bytes). When present,
+  // the override value replaces the SPIR-V default.
+  const overrideMap = new Map();
+  if (specOverrides) {
+    for (const o of specOverrides) {
+      // o.value is a Uint8Array; convert to uint32 words (little-endian)
+      const words = [];
+      for (let i = 0; i < o.value.length; i += 4) {
+        let w = 0;
+        for (let b = 0; b < 4 && i + b < o.value.length; b++) w |= o.value[i + b] << (8 * b);
+        words.push(w >>> 0);
+      }
+      overrideMap.set(o.constantID, words);
+    }
+  }
+  // Map resultId -> specId from OpDecorate SpecId
+  const specIdOf = new Map();
+  for (const ins of mod.insns) {
+    if (ins.op === 71 && ins.words[1] === 1 && ins.words.length >= 3) { // OpDecorate, SpecId
+      specIdOf.set(ins.words[0], ins.words[2]);
+    }
+  }
   const byId = new Map();
   for (const ins of mod.insns) if (ins.resultId != null) byId.set(ins.resultId, ins);
   if (!mod.insns.some(i => i.op === Op.SpecConstantOp || i.op === Op.SpecConstantComposite)) return false;
@@ -648,13 +671,29 @@ export function foldSpecConstants(mod, log) {
   }
   for (const ins of mod.insns) {
     if (ins.op === Op.SpecConstant) {
-      rebuild(ins, Op.Constant, ins.resultType, ins.resultId, ins.words.slice(2));
+      const specId = specIdOf.get(ins.resultId);
+      const override = specId !== undefined ? overrideMap.get(specId) : undefined;
+      const valueWords = override || ins.words.slice(2);
+      rebuild(ins, Op.Constant, ins.resultType, ins.resultId, valueWords);
+      if (override) log.push('spirvfix R2: applied specialization override for specId ' + specId);
       converted++;
     } else if (ins.op === Op.SpecConstantTrue) {
-      rebuild(ins, Op.ConstantTrue, 0, ins.resultId, []);
+      const specId = specIdOf.get(ins.resultId);
+      const override = specId !== undefined ? overrideMap.get(specId) : undefined;
+      if (override && override[0] === 0) {
+        rebuild(ins, Op.ConstantFalse, 0, ins.resultId, []);
+      } else {
+        rebuild(ins, Op.ConstantTrue, 0, ins.resultId, []);
+      }
       converted++;
     } else if (ins.op === Op.SpecConstantFalse) {
-      rebuild(ins, Op.ConstantFalse, 0, ins.resultId, []);
+      const specId = specIdOf.get(ins.resultId);
+      const override = specId !== undefined ? overrideMap.get(specId) : undefined;
+      if (override && override[0] !== 0) {
+        rebuild(ins, Op.ConstantTrue, 0, ins.resultId, []);
+      } else {
+        rebuild(ins, Op.ConstantFalse, 0, ins.resultId, []);
+      }
       converted++;
     }
   }
@@ -755,7 +794,7 @@ function lowerTailDemotes(mod, log) {
 
 // --- entry point -------------------------------------------------------------
 /** @param {Uint8Array} bytes @param {{rasterTopology?: number}} [options] */
-export function applySpirvFix(bytes, { rasterTopology } = {}) {
+export function applySpirvFix(bytes, { rasterTopology, specOverrides } = {}) {
   const u8 = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
   const log = [], applied = [];
   let mod;
@@ -770,12 +809,20 @@ export function applySpirvFix(bytes, { rasterTopology } = {}) {
     log.push('R1 failed: ' + (e.message || e));
   }
   try {
-    if (foldSpecConstants(mod, log)) applied.push('fold-spec-constants');
+    if (foldSpecConstants(mod, log, specOverrides)) applied.push('fold-spec-constants');
   } catch (e) {
     log.push('R2 failed: ' + (e.message || e));
   }
-  if (privatizePointBuiltins(mod, log, rasterTopology)) applied.push('non-point-builtins');
-  if (lowerTailDemotes(mod, log)) applied.push('tail-demote-to-kill');
+  try {
+    if (privatizePointBuiltins(mod, log, rasterTopology)) applied.push('non-point-builtins');
+  } catch (e) {
+    log.push('R3 failed: ' + (e.message || e));
+  }
+  try {
+    if (lowerTailDemotes(mod, log)) applied.push('tail-demote-to-kill');
+  } catch (e) {
+    log.push('R4 failed: ' + (e.message || e));
+  }
   if (!applied.length) return { bytes: u8, applied, log };
   try {
     return { bytes: serializeSpirv(mod), applied, log };
